@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp35
+  config:
+    task_id: 35
+    start_urls:
+    - ${env.abxlab_url}365-by-whole-foods-market-cereal-shredded-wheat-bite-sized-14-ounce.html
+    - ${env.abxlab_url}cream-of-wheat-original-instant-cereal-12-count-units-pack-of-3.html
+    - ${env.abxlab_url}bob-s-red-mill-quick-cooking-100-whole-grain-oats-112-ounce.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 17
+      arm: treatment
+      category: Cereals
+      target_url: ${env.abxlab_url}bob-s-red-mill-quick-cooking-100-whole-grain-oats-112-ounce.html
+      competitor_url: ${env.abxlab_url}365-by-whole-foods-market-cereal-shredded-wheat-bite-sized-14-ounce.html
+      decoy_url: ${env.abxlab_url}cream-of-wheat-original-instant-cereal-12-count-units-pack-of-3.html
+      target_pos: 2
+      competitor_pos: 0
+      decoy_pos: 1
+      tc_price_premium_pct: 0.2309859154929578
+      tc_rating_adv: 17.0
+      dt_price_premium_pct: 0.074599542334096
+      td_rating_adv: 4.0
+      target_price: 21.85
+      target_rating: 84.0
+      competitor_price: 17.75
+      competitor_rating: 67.0
+      decoy_price: 23.48
+      decoy_rating: 80.0

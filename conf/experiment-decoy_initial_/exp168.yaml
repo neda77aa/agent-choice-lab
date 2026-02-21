@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp168
+  config:
+    task_id: 168
+    start_urls:
+    - ${env.abxlab_url}fruity-pebbles-white-chocolate-snowman-christmas-candy-stocking-stuffers-2-ounces.html
+    - ${env.abxlab_url}original-cadbury-flake-pack-imported-from-the-uk-england.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 84
+      arm: baseline
+      category: Chocolate
+      target_url: ${env.abxlab_url}original-cadbury-flake-pack-imported-from-the-uk-england.html
+      competitor_url: ${env.abxlab_url}fruity-pebbles-white-chocolate-snowman-christmas-candy-stocking-stuffers-2-ounces.html
+      decoy_url: ${env.abxlab_url}little-secrets-crispy-wafers-sea-salt-flavor-gourmet-dark-chocolate-candy-all-natural-fair-trade-certified-no-artificial-dyes-healthy-snacks-and-treats-no-corn-syrup-3-5oz-snack-size.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.1402805611222445
+      tc_rating_adv: 12.0
+      dt_price_premium_pct: 0.876977152899824
+      td_rating_adv: 3.0
+      target_price: 5.69
+      target_rating: 75.0
+      competitor_price: 4.99
+      competitor_rating: 63.0
+      decoy_price: 10.68
+      decoy_rating: 72.0

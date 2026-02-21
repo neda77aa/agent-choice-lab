@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp258
+  config:
+    task_id: 258
+    start_urls:
+    - ${env.abxlab_url}erbaviva-jasmine-grapefruit-organic-deodorant-travel-2-fl-oz-aluminum-free-cruelty-free.html
+    - ${env.abxlab_url}old-spice-wild-bearglove-2-6-oz.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 129
+      arm: baseline
+      category: Deodorants & Antiperspirants
+      target_url: ${env.abxlab_url}old-spice-wild-bearglove-2-6-oz.html
+      competitor_url: ${env.abxlab_url}erbaviva-jasmine-grapefruit-organic-deodorant-travel-2-fl-oz-aluminum-free-cruelty-free.html
+      decoy_url: ${env.abxlab_url}lafe-s-natural-deodorant-3oz-roll-on-aluminum-free-natural-deodorant-for-men-women-paraben-free-baking-soda-free-with-24-hour-protection-citrus-bergamot-formerly-active-3-pack-packaging-may-vary.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.2057142857142856
+      tc_rating_adv: 35.0
+      dt_price_premium_pct: 0.1249999999999999
+      td_rating_adv: 5.0
+      target_price: 16.88
+      target_rating: 95.0
+      competitor_price: 14.0
+      competitor_rating: 60.0
+      decoy_price: 18.99
+      decoy_rating: 90.0

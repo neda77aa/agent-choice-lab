@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp225
+  config:
+    task_id: 225
+    start_urls:
+    - ${env.abxlab_url}jovial-einkorn-cookies-crispy-cocoa-cookies-usda-certified-organic-high-protein-fair-trade-certified-all-natural-ingredients-low-carb-low-sugar-palm-done-right-8-8-oz.html
+    - ${env.abxlab_url}bagley-rumba-112g-2-pack.html
+    - ${env.abxlab_url}whole-foods-market-cookie-peanut-butter-mini-18-count-12-ounce.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 112
+      arm: treatment
+      category: Cookies
+      target_url: ${env.abxlab_url}bagley-rumba-112g-2-pack.html
+      competitor_url: ${env.abxlab_url}jovial-einkorn-cookies-crispy-cocoa-cookies-usda-certified-organic-high-protein-fair-trade-certified-all-natural-ingredients-low-carb-low-sugar-palm-done-right-8-8-oz.html
+      decoy_url: ${env.abxlab_url}whole-foods-market-cookie-peanut-butter-mini-18-count-12-ounce.html
+      target_pos: 1
+      competitor_pos: 0
+      decoy_pos: 2
+      tc_price_premium_pct: 0.2747875354107649
+      tc_rating_adv: 7.0
+      dt_price_premium_pct: 0.3666666666666667
+      td_rating_adv: 3.0
+      target_price: 18.0
+      target_rating: 80.0
+      competitor_price: 14.12
+      competitor_rating: 73.0
+      decoy_price: 24.6
+      decoy_rating: 77.0

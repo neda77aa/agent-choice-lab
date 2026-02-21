@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp433
+  config:
+    task_id: 433
+    start_urls:
+    - ${env.abxlab_url}miracle-brite-smile-3-hydrogen-peroxide-food-grade-peppermint-lemon-clove-leaf-cinnamon-and-rosemary.html
+    - ${env.abxlab_url}stannous-fluoride-mouthwash-10-fl-oz-0-63-antimicrobial-perio-rinse-alcohol-free-dye-free-paraben-free-refreshing-fruit-punch-flavor.html
+    - ${env.abxlab_url}oral7-dry-mouth-mouthwash-alcohol-free-oral-rinse-with-xylitol-500ml.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 216
+      arm: treatment
+      category: Mouthwash
+      target_url: ${env.abxlab_url}miracle-brite-smile-3-hydrogen-peroxide-food-grade-peppermint-lemon-clove-leaf-cinnamon-and-rosemary.html
+      competitor_url: ${env.abxlab_url}oral7-dry-mouth-mouthwash-alcohol-free-oral-rinse-with-xylitol-500ml.html
+      decoy_url: ${env.abxlab_url}stannous-fluoride-mouthwash-10-fl-oz-0-63-antimicrobial-perio-rinse-alcohol-free-dye-free-paraben-free-refreshing-fruit-punch-flavor.html
+      target_pos: 0
+      competitor_pos: 2
+      decoy_pos: 1
+      tc_price_premium_pct: 0.1429592566118656
+      tc_rating_adv: 20.0
+      dt_price_premium_pct: 0.1813633520950594
+      td_rating_adv: 7.0
+      target_price: 15.99
+      target_rating: 87.0
+      competitor_price: 13.99
+      competitor_rating: 67.0
+      decoy_price: 18.89
+      decoy_rating: 80.0

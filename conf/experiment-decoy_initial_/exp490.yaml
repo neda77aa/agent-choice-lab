@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp490
+  config:
+    task_id: 490
+    start_urls:
+    - ${env.abxlab_url}hello-activated-charcoal-hemp-seed-oil-epic-whitening-toothpaste-4-ounce-fluoride-free-sls-free.html
+    - ${env.abxlab_url}close-up-anticavity-flouride-toothpaste-cinnamon-red-gel-4-0-oz-2-pack.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 245
+      arm: baseline
+      category: Toothpaste
+      target_url: ${env.abxlab_url}close-up-anticavity-flouride-toothpaste-cinnamon-red-gel-4-0-oz-2-pack.html
+      competitor_url: ${env.abxlab_url}hello-activated-charcoal-hemp-seed-oil-epic-whitening-toothpaste-4-ounce-fluoride-free-sls-free.html
+      decoy_url: ${env.abxlab_url}nutribiotic-dental-gel-plus-truly-whitening-wintergreen-4-5-oz-with-gse-aloe-vitamin-c-baking-soda-dental-peroxide-support-healthy-teeth-gums-fluoride-free.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.0944206008583691
+      tc_rating_adv: 10.0
+      dt_price_premium_pct: 0.2091503267973855
+      td_rating_adv: 3.0
+      target_price: 7.65
+      target_rating: 90.0
+      competitor_price: 6.99
+      competitor_rating: 80.0
+      decoy_price: 9.25
+      decoy_rating: 87.0

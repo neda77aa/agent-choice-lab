@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp420
+  config:
+    task_id: 420
+    start_urls:
+    - ${env.abxlab_url}round-decorative-wall-mirror-brass-project-62.html
+    - ${env.abxlab_url}oval-wall-mounted-mirror-metal-wall-mirror-with-shelf-decorative-wall-mirror-for-bedroom-bathroom-living-room-entryway-13-x-27-black-room-bathroom-living-room-entryway.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 210
+      arm: baseline
+      category: Mirrors
+      target_url: ${env.abxlab_url}oval-wall-mounted-mirror-metal-wall-mirror-with-shelf-decorative-wall-mirror-for-bedroom-bathroom-living-room-entryway-13-x-27-black-room-bathroom-living-room-entryway.html
+      competitor_url: ${env.abxlab_url}round-decorative-wall-mirror-brass-project-62.html
+      decoy_url: ${env.abxlab_url}kate-and-laurel-keyleigh-modern-glam-geometric-shaped-metal-accent-wall-mirror-satin-gold.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.1279613215149073
+      tc_rating_adv: 16.0
+      dt_price_premium_pct: 0.2143163309044149
+      td_rating_adv: 5.0
+      target_price: 69.99
+      target_rating: 80.0
+      competitor_price: 62.05
+      competitor_rating: 64.0
+      decoy_price: 84.99
+      decoy_rating: 75.0

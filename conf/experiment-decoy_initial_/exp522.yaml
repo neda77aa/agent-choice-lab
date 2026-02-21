@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp522
+  config:
+    task_id: 522
+    start_urls:
+    - ${env.abxlab_url}perioscriptr-oral-cleansing-concentrate-4-oz-bottle.html
+    - ${env.abxlab_url}pack-of-2-sensodyne-with-novamin-repair-protect-75-ml-canadian.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 261
+      arm: baseline
+      category: Toothpaste
+      target_url: ${env.abxlab_url}perioscriptr-oral-cleansing-concentrate-4-oz-bottle.html
+      competitor_url: ${env.abxlab_url}pack-of-2-sensodyne-with-novamin-repair-protect-75-ml-canadian.html
+      decoy_url: ${env.abxlab_url}arm-hammer-complete-care-fluoride-anticavity-toothpaste-fresh-mint-6-oz-pack-of-3.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.2580305423907321
+      tc_rating_adv: 24.0
+      dt_price_premium_pct: 0.8451234826287148
+      td_rating_adv: 4.0
+      target_price: 23.89
+      target_rating: 82.0
+      competitor_price: 18.99
+      competitor_rating: 58.0
+      decoy_price: 44.08
+      decoy_rating: 78.0

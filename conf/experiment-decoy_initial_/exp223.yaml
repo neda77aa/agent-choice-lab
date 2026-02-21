@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp223
+  config:
+    task_id: 223
+    start_urls:
+    - ${env.abxlab_url}pepperidge-farm-milano-cookies-pumpkin-spice-7-oz-bag.html
+    - ${env.abxlab_url}lenny-and-larry-s-the-complete-cookie-double-chocolate-4-ounce.html
+    - ${env.abxlab_url}pepperidge-farm-milano-cookies-raspberry-chocolate-7-oz-bag.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 111
+      arm: treatment
+      category: Cookies
+      target_url: ${env.abxlab_url}pepperidge-farm-milano-cookies-pumpkin-spice-7-oz-bag.html
+      competitor_url: ${env.abxlab_url}lenny-and-larry-s-the-complete-cookie-double-chocolate-4-ounce.html
+      decoy_url: ${env.abxlab_url}pepperidge-farm-milano-cookies-raspberry-chocolate-7-oz-bag.html
+      target_pos: 0
+      competitor_pos: 1
+      decoy_pos: 2
+      tc_price_premium_pct: 0.2385861561119293
+      tc_rating_adv: 12.0
+      dt_price_premium_pct: 0.2449464922711058
+      td_rating_adv: 5.0
+      target_price: 67.28
+      target_rating: 65.0
+      competitor_price: 54.32
+      competitor_rating: 53.0
+      decoy_price: 83.76
+      decoy_rating: 60.0

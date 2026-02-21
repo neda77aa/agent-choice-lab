@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp1
+  config:
+    task_id: 1
+    start_urls:
+    - ${env.abxlab_url}illumina-fake-hanging-planters-with-fake-plants-4pc-hanging-fake-plants-indoor-and-outdoor-hanging-artificial-plant-small-hanging-plant-home-decor-artificial-hanging-plants-with-pot.html
+    - ${env.abxlab_url}dried-eucalyptus-branches-real-12-pcs-eucalyptus-stems-18-inch-eucalyptus-plant-indoor-for-shower-wedding-home-diy-party-restaurant-hotel-office-decoration.html
+    - ${env.abxlab_url}beferr-6pcs-artificial-eucalyptus-stems-bulk-24-faux-flower-stems-tall-eucalyptus-branches-silk-plants-greenery-bouquet-for-wedding-home-decor.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 0
+      arm: treatment
+      category: Artificial Plants & Flowers
+      target_url: ${env.abxlab_url}beferr-6pcs-artificial-eucalyptus-stems-bulk-24-faux-flower-stems-tall-eucalyptus-branches-silk-plants-greenery-bouquet-for-wedding-home-decor.html
+      competitor_url: ${env.abxlab_url}dried-eucalyptus-branches-real-12-pcs-eucalyptus-stems-18-inch-eucalyptus-plant-indoor-for-shower-wedding-home-diy-party-restaurant-hotel-office-decoration.html
+      decoy_url: ${env.abxlab_url}illumina-fake-hanging-planters-with-fake-plants-4pc-hanging-fake-plants-indoor-and-outdoor-hanging-artificial-plant-small-hanging-plant-home-decor-artificial-hanging-plants-with-pot.html
+      target_pos: 2
+      competitor_pos: 1
+      decoy_pos: 0
+      tc_price_premium_pct: 0.1284946236559138
+      tc_rating_adv: 30.0
+      dt_price_premium_pct: 0.1667460695569319
+      td_rating_adv: 6.0
+      target_price: 20.99
+      target_rating: 93.0
+      competitor_price: 18.6
+      competitor_rating: 63.0
+      decoy_price: 24.49
+      decoy_rating: 87.0

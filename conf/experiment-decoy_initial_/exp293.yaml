@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp293
+  config:
+    task_id: 293
+    start_urls:
+    - ${env.abxlab_url}secret-anti-perspirant-deodorant-solid-powder-fresh-2-70-oz.html
+    - ${env.abxlab_url}right-guard-xtreme-defense-antiperspirant-deodorant-gel-arctic-refresh-4-ounce-count-of-4.html
+    - ${env.abxlab_url}tom-s-of-maine-natural-long-lasting-men-s-deodorant-mountain-spring-2-25-oz.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 146
+      arm: treatment
+      category: Deodorants & Antiperspirants
+      target_url: ${env.abxlab_url}right-guard-xtreme-defense-antiperspirant-deodorant-gel-arctic-refresh-4-ounce-count-of-4.html
+      competitor_url: ${env.abxlab_url}tom-s-of-maine-natural-long-lasting-men-s-deodorant-mountain-spring-2-25-oz.html
+      decoy_url: ${env.abxlab_url}secret-anti-perspirant-deodorant-solid-powder-fresh-2-70-oz.html
+      target_pos: 1
+      competitor_pos: 2
+      decoy_pos: 0
+      tc_price_premium_pct: 0.1588107324147934
+      tc_rating_adv: 9.0
+      dt_price_premium_pct: 0.6752190237797245
+      td_rating_adv: 9.0
+      target_price: 15.98
+      target_rating: 69.0
+      competitor_price: 13.79
+      competitor_rating: 60.0
+      decoy_price: 26.77
+      decoy_rating: 60.0

@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp136
+  config:
+    task_id: 136
+    start_urls:
+    - ${env.abxlab_url}cacao-therapy-dark-chocolate-covered-espresso-beans-5-7-oz-made-with-real-chocolate-and-coffee-beans-delicious-sweet-and-crunchy-kosher-non-gmo-gluten-free-choose-your-flavor-espresso-beans.html
+    - ${env.abxlab_url}milka-lu-biscuits-chocolate-bar-candy-original-german-chocolate-87g-3-06oz-pack-of-2.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 68
+      arm: baseline
+      category: Chocolate
+      target_url: ${env.abxlab_url}cacao-therapy-dark-chocolate-covered-espresso-beans-5-7-oz-made-with-real-chocolate-and-coffee-beans-delicious-sweet-and-crunchy-kosher-non-gmo-gluten-free-choose-your-flavor-espresso-beans.html
+      competitor_url: ${env.abxlab_url}milka-lu-biscuits-chocolate-bar-candy-original-german-chocolate-87g-3-06oz-pack-of-2.html
+      decoy_url: ${env.abxlab_url}madelaine-premium-milk-chocolate-gold-coins-large-coins-1-2-lb.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1007827788649705
+      tc_rating_adv: 20.0
+      dt_price_premium_pct: 0.2755555555555555
+      td_rating_adv: 3.0
+      target_price: 11.25
+      target_rating: 100.0
+      competitor_price: 10.22
+      competitor_rating: 80.0
+      decoy_price: 14.35
+      decoy_rating: 97.0

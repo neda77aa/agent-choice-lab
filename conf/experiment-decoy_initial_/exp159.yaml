@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp159
+  config:
+    task_id: 159
+    start_urls:
+    - ${env.abxlab_url}gourmet-chocolate-espresso-beans-by-its-delish-dark-chocolate-3-lbs.html
+    - ${env.abxlab_url}elite-chocolate-covered-biscuit-with-milk-flavored-cream-3-5-oz-pk-of-6.html
+    - ${env.abxlab_url}r-m-palmer-love-expression-bulk-bag-assortment-of-emoji-faces-snapchat-fudge-filled-chocolaty-candies-valentine-s-day-treats-2-lbs.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 79
+      arm: treatment
+      category: Chocolate
+      target_url: ${env.abxlab_url}elite-chocolate-covered-biscuit-with-milk-flavored-cream-3-5-oz-pk-of-6.html
+      competitor_url: ${env.abxlab_url}r-m-palmer-love-expression-bulk-bag-assortment-of-emoji-faces-snapchat-fudge-filled-chocolaty-candies-valentine-s-day-treats-2-lbs.html
+      decoy_url: ${env.abxlab_url}gourmet-chocolate-espresso-beans-by-its-delish-dark-chocolate-3-lbs.html
+      target_pos: 1
+      competitor_pos: 2
+      decoy_pos: 0
+      tc_price_premium_pct: 0.2501250625312656
+      tc_rating_adv: 30.0
+      dt_price_premium_pct: 0.3201280512204884
+      td_rating_adv: 4.0
+      target_price: 24.99
+      target_rating: 100.0
+      competitor_price: 19.99
+      competitor_rating: 70.0
+      decoy_price: 32.99
+      decoy_rating: 96.0

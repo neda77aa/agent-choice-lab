@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp516
+  config:
+    task_id: 516
+    start_urls:
+    - ${env.abxlab_url}colgate-enamel-health-toothpaste-sensitivity-relief-fresh-mint-gel-6-0-oz.html
+    - ${env.abxlab_url}farmasi-eurofresh-whitening-toothpaste-112-ml-3-7-fl-oz.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 258
+      arm: baseline
+      category: Toothpaste
+      target_url: ${env.abxlab_url}colgate-enamel-health-toothpaste-sensitivity-relief-fresh-mint-gel-6-0-oz.html
+      competitor_url: ${env.abxlab_url}farmasi-eurofresh-whitening-toothpaste-112-ml-3-7-fl-oz.html
+      decoy_url: ${env.abxlab_url}crest-3d-white-whitening-therapy-enamel-care-fluoride-anticavity-toothpaste-4-1-oz-pack-of-2.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1454753722794959
+      tc_rating_adv: 12.0
+      dt_price_premium_pct: 0.399
+      td_rating_adv: 5.0
+      target_price: 10.0
+      target_rating: 82.0
+      competitor_price: 8.73
+      competitor_rating: 70.0
+      decoy_price: 13.99
+      decoy_rating: 77.0

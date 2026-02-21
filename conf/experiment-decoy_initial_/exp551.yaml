@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp551
+  config:
+    task_id: 551
+    start_urls:
+    - ${env.abxlab_url}chobanir-flipr-low-fat-greek-yogurt-cookies-cream-4-5oz.html
+    - ${env.abxlab_url}light-and-fit-multipack-peach-strawberry-yogurt-4-ounce-24-per-case.html
+    - ${env.abxlab_url}stonyfield-organic-kids-strawberry-lowfat-yogurt-tubes-2-oz-8-ct-1-organic-kids-yogurt-non-gmo-no-artificial-flavors-or-sweeteners.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 275
+      arm: treatment
+      category: Yogurt
+      target_url: ${env.abxlab_url}chobanir-flipr-low-fat-greek-yogurt-cookies-cream-4-5oz.html
+      competitor_url: ${env.abxlab_url}stonyfield-organic-kids-strawberry-lowfat-yogurt-tubes-2-oz-8-ct-1-organic-kids-yogurt-non-gmo-no-artificial-flavors-or-sweeteners.html
+      decoy_url: ${env.abxlab_url}light-and-fit-multipack-peach-strawberry-yogurt-4-ounce-24-per-case.html
+      target_pos: 0
+      competitor_pos: 2
+      decoy_pos: 1
+      tc_price_premium_pct: 0.2343888724474697
+      tc_rating_adv: 6.0
+      dt_price_premium_pct: 0.2682809877727163
+      td_rating_adv: 3.0
+      target_price: 41.71
+      target_rating: 93.0
+      competitor_price: 33.79
+      competitor_rating: 87.0
+      decoy_price: 52.9
+      decoy_rating: 90.0

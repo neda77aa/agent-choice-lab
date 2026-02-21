@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp294
+  config:
+    task_id: 294
+    start_urls:
+    - ${env.abxlab_url}rexona-women-motionsense-aloe-vera-48h-anti-perspirant-solid-stick-40-ml.html
+    - ${env.abxlab_url}secret-original-2-7-oz.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 147
+      arm: baseline
+      category: Deodorants & Antiperspirants
+      target_url: ${env.abxlab_url}rexona-women-motionsense-aloe-vera-48h-anti-perspirant-solid-stick-40-ml.html
+      competitor_url: ${env.abxlab_url}secret-original-2-7-oz.html
+      decoy_url: ${env.abxlab_url}cleure-hypoallergenic-3-in-1-spray-deodorant-free-of-fragrance-paraben-salicylate-gluten-and-aluminum-free-unscented-8-oz.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1414285714285714
+      tc_rating_adv: 35.0
+      dt_price_premium_pct: 0.2515644555694618
+      td_rating_adv: 3.0
+      target_price: 7.99
+      target_rating: 85.0
+      competitor_price: 7.0
+      competitor_rating: 50.0
+      decoy_price: 10.0
+      decoy_rating: 82.0

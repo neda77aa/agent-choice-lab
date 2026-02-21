@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp186
+  config:
+    task_id: 186
+    start_urls:
+    - ${env.abxlab_url}cameo-creme-sandwich-cookies-12-pack.html
+    - ${env.abxlab_url}lucy-s-gluten-free-cookies-cinnamon-thin-5-5-oz-pack-of-2.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 93
+      arm: baseline
+      category: Cookies
+      target_url: ${env.abxlab_url}lucy-s-gluten-free-cookies-cinnamon-thin-5-5-oz-pack-of-2.html
+      competitor_url: ${env.abxlab_url}cameo-creme-sandwich-cookies-12-pack.html
+      decoy_url: ${env.abxlab_url}fresh-sicilian-candied-orange-peel-frank-and-sal-bakery-1-pound.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.1250781738586615
+      tc_rating_adv: 17.0
+      dt_price_premium_pct: 0.2229016120066704
+      td_rating_adv: 4.0
+      target_price: 17.99
+      target_rating: 77.0
+      competitor_price: 15.99
+      competitor_rating: 60.0
+      decoy_price: 22.0
+      decoy_rating: 73.0

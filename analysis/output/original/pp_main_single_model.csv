@@ -1,0 +1,5 @@
+"model","estimate","std.error","p.value","term","panel"
+"Single Model",-0.00816468791477255,0.0602606188252624,0.892248611864775,"product_position_idx","Overall by model (EMM)"
+"Single Model",0.0496964292294958,0.0651108619674443,0.445466516394086,"product_is_cheaper","Overall by model (EMM)"
+"Single Model",0.719919915084709,0.0782217905570223,1.59925373224672e-19,"product_is_higher_rated","Overall by model (EMM)"
+"Single Model",0.249298142851195,0.0128417930049818,1.11986943859015e-66,"product_is_nudged","Overall by model (EMM)"

@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp506
+  config:
+    task_id: 506
+    start_urls:
+    - ${env.abxlab_url}organic-activated-carbon-bamboo-charcoal-brightening-toothpaste-coconut-vegan-based-enamel-protection-stain-removal-for-sensitive-teeth.html
+    - ${env.abxlab_url}hello-activated-charcoal-hemp-seed-oil-epic-whitening-toothpaste-4-ounce-fluoride-free-sls-free.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 253
+      arm: baseline
+      category: Toothpaste
+      target_url: ${env.abxlab_url}organic-activated-carbon-bamboo-charcoal-brightening-toothpaste-coconut-vegan-based-enamel-protection-stain-removal-for-sensitive-teeth.html
+      competitor_url: ${env.abxlab_url}hello-activated-charcoal-hemp-seed-oil-epic-whitening-toothpaste-4-ounce-fluoride-free-sls-free.html
+      decoy_url: ${env.abxlab_url}squigle-enamel-saver-toothpaste-canker-sore-prevention-treatment-prevents-cavities-perioral-dermatitis-bad-breath-chapped-lips-1-pack.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.2861230329041487
+      tc_rating_adv: 13.0
+      dt_price_premium_pct: 0.2224694104560622
+      td_rating_adv: 3.0
+      target_price: 8.99
+      target_rating: 93.0
+      competitor_price: 6.99
+      competitor_rating: 80.0
+      decoy_price: 10.99
+      decoy_rating: 90.0

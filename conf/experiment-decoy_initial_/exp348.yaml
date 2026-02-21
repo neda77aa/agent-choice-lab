@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp348
+  config:
+    task_id: 348
+    start_urls:
+    - ${env.abxlab_url}tj-open-ear-headphones-not-with-the-older-bone-conductive-technology-wireless-sport-bluetooth-headsets-with-mic-long-battery-and-ultra-lightweight-for-running-cycling-fitness-grey.html
+    - ${env.abxlab_url}jabra-extreme2-bluetooth-headset-retail-packaging-black.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 174
+      arm: baseline
+      category: Earbud Headphones
+      target_url: ${env.abxlab_url}tj-open-ear-headphones-not-with-the-older-bone-conductive-technology-wireless-sport-bluetooth-headsets-with-mic-long-battery-and-ultra-lightweight-for-running-cycling-fitness-grey.html
+      competitor_url: ${env.abxlab_url}jabra-extreme2-bluetooth-headset-retail-packaging-black.html
+      decoy_url: ${env.abxlab_url}wireless-bone-conduction-headphones-bluetooth-v5-0-waterproof-ipx8-titanium-alloy-open-ear-sport-bluetooth-headset-built-in-16gb-mp3-player-for-swimming-diving-water-gym-spa-and-outdoor-sports.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.2010010010010009
+      tc_rating_adv: 6.0
+      dt_price_premium_pct: 0.6334389064844139
+      td_rating_adv: 3.0
+      target_price: 59.99
+      target_rating: 73.0
+      competitor_price: 49.95
+      competitor_rating: 67.0
+      decoy_price: 97.99
+      decoy_rating: 70.0
