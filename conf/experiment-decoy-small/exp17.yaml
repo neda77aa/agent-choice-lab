@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp17
+  config:
+    task_id: 17
+    start_urls:
+    - ${env.abxlab_url}whole-foods-market-cookie-peanut-butter-mini-18-count-12-ounce.html
+    - ${env.abxlab_url}journey-of-asia-seri-s-choice-korean-snack-box-36-count-individual-wrapped-essentials-packs-of-candy-snacks-chips-cookies-treats-for-kids-children-college-students-adult-and-senior.html
+    - ${env.abxlab_url}fresh-sicilian-candied-orange-peel-frank-and-sal-bakery-1-pound.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 8
+      arm: treatment
+      category: Cookies
+      target_url: ${env.abxlab_url}whole-foods-market-cookie-peanut-butter-mini-18-count-12-ounce.html
+      competitor_url: ${env.abxlab_url}fresh-sicilian-candied-orange-peel-frank-and-sal-bakery-1-pound.html
+      decoy_url: ${env.abxlab_url}journey-of-asia-seri-s-choice-korean-snack-box-36-count-individual-wrapped-essentials-packs-of-candy-snacks-chips-cookies-treats-for-kids-children-college-students-adult-and-senior.html
+      target_pos: 0
+      competitor_pos: 2
+      decoy_pos: 1
+      tc_price_premium_pct: 0.1181818181818182
+      tc_rating_adv: 4.0
+      dt_price_premium_pct: 0.1317073170731706
+      td_rating_adv: 2.0
+      target_price: 24.6
+      target_rating: 77.0
+      competitor_price: 22.0
+      competitor_rating: 73.0
+      decoy_price: 27.84
+      decoy_rating: 75.0

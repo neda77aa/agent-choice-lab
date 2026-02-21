@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp46
+  config:
+    task_id: 46
+    start_urls:
+    - ${env.abxlab_url}french-cow-milk-cheese-comte-aoc-1-lb.html
+    - ${env.abxlab_url}anchor-new-zealand-cheddar.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 23
+      arm: baseline
+      category: Cheese
+      target_url: ${env.abxlab_url}anchor-new-zealand-cheddar.html
+      competitor_url: ${env.abxlab_url}french-cow-milk-cheese-comte-aoc-1-lb.html
+      decoy_url: ${env.abxlab_url}organic-valley-gourmet-organic-provolone-cheese-block-pasteurized-non-gmo-no-added-hormones-8-oz.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.1363511659807955
+      tc_rating_adv: 5.0
+      dt_price_premium_pct: 0.0557701593433122
+      td_rating_adv: 3.0
+      target_price: 41.42
+      target_rating: 85.0
+      competitor_price: 36.45
+      competitor_rating: 80.0
+      decoy_price: 43.73
+      decoy_rating: 82.0

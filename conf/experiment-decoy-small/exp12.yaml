@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp12
+  config:
+    task_id: 12
+    start_urls:
+    - ${env.abxlab_url}milka-milkinis-chocolate-bar-candy-original-german-chocolate-87g-3-06oz.html
+    - ${env.abxlab_url}toffifay-hazelnut-candies-4-piece-box-1-16-ounce-caramel-candy-hazelnut-candy-chocolate-candy-sweets-for-home-road-trips-or-parties-great-holiday-gift-idea-or-birthday-gift-idea.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 6
+      arm: baseline
+      category: Chocolate
+      target_url: ${env.abxlab_url}milka-milkinis-chocolate-bar-candy-original-german-chocolate-87g-3-06oz.html
+      competitor_url: ${env.abxlab_url}toffifay-hazelnut-candies-4-piece-box-1-16-ounce-caramel-candy-hazelnut-candy-chocolate-candy-sweets-for-home-road-trips-or-parties-great-holiday-gift-idea-or-birthday-gift-idea.html
+      decoy_url: ${env.abxlab_url}hershey-s-kisses-milk-chocolate-candy-valentine-s-day-gift-6-5-oz-heart-box.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1039439734611131
+      tc_rating_adv: 3.0
+      dt_price_premium_pct: 0.0851419031719532
+      td_rating_adv: 3.0
+      target_price: 59.9
+      target_rating: 55.0
+      competitor_price: 54.26
+      competitor_rating: 52.0
+      decoy_price: 65.0
+      decoy_rating: 52.0

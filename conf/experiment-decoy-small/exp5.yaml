@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp5
+  config:
+    task_id: 5
+    start_urls:
+    - ${env.abxlab_url}trader-joe-s-petite-pumpkin-spice-cookies-10-oz-pack-of-2.html
+    - ${env.abxlab_url}harry-david-dark-chocolate-wafer-rolls-10-oz.html
+    - ${env.abxlab_url}lucy-s-gluten-free-cookies-cinnamon-thin-5-5-oz-pack-of-2.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 2
+      arm: treatment
+      category: Cookies
+      target_url: ${env.abxlab_url}harry-david-dark-chocolate-wafer-rolls-10-oz.html
+      competitor_url: ${env.abxlab_url}trader-joe-s-petite-pumpkin-spice-cookies-10-oz-pack-of-2.html
+      decoy_url: ${env.abxlab_url}lucy-s-gluten-free-cookies-cinnamon-thin-5-5-oz-pack-of-2.html
+      target_pos: 1
+      competitor_pos: 0
+      decoy_pos: 2
+      tc_price_premium_pct: 0.145010768126346
+      tc_rating_adv: 4.0
+      dt_price_premium_pct: 0.1278996865203761
+      td_rating_adv: 3.0
+      target_price: 15.95
+      target_rating: 80.0
+      competitor_price: 13.93
+      competitor_rating: 76.0
+      decoy_price: 17.99
+      decoy_rating: 77.0

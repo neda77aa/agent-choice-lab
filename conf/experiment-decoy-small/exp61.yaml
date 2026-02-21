@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp61
+  config:
+    task_id: 61
+    start_urls:
+    - ${env.abxlab_url}cadbury-curly-wurly-chocolate-chewy-bars-total-6-bars-of-british-chocolate-candy.html
+    - ${env.abxlab_url}frey-1-box-ovation-break-a-parts-ball-orange-shaped-holiday-candy-milk-chocolate-raspberry-flavor-splits-into-20-pieces-net-wt-5-53-oz.html
+    - ${env.abxlab_url}milka-lu-biscuits-chocolate-bar-candy-original-german-chocolate-87g-3-06oz-pack-of-2.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 30
+      arm: treatment
+      category: Chocolate
+      target_url: ${env.abxlab_url}frey-1-box-ovation-break-a-parts-ball-orange-shaped-holiday-candy-milk-chocolate-raspberry-flavor-splits-into-20-pieces-net-wt-5-53-oz.html
+      competitor_url: ${env.abxlab_url}milka-lu-biscuits-chocolate-bar-candy-original-german-chocolate-87g-3-06oz-pack-of-2.html
+      decoy_url: ${env.abxlab_url}cadbury-curly-wurly-chocolate-chewy-bars-total-6-bars-of-british-chocolate-candy.html
+      target_pos: 1
+      competitor_pos: 2
+      decoy_pos: 0
+      tc_price_premium_pct: 0.0753424657534246
+      tc_rating_adv: 3.0
+      dt_price_premium_pct: 0.0691537761601455
+      td_rating_adv: 3.0
+      target_price: 10.99
+      target_rating: 83.0
+      competitor_price: 10.22
+      competitor_rating: 80.0
+      decoy_price: 11.75
+      decoy_rating: 80.0

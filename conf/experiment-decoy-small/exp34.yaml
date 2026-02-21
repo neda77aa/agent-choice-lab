@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp34
+  config:
+    task_id: 34
+    start_urls:
+    - ${env.abxlab_url}piraque-biscoito-doce-de-maizena-200g-pack-of-02.html
+    - ${env.abxlab_url}gamesa-barras-de-coco-cookies-14-3-ounce.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 17
+      arm: baseline
+      category: Cookies
+      target_url: ${env.abxlab_url}piraque-biscoito-doce-de-maizena-200g-pack-of-02.html
+      competitor_url: ${env.abxlab_url}gamesa-barras-de-coco-cookies-14-3-ounce.html
+      decoy_url: ${env.abxlab_url}fox-s-mini-party-rings-6-x-25g.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1490683229813663
+      tc_rating_adv: 5.0
+      dt_price_premium_pct: 0.08
+      td_rating_adv: 3.0
+      target_price: 9.25
+      target_rating: 63.0
+      competitor_price: 8.05
+      competitor_rating: 58.0
+      decoy_price: 9.99
+      decoy_rating: 60.0

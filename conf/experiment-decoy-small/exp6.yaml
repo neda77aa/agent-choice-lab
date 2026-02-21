@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp6
+  config:
+    task_id: 6
+    start_urls:
+    - ${env.abxlab_url}krunchy-melts-chocolate-meringue-cookies-4-oz-tub-pack-of-2.html
+    - ${env.abxlab_url}little-dutch-maid-almond-windmill-cookie-10-ounce-pack-of-12.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 3
+      arm: baseline
+      category: Cookies
+      target_url: ${env.abxlab_url}krunchy-melts-chocolate-meringue-cookies-4-oz-tub-pack-of-2.html
+      competitor_url: ${env.abxlab_url}little-dutch-maid-almond-windmill-cookie-10-ounce-pack-of-12.html
+      decoy_url: ${env.abxlab_url}cybeles-cookie-chc-chnk-brownie.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1482030381622823
+      tc_rating_adv: 4.0
+      dt_price_premium_pct: 0.2378186511777993
+      td_rating_adv: 3.0
+      target_price: 30.99
+      target_rating: 76.0
+      competitor_price: 26.99
+      competitor_rating: 72.0
+      decoy_price: 38.36
+      decoy_rating: 73.0
