@@ -179,3 +179,10 @@ results/
 
 agent_lab_exp/
 trajectories_human/
+.Rhistory
+analysis/output/
+analysis/data/
+analysis/Rplots.pdf
+conf/experiment-decoy_initial_/
+logs/
+results/
