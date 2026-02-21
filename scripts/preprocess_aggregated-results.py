@@ -26,6 +26,7 @@ This script processes aggregated results to make them ready for the analysis in 
 
 import logging
 import argparse
+import ast
 import pandas as pd
 from urllib.parse import urlparse
 from tqdm.auto import tqdm
@@ -51,10 +52,19 @@ def main():
     parser.add_argument("--output_file", type=str, required=True, help="Output CSV file path for processed data")
     parser.add_argument("--num_workers", type=int, default=8, help="(Maximum) number of parallel workers for fetching data")
     parser.add_argument("--product_list", type=str, help="Optional list of product URLs to include metadata.")
+    parser.add_argument(
+        "--decoy_mode",
+        action="store_true",
+        help="Enable preprocessing for decoy experiments (supports 2- and 3-option sets)."
+    )
     args = parser.parse_args()
 
     df_list = [pd.read_csv(file) for file in args.input_files]
     df = pd.concat(df_list, ignore_index=True)
+
+    if args.decoy_mode:
+        preprocess_decoy(df=df, output_file=args.output_file, num_workers=args.num_workers)
+        return
 
     # Filter to pairs
     df["cfg.task.config.start_urls"] = df["cfg.task.config.start_urls"].map(eval)
@@ -154,6 +164,81 @@ def main():
     logger.info("Saved preprocessed data to %s", args.output_file)
 
 
+def preprocess_decoy(df: pd.DataFrame, output_file: str, num_workers: int = 8):
+    df["cfg.task.config.start_urls"] = df["cfg.task.config.start_urls"].map(safe_eval_list)
+    df = df[df["cfg.task.config.start_urls"].map(lambda x: isinstance(x, list) and len(x) >= 2)].copy()
+    df = df[df["final_step.url"].notnull()].copy()
+
+    if "cfg.task.config.metadata.study_type" in df.columns:
+        d2 = df[df["cfg.task.config.metadata.study_type"] == "decoy_pricerating"].copy()
+        if len(d2) > 0:
+            df = d2
+
+    logger.info("Found %d candidate decoy experiment rows", len(df))
+
+    df = fetch_product_data_parallel(df, max_workers=num_workers)
+
+    df["set_size"] = df["cfg.task.config.start_urls"].map(len)
+    df["arm"] = df.get("cfg.task.config.metadata.arm", pd.Series([None] * len(df)))
+    df["triad_id"] = pd.to_numeric(df.get("cfg.task.config.metadata.triad_id"), errors="coerce").astype("Int64")
+    df["category"] = df.get("cfg.task.config.metadata.category")
+    df["target_url"] = df.get("cfg.task.config.metadata.target_url")
+    df["competitor_url"] = df.get("cfg.task.config.metadata.competitor_url")
+    df["decoy_url"] = df.get("cfg.task.config.metadata.decoy_url")
+    df["target_pos"] = pd.to_numeric(df.get("cfg.task.config.metadata.target_pos"), errors="coerce").astype("Int64")
+    df["competitor_pos"] = pd.to_numeric(df.get("cfg.task.config.metadata.competitor_pos"), errors="coerce").astype("Int64")
+    df["decoy_pos"] = pd.to_numeric(df.get("cfg.task.config.metadata.decoy_pos"), errors="coerce").astype("Int64")
+    df["model_family"] = df.get("study.chat_model_args.model_name")
+
+    df["chose_idx"] = df.apply(
+        lambda row: row["cfg.task.config.start_urls"].index(row["final_step.url"])
+        if row["final_step.url"] in row["cfg.task.config.start_urls"] else None,
+        axis=1,
+    ).astype("Int64")
+
+    df = df[df["chose_idx"].notnull()].copy()
+
+    if "final_step.elem_info.attrs.id" in df.columns:
+        df = df[df["final_step.elem_info.attrs.id"].notnull()].copy()
+        df = df[df["final_step.elem_info.attrs.id"].map(lambda x: "addtocart" in str(x).lower())].copy()
+
+    df["chosen_url"] = df["final_step.url"]
+    df["chose_target"] = df["chosen_url"] == df["target_url"]
+    df["chose_competitor"] = df["chosen_url"] == df["competitor_url"]
+    df["chose_decoy"] = df["chosen_url"] == df["decoy_url"]
+    df["chosen_role"] = df.apply(
+        lambda row: (
+            "target" if row["chose_target"] else
+            "competitor" if row["chose_competitor"] else
+            "decoy" if row["chose_decoy"] else
+            "unknown"
+        ),
+        axis=1,
+    )
+
+    df["target_price"] = df.apply(lambda row: lookup_attr(row, row["target_url"], "prices"), axis=1)
+    df["target_rating"] = df.apply(lambda row: lookup_attr(row, row["target_url"], "ratings"), axis=1)
+    df["competitor_price"] = df.apply(lambda row: lookup_attr(row, row["competitor_url"], "prices"), axis=1)
+    df["competitor_rating"] = df.apply(lambda row: lookup_attr(row, row["competitor_url"], "ratings"), axis=1)
+    df["decoy_price"] = df.apply(lambda row: lookup_attr(row, row["decoy_url"], "prices"), axis=1)
+    df["decoy_rating"] = df.apply(lambda row: lookup_attr(row, row["decoy_url"], "ratings"), axis=1)
+
+    df["decoy_present"] = df["set_size"] >= 3
+    df["tc_price_premium_pct"] = (df["target_price"] - df["competitor_price"]) / df["competitor_price"]
+    df["tc_rating_adv"] = df["target_rating"] - df["competitor_rating"]
+    df["dt_price_premium_pct"] = (df["decoy_price"] - df["target_price"]) / df["target_price"]
+    df["td_rating_adv"] = df["target_rating"] - df["decoy_rating"]
+
+    df["choice_in_tc"] = df["chosen_role"].isin(["target", "competitor"])
+    df["chose_target_cond_tc"] = df.apply(
+        lambda row: (row["chosen_role"] == "target") if row["choice_in_tc"] else None,
+        axis=1,
+    )
+
+    df.to_csv(output_file, index=False)
+    logger.info("Saved decoy-preprocessed data to %s", output_file)
+
+
 def fetch_single_product_data(url: str) -> tuple[str, float, float]:
     try:
         rating = float(get_rating_for_product(url).replace("%", ""))
@@ -190,6 +275,32 @@ def fetch_product_data_parallel(df: pd.DataFrame, max_workers: int = 8) -> pd.Da
     )
 
     return df
+
+
+def safe_eval_list(value):
+    if isinstance(value, list):
+        return value
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return []
+    try:
+        parsed = ast.literal_eval(value)
+        return parsed if isinstance(parsed, list) else []
+    except Exception:
+        return []
+
+
+def lookup_attr(row: pd.Series, role_url: str, field_name: str):
+    if not isinstance(role_url, str):
+        return None
+    urls = row["cfg.task.config.start_urls"]
+    vals = row[field_name]
+    if not isinstance(urls, list) or not isinstance(vals, list):
+        return None
+    try:
+        idx = urls.index(role_url)
+        return vals[idx]
+    except Exception:
+        return None
 
 
 if __name__ == "__main__":

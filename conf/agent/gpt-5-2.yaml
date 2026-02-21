@@ -1,0 +1,18 @@
+_target_: agentlab.agents.generic_agent.generic_agent.GenericAgentArgs
+
+defaults:
+  - flags: default
+  - _self_
+
+chat_model_args:
+  _target_: agentlab.llm.chat_api.LiteLLMModelArgs
+  # Alias config: keep this as the actual OpenAI model ID that your API supports.
+  model_name: gpt-5.2
+  max_total_tokens: 400000
+  max_input_tokens: 400000
+  max_new_tokens: 128000
+  vision_support: true
+  temperature: 0.1
+  additional_drop_params:
+    - temperature
+    - max_tokens
