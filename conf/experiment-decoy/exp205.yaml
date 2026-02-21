@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp205
+  config:
+    task_id: 205
+    start_urls:
+    - ${env.abxlab_url}mcvitie-s-digestives-400g-pack-of-3-400g-x-3.html
+    - ${env.abxlab_url}gullon-sf-fiber-cookies-6-ounce-170-gram-pack-of-5.html
+    - ${env.abxlab_url}mulino-bianco-chicche-shortcake-filled-with-cocoa-cream-7-05-oz-200g-italian-import.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 102
+      arm: treatment
+      category: Cookies
+      target_url: ${env.abxlab_url}gullon-sf-fiber-cookies-6-ounce-170-gram-pack-of-5.html
+      competitor_url: ${env.abxlab_url}mcvitie-s-digestives-400g-pack-of-3-400g-x-3.html
+      decoy_url: ${env.abxlab_url}mulino-bianco-chicche-shortcake-filled-with-cocoa-cream-7-05-oz-200g-italian-import.html
+      target_pos: 1
+      competitor_pos: 0
+      decoy_pos: 2
+      tc_price_premium_pct: 0.1272443403590943
+      tc_rating_adv: 31.0
+      dt_price_premium_pct: 0.5235457063711911
+      td_rating_adv: 3.0
+      target_price: 14.44
+      target_rating: 68.0
+      competitor_price: 12.81
+      competitor_rating: 37.0
+      decoy_price: 22.0
+      decoy_rating: 65.0

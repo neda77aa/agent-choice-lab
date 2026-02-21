@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp210
+  config:
+    task_id: 210
+    start_urls:
+    - ${env.abxlab_url}tate-s-bake-shop-tiny-tate-s-bite-size-chocolate-chip-cookies-1oz-bags-each-bag-contains-12-bite-size-cookies-pack-of-24.html
+    - ${env.abxlab_url}oreo-original-double-stuf-gluten-free-cookies-variety-pack-4-count.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 105
+      arm: baseline
+      category: Cookies
+      target_url: ${env.abxlab_url}tate-s-bake-shop-tiny-tate-s-bite-size-chocolate-chip-cookies-1oz-bags-each-bag-contains-12-bite-size-cookies-pack-of-24.html
+      competitor_url: ${env.abxlab_url}oreo-original-double-stuf-gluten-free-cookies-variety-pack-4-count.html
+      decoy_url: ${env.abxlab_url}tates-bake-shop-coconut-crisp-cookies-7-oz-3.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1926421404682273
+      tc_rating_adv: 5.0
+      dt_price_premium_pct: 0.1539540100953449
+      td_rating_adv: 3.0
+      target_price: 35.66
+      target_rating: 88.0
+      competitor_price: 29.9
+      competitor_rating: 83.0
+      decoy_price: 41.15
+      decoy_rating: 85.0

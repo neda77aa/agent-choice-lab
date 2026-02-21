@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp119
+  config:
+    task_id: 119
+    start_urls:
+    - ${env.abxlab_url}norseland-jarlsberg-loaf-7-36-ounce-pack-of-1.html
+    - ${env.abxlab_url}cabot-classic-vermont-3-year-cheddar-cheese-1-75-lb.html
+    - ${env.abxlab_url}365-by-whole-foods-market-shaved-italian-cheese-blend-5-ounce.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 59
+      arm: treatment
+      category: Cheese
+      target_url: ${env.abxlab_url}cabot-classic-vermont-3-year-cheddar-cheese-1-75-lb.html
+      competitor_url: ${env.abxlab_url}norseland-jarlsberg-loaf-7-36-ounce-pack-of-1.html
+      decoy_url: ${env.abxlab_url}365-by-whole-foods-market-shaved-italian-cheese-blend-5-ounce.html
+      target_pos: 1
+      competitor_pos: 0
+      decoy_pos: 2
+      tc_price_premium_pct: 0.163176265270506
+      tc_rating_adv: 22.0
+      dt_price_premium_pct: 0.1092773193298324
+      td_rating_adv: 4.0
+      target_price: 39.99
+      target_rating: 100.0
+      competitor_price: 34.38
+      competitor_rating: 78.0
+      decoy_price: 44.36
+      decoy_rating: 96.0

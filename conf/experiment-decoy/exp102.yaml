@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp102
+  config:
+    task_id: 102
+    start_urls:
+    - ${env.abxlab_url}whole-foods-market-fresh-mozzarella-8-oz.html
+    - ${env.abxlab_url}cheddar-cheese-1-year-aged-white-40oz-half-loaf.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 51
+      arm: baseline
+      category: Cheese
+      target_url: ${env.abxlab_url}cheddar-cheese-1-year-aged-white-40oz-half-loaf.html
+      competitor_url: ${env.abxlab_url}whole-foods-market-fresh-mozzarella-8-oz.html
+      decoy_url: ${env.abxlab_url}parmigiano-reggiano-whole-chunk-top-grade-aged-24-months-2-pounds-imported-parmesan-cheese.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.1538461538461538
+      tc_rating_adv: 17.0
+      dt_price_premium_pct: 0.0947619047619046
+      td_rating_adv: 5.0
+      target_price: 42.0
+      target_rating: 87.0
+      competitor_price: 36.4
+      competitor_rating: 70.0
+      decoy_price: 45.98
+      decoy_rating: 82.0

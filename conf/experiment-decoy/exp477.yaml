@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp477
+  config:
+    task_id: 477
+    start_urls:
+    - ${env.abxlab_url}tv-soundbar-wired-wireless-bluetooth-5-0-stereo-sound-bar-for-tv-three-equalizer-mode-audio-speaker-for-tv-optical-aux-rca-connection-wall-mountable-remote-control.html
+    - ${env.abxlab_url}samsung-hw-q6cr-5-1-ch-acoustic-beam-soundbar-and-wireless-subwoofer-2020.html
+    - ${env.abxlab_url}soundbar-toproad-sound-bar-with-built-in-mic-and-bluetooth-wired-and-wireless-speaker-for-tv-pc-phones-tablets-with-remote-control.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 238
+      arm: treatment
+      category: Speakers
+      target_url: ${env.abxlab_url}samsung-hw-q6cr-5-1-ch-acoustic-beam-soundbar-and-wireless-subwoofer-2020.html
+      competitor_url: ${env.abxlab_url}soundbar-toproad-sound-bar-with-built-in-mic-and-bluetooth-wired-and-wireless-speaker-for-tv-pc-phones-tablets-with-remote-control.html
+      decoy_url: ${env.abxlab_url}tv-soundbar-wired-wireless-bluetooth-5-0-stereo-sound-bar-for-tv-three-equalizer-mode-audio-speaker-for-tv-optical-aux-rca-connection-wall-mountable-remote-control.html
+      target_pos: 1
+      competitor_pos: 2
+      decoy_pos: 0
+      tc_price_premium_pct: 0.1282979824107605
+      tc_rating_adv: 16.0
+      dt_price_premium_pct: 0.3752865657955068
+      td_rating_adv: 6.0
+      target_price: 43.62
+      target_rating: 78.0
+      competitor_price: 38.66
+      competitor_rating: 62.0
+      decoy_price: 59.99
+      decoy_rating: 72.0

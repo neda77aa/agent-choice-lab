@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp444
+  config:
+    task_id: 444
+    start_urls:
+    - ${env.abxlab_url}epic-xyitol-spearmint-flavored-mouthwash-16-ounce.html
+    - ${env.abxlab_url}one-drop-only-oral-care-concentrate-50ml.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 222
+      arm: baseline
+      category: Mouthwash
+      target_url: ${env.abxlab_url}one-drop-only-oral-care-concentrate-50ml.html
+      competitor_url: ${env.abxlab_url}epic-xyitol-spearmint-flavored-mouthwash-16-ounce.html
+      decoy_url: ${env.abxlab_url}breathrx-anti-bacterial-mouth-rinse-33oz-bottle.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.1482939632545931
+      tc_rating_adv: 12.0
+      dt_price_premium_pct: 0.9314285714285712
+      td_rating_adv: 7.0
+      target_price: 17.5
+      target_rating: 100.0
+      competitor_price: 15.24
+      competitor_rating: 88.0
+      decoy_price: 33.8
+      decoy_rating: 93.0

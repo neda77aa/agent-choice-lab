@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp521
+  config:
+    task_id: 521
+    start_urls:
+    - ${env.abxlab_url}orajel-vamparina-fluoride-free-training-toothpaste-midnight-berry-flavor-one-1-5oz-tube-orajel-1-pediatrician-recommended-brand-for-kids-non-fluoride-toothpaste.html
+    - ${env.abxlab_url}crest-complete-cinnamon-rush-5-4-ounce-3-pack.html
+    - ${env.abxlab_url}desert-essence-natural-tea-tree-oil-toothpaste-fennel-6-4-oz-pack-of-4.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 260
+      arm: treatment
+      category: Toothpaste
+      target_url: ${env.abxlab_url}orajel-vamparina-fluoride-free-training-toothpaste-midnight-berry-flavor-one-1-5oz-tube-orajel-1-pediatrician-recommended-brand-for-kids-non-fluoride-toothpaste.html
+      competitor_url: ${env.abxlab_url}crest-complete-cinnamon-rush-5-4-ounce-3-pack.html
+      decoy_url: ${env.abxlab_url}desert-essence-natural-tea-tree-oil-toothpaste-fennel-6-4-oz-pack-of-4.html
+      target_pos: 0
+      competitor_pos: 1
+      decoy_pos: 2
+      tc_price_premium_pct: 0.1338842975206611
+      tc_rating_adv: 13.0
+      dt_price_premium_pct: 0.5301263362487852
+      td_rating_adv: 3.0
+      target_price: 20.58
+      target_rating: 98.0
+      competitor_price: 18.15
+      competitor_rating: 85.0
+      decoy_price: 31.49
+      decoy_rating: 95.0

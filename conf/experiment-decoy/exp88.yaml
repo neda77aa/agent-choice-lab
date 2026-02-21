@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp88
+  config:
+    task_id: 88
+    start_urls:
+    - ${env.abxlab_url}dietz-watson-sliced-havarti-cheese-0-5-lbs.html
+    - ${env.abxlab_url}365-by-whole-foods-market-feta-value-16-ounce.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 44
+      arm: baseline
+      category: Cheese
+      target_url: ${env.abxlab_url}dietz-watson-sliced-havarti-cheese-0-5-lbs.html
+      competitor_url: ${env.abxlab_url}365-by-whole-foods-market-feta-value-16-ounce.html
+      decoy_url: ${env.abxlab_url}whole-foods-market-fresh-mozzarella-8-oz.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1302907618697092
+      tc_rating_adv: 20.0
+      dt_price_premium_pct: 0.1852816672093779
+      td_rating_adv: 8.0
+      target_price: 30.71
+      target_rating: 78.0
+      competitor_price: 27.17
+      competitor_rating: 58.0
+      decoy_price: 36.4
+      decoy_rating: 70.0

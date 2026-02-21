@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp4
+  config:
+    task_id: 4
+    start_urls:
+    - ${env.abxlab_url}auihiay-10-pieces-5-kinds-artificial-floating-foam-lotus-leaves-lily-pads-artificial-foliage-pond-decor-for-pond-pool-aquarium-decoration.html
+    - ${env.abxlab_url}blingstar-artificial-flowers-tall-floor-fake-plants-2-pack-plastic-chrysanthemum-with-rattan-baskets-large-faux-potted-plants-for-house-office-room-party-indoor-decor-installation-size-9x9x23-6in.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 2
+      arm: baseline
+      category: Artificial Plants & Flowers
+      target_url: ${env.abxlab_url}blingstar-artificial-flowers-tall-floor-fake-plants-2-pack-plastic-chrysanthemum-with-rattan-baskets-large-faux-potted-plants-for-house-office-room-party-indoor-decor-installation-size-9x9x23-6in.html
+      competitor_url: ${env.abxlab_url}auihiay-10-pieces-5-kinds-artificial-floating-foam-lotus-leaves-lily-pads-artificial-foliage-pond-decor-for-pond-pool-aquarium-decoration.html
+      decoy_url: ${env.abxlab_url}acelist-fake-monstera-with-metal-hanger-set-artificial-hanging-plants-in-modern-planter-tropical-plants-for-indoor-outdoor-home-office-bathroom-decor.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.23094688221709
+      tc_rating_adv: 18.0
+      dt_price_premium_pct: 0.5003126954346465
+      td_rating_adv: 3.0
+      target_price: 15.99
+      target_rating: 80.0
+      competitor_price: 12.99
+      competitor_rating: 62.0
+      decoy_price: 23.99
+      decoy_rating: 77.0

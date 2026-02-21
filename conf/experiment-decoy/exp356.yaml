@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp356
+  config:
+    task_id: 356
+    start_urls:
+    - ${env.abxlab_url}1mii-ankbit-bluetooth-wireless-earbuds-with-charging-case-tws-hi-res-sound-quality-bluetooth-in-ear-headphones-ipx8-waterproof-button-control-built-in-mic-true-wireless-earbuds-for-android-and-ios.html
+    - ${env.abxlab_url}ugreen-wired-lightning-headphones-mfi-certified-for-iphone-in-ear-earphones-with-microphone-and-volume-control-wired-lightning-earbuds-compatible-with-iphone-13-mini-pro-max-12-11-pro-max-black.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 178
+      arm: baseline
+      category: Earbud Headphones
+      target_url: ${env.abxlab_url}1mii-ankbit-bluetooth-wireless-earbuds-with-charging-case-tws-hi-res-sound-quality-bluetooth-in-ear-headphones-ipx8-waterproof-button-control-built-in-mic-true-wireless-earbuds-for-android-and-ios.html
+      competitor_url: ${env.abxlab_url}ugreen-wired-lightning-headphones-mfi-certified-for-iphone-in-ear-earphones-with-microphone-and-volume-control-wired-lightning-earbuds-compatible-with-iphone-13-mini-pro-max-12-11-pro-max-black.html
+      decoy_url: ${env.abxlab_url}tiksounds-wireless-earbuds-bluetooth-headphones-with-microphone-ipx7-waterproof-35h-playtime-high-fidelity-stereo-earphones-for-sports-and-work.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.1364256480218281
+      tc_rating_adv: 20.0
+      dt_price_premium_pct: 0.2000800320128051
+      td_rating_adv: 5.0
+      target_price: 24.99
+      target_rating: 80.0
+      competitor_price: 21.99
+      competitor_rating: 60.0
+      decoy_price: 29.99
+      decoy_rating: 75.0

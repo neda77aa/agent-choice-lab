@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp311
+  config:
+    task_id: 311
+    start_urls:
+    - ${env.abxlab_url}fujifilm-finepix-jz250-digital-camera-black.html
+    - ${env.abxlab_url}nikon-coolpix-2100-2mp-digital-camera-w-3x-optical-zoom.html
+    - ${env.abxlab_url}canon-powershot-d30-waterproof-digital-camera-blue.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 155
+      arm: treatment
+      category: Digital Cameras
+      target_url: ${env.abxlab_url}canon-powershot-d30-waterproof-digital-camera-blue.html
+      competitor_url: ${env.abxlab_url}fujifilm-finepix-jz250-digital-camera-black.html
+      decoy_url: ${env.abxlab_url}nikon-coolpix-2100-2mp-digital-camera-w-3x-optical-zoom.html
+      target_pos: 2
+      competitor_pos: 0
+      decoy_pos: 1
+      tc_price_premium_pct: 0.2406876790830945
+      tc_rating_adv: 12.0
+      dt_price_premium_pct: 0.148960739030023
+      td_rating_adv: 3.0
+      target_price: 34.64
+      target_rating: 75.0
+      competitor_price: 27.92
+      competitor_rating: 63.0
+      decoy_price: 39.8
+      decoy_rating: 72.0

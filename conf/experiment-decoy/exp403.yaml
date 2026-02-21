@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp403
+  config:
+    task_id: 403
+    start_urls:
+    - ${env.abxlab_url}voigtlander-nokton-40mm-f-1-2-aspherical-lens-for-sony-e-mount.html
+    - ${env.abxlab_url}canon-ef-24-105mm-f-4-l-is-usm-lens-for-canon-eos-slr-cameras-white-box-bulk-packaging.html
+    - ${env.abxlab_url}fujinon-xf18mmf1-4-r-lm-wr.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 201
+      arm: treatment
+      category: Lenses
+      target_url: ${env.abxlab_url}fujinon-xf18mmf1-4-r-lm-wr.html
+      competitor_url: ${env.abxlab_url}voigtlander-nokton-40mm-f-1-2-aspherical-lens-for-sony-e-mount.html
+      decoy_url: ${env.abxlab_url}canon-ef-24-105mm-f-4-l-is-usm-lens-for-canon-eos-slr-cameras-white-box-bulk-packaging.html
+      target_pos: 2
+      competitor_pos: 0
+      decoy_pos: 1
+      tc_price_premium_pct: 0.1766784452296819
+      tc_rating_adv: 5.0
+      dt_price_premium_pct: 0.2361861861861862
+      td_rating_adv: 3.0
+      target_price: 999.0
+      target_rating: 100.0
+      competitor_price: 849.0
+      competitor_rating: 95.0
+      decoy_price: 1234.95
+      decoy_rating: 97.0

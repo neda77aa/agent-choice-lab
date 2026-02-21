@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp451
+  config:
+    task_id: 451
+    start_urls:
+    - ${env.abxlab_url}tea-tree-mouthwash-alcohol-free-12-ounce-3-pack.html
+    - ${env.abxlab_url}stannous-fluoride-mouthwash-10-fl-oz-0-63-antimicrobial-perio-rinse-alcohol-free-dye-free-paraben-free-refreshing-fruit-punch-flavor.html
+    - ${env.abxlab_url}act-alcohol-free-anticavity-fluoride-rinse-cinnamon-18-fl-oz-pack-of-4.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 225
+      arm: treatment
+      category: Mouthwash
+      target_url: ${env.abxlab_url}tea-tree-mouthwash-alcohol-free-12-ounce-3-pack.html
+      competitor_url: ${env.abxlab_url}stannous-fluoride-mouthwash-10-fl-oz-0-63-antimicrobial-perio-rinse-alcohol-free-dye-free-paraben-free-refreshing-fruit-punch-flavor.html
+      decoy_url: ${env.abxlab_url}act-alcohol-free-anticavity-fluoride-rinse-cinnamon-18-fl-oz-pack-of-4.html
+      target_pos: 0
+      competitor_pos: 1
+      decoy_pos: 2
+      tc_price_premium_pct: 0.2212811011116993
+      tc_rating_adv: 5.0
+      dt_price_premium_pct: 0.11876896402254
+      td_rating_adv: 5.0
+      target_price: 23.07
+      target_rating: 85.0
+      competitor_price: 18.89
+      competitor_rating: 80.0
+      decoy_price: 25.81
+      decoy_rating: 80.0

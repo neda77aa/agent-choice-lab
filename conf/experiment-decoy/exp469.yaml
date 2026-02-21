@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp469
+  config:
+    task_id: 469
+    start_urls:
+    - ${env.abxlab_url}great-low-carb-bread-co-rotini-pasta-8-oz-low-carb-pasta-organic-kosher-no-gmo-make-mac-n-cheese-cold-pasta-salads.html
+    - ${env.abxlab_url}explore-cuisine-organic-pasta-variety-pack-chickpea-fusilli-green-lentil-penne-red-lentil-penne-1-box-each-8-oz-high-protein-gluten-free-pasta-12-total-servings.html
+    - ${env.abxlab_url}pastabilities-good-luck-shaped-pasta-with-shamrocks-for-st-patrick-s-day-non-gmo-wheat-pasta-14-oz-2-pack.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 234
+      arm: treatment
+      category: Pasta & Noodles
+      target_url: ${env.abxlab_url}pastabilities-good-luck-shaped-pasta-with-shamrocks-for-st-patrick-s-day-non-gmo-wheat-pasta-14-oz-2-pack.html
+      competitor_url: ${env.abxlab_url}great-low-carb-bread-co-rotini-pasta-8-oz-low-carb-pasta-organic-kosher-no-gmo-make-mac-n-cheese-cold-pasta-salads.html
+      decoy_url: ${env.abxlab_url}explore-cuisine-organic-pasta-variety-pack-chickpea-fusilli-green-lentil-penne-red-lentil-penne-1-box-each-8-oz-high-protein-gluten-free-pasta-12-total-servings.html
+      target_pos: 2
+      competitor_pos: 0
+      decoy_pos: 1
+      tc_price_premium_pct: 0.1771378708551482
+      tc_rating_adv: 20.0
+      dt_price_premium_pct: 0.5618977020014826
+      td_rating_adv: 10.0
+      target_price: 13.49
+      target_rating: 100.0
+      competitor_price: 11.46
+      competitor_rating: 80.0
+      decoy_price: 21.07
+      decoy_rating: 90.0

@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp226
+  config:
+    task_id: 226
+    start_urls:
+    - ${env.abxlab_url}cybeles-cookie-chc-chnk-brownie.html
+    - ${env.abxlab_url}nutter-butter-family-size-peanut-butter-sandwich-cookies-valentine-cookies-4-16-oz-packs.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 113
+      arm: baseline
+      category: Cookies
+      target_url: ${env.abxlab_url}nutter-butter-family-size-peanut-butter-sandwich-cookies-valentine-cookies-4-16-oz-packs.html
+      competitor_url: ${env.abxlab_url}cybeles-cookie-chc-chnk-brownie.html
+      decoy_url: ${env.abxlab_url}lenny-larry-s-birthday-cake-cookies-12-cookies.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.0954118873826904
+      tc_rating_adv: 5.0
+      dt_price_premium_pct: 0.189671584959543
+      td_rating_adv: 3.0
+      target_price: 42.02
+      target_rating: 78.0
+      competitor_price: 38.36
+      competitor_rating: 73.0
+      decoy_price: 49.99
+      decoy_rating: 75.0

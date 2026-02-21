@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp236
+  config:
+    task_id: 236
+    start_urls:
+    - ${env.abxlab_url}voortman-bakery-strawberry-wafers-10-6-ounces-pack-of-4-baked-with-real-strawberries-no-artificial-colors-or-flavors-no-high-fructose-corn-syrup.html
+    - ${env.abxlab_url}the-best-and-ultimate-korean-snack-box-25-count-with-korean-fire-noodles-chips-candy-cookies-variety-assortment-excellent-gift-for-birthdays-or-holidays.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 118
+      arm: baseline
+      category: Cookies
+      target_url: ${env.abxlab_url}the-best-and-ultimate-korean-snack-box-25-count-with-korean-fire-noodles-chips-candy-cookies-variety-assortment-excellent-gift-for-birthdays-or-holidays.html
+      competitor_url: ${env.abxlab_url}voortman-bakery-strawberry-wafers-10-6-ounces-pack-of-4-baked-with-real-strawberries-no-artificial-colors-or-flavors-no-high-fructose-corn-syrup.html
+      decoy_url: ${env.abxlab_url}chips-ahoy-chewy-chocolate-chip-cookies-13-ounce-pack-of-12.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.1231460674157302
+      tc_rating_adv: 27.0
+      dt_price_premium_pct: 0.1984793917567027
+      td_rating_adv: 3.0
+      target_price: 24.99
+      target_rating: 100.0
+      competitor_price: 22.25
+      competitor_rating: 73.0
+      decoy_price: 29.95
+      decoy_rating: 97.0

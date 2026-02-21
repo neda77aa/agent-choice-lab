@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp50
+  config:
+    task_id: 50
+    start_urls:
+    - ${env.abxlab_url}arrowhead-mills-organic-cereal-puffed-kamut-6-oz-2-pack.html
+    - ${env.abxlab_url}bob-s-red-mill-organic-brown-rice-farina-creamy-rice-hot-cereal-24-oz.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 25
+      arm: baseline
+      category: Cereals
+      target_url: ${env.abxlab_url}arrowhead-mills-organic-cereal-puffed-kamut-6-oz-2-pack.html
+      competitor_url: ${env.abxlab_url}bob-s-red-mill-organic-brown-rice-farina-creamy-rice-hot-cereal-24-oz.html
+      decoy_url: ${env.abxlab_url}quaker-instant-oatmeal-express-cup-maple-brown-sugar-4-count.html
+      target_pos: 0
+      competitor_pos: 1
+      tc_price_premium_pct: 0.2120253164556961
+      tc_rating_adv: 13.0
+      dt_price_premium_pct: 0.31940818102698
+      td_rating_adv: 3.0
+      target_price: 11.49
+      target_rating: 93.0
+      competitor_price: 9.48
+      competitor_rating: 80.0
+      decoy_price: 15.16
+      decoy_rating: 90.0

@@ -1,0 +1,44 @@
+# @package _global_
+
+task:
+  name: exp434
+  config:
+    task_id: 434
+    start_urls:
+    - ${env.abxlab_url}oral7-dry-mouth-mouthwash-alcohol-free-oral-rinse-with-xylitol-500ml.html
+    - ${env.abxlab_url}one-drop-only-oral-care-concentrate-50ml.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9001
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 217
+      arm: baseline
+      category: Mouthwash
+      target_url: ${env.abxlab_url}one-drop-only-oral-care-concentrate-50ml.html
+      competitor_url: ${env.abxlab_url}oral7-dry-mouth-mouthwash-alcohol-free-oral-rinse-with-xylitol-500ml.html
+      decoy_url: ${env.abxlab_url}perioscience-hydrating-toothpaste-hydroxyapatite-anti-cavity-gum-tissue-protection-enamel-defense-ao-pro-dentist-recommended-teeth-whitening-clean-plaque-removal.html
+      target_pos: 1
+      competitor_pos: 0
+      tc_price_premium_pct: 0.2508934953538241
+      tc_rating_adv: 33.0
+      dt_price_premium_pct: 0.0857142857142857
+      td_rating_adv: 7.0
+      target_price: 17.5
+      target_rating: 100.0
+      competitor_price: 13.99
+      competitor_rating: 67.0
+      decoy_price: 19.0
+      decoy_rating: 93.0

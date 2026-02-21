@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp387
+  config:
+    task_id: 387
+    start_urls:
+    - ${env.abxlab_url}thore-type-c-headphones-in-ear-wired-earbuds-with-microphone-volume-control-mic-earphones-for-samsung-galaxy-note-s20-s21-s22-plus-ultra-fe-pixel-4-5-6-pro-more-black-usb-c-connection.html
+    - ${env.abxlab_url}superx-bluetooth-5-0-wireless-earbuds-with-charging-case-ipx5-sweatproof-headset-headphones-in-ear-built-in-mic-industrial-leading-tws-sound-with-sport-pumping-bass-platinum-silver.html
+    - ${env.abxlab_url}appinessey-bluetooth-foldable-headphones-wireless-neckband-headset-with-retractable-earbuds-noise-cancelling-with-mic-sports-earphones-for-running-workout-gym-black.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 193
+      arm: treatment
+      category: Earbud Headphones
+      target_url: ${env.abxlab_url}superx-bluetooth-5-0-wireless-earbuds-with-charging-case-ipx5-sweatproof-headset-headphones-in-ear-built-in-mic-industrial-leading-tws-sound-with-sport-pumping-bass-platinum-silver.html
+      competitor_url: ${env.abxlab_url}appinessey-bluetooth-foldable-headphones-wireless-neckband-headset-with-retractable-earbuds-noise-cancelling-with-mic-sports-earphones-for-running-workout-gym-black.html
+      decoy_url: ${env.abxlab_url}thore-type-c-headphones-in-ear-wired-earbuds-with-microphone-volume-control-mic-earphones-for-samsung-galaxy-note-s20-s21-s22-plus-ultra-fe-pixel-4-5-6-pro-more-black-usb-c-connection.html
+      target_pos: 1
+      competitor_pos: 2
+      decoy_pos: 0
+      tc_price_premium_pct: 0.2501563477173232
+      tc_rating_adv: 25.0
+      dt_price_premium_pct: 0.5002501250625313
+      td_rating_adv: 4.0
+      target_price: 19.99
+      target_rating: 67.0
+      competitor_price: 15.99
+      competitor_rating: 42.0
+      decoy_price: 29.99
+      decoy_rating: 63.0

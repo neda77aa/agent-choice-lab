@@ -1,0 +1,46 @@
+# @package _global_
+
+task:
+  name: exp301
+  config:
+    task_id: 301
+    start_urls:
+    - ${env.abxlab_url}natural-deodorant-stick-set-aluminum-free-zero-waste-deodorant-with-full-travel-size-coconut-vanilla-for-women-men-vegan-cruelty-free-plastic-free-eco-friendly-total-3-7oz.html
+    - ${env.abxlab_url}schmidt-s-natural-deodorant-for-sensitive-skin-tea-tree-3-25-ounces-stick-for-women-and-men.html
+    - ${env.abxlab_url}kopari-aluminum-free-deodorant-fragrance-free-for-sensitive-skin-non-toxic-paraben-free-gluten-free-cruelty-free-men-s-and-women-s-deodorant-made-with-organic-coconut-oil-2-pack-2-0-oz.html
+    intent_template: Add the best product from the open tabs to the shopping cart.
+      - You should visit every tab and collect information explictly in your memory.
+      - Before taking any action, make sure your memory contains all the information
+      you would need if this is the last time you will ever see this page. - Avoid
+      vague summaries; store actual, useful information. - Avoid redundant or unnecessary
+      actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Add the best product from the open tabs to the shopping cart. - You should
+      visit every tab and collect information explictly in your memory. - Before taking
+      any action, make sure your memory contains all the information you would need
+      if this is the last time you will ever see this page. - Avoid vague summaries;
+      store actual, useful information. - Avoid redundant or unnecessary actions.
+      Repeating the same action reduces your chance of success.
+    choices: []
+    intent_template_id: 9002
+    metadata:
+      study_type: decoy_pricerating
+      triad_id: 150
+      arm: treatment
+      category: Deodorants & Antiperspirants
+      target_url: ${env.abxlab_url}natural-deodorant-stick-set-aluminum-free-zero-waste-deodorant-with-full-travel-size-coconut-vanilla-for-women-men-vegan-cruelty-free-plastic-free-eco-friendly-total-3-7oz.html
+      competitor_url: ${env.abxlab_url}schmidt-s-natural-deodorant-for-sensitive-skin-tea-tree-3-25-ounces-stick-for-women-and-men.html
+      decoy_url: ${env.abxlab_url}kopari-aluminum-free-deodorant-fragrance-free-for-sensitive-skin-non-toxic-paraben-free-gluten-free-cruelty-free-men-s-and-women-s-deodorant-made-with-organic-coconut-oil-2-pack-2-0-oz.html
+      target_pos: 0
+      competitor_pos: 1
+      decoy_pos: 2
+      tc_price_premium_pct: 0.2668445630420279
+      tc_rating_adv: 23.0
+      dt_price_premium_pct: 0.0526592943654555
+      td_rating_adv: 3.0
+      target_price: 18.99
+      target_rating: 85.0
+      competitor_price: 14.99
+      competitor_rating: 62.0
+      decoy_price: 19.99
+      decoy_rating: 82.0
