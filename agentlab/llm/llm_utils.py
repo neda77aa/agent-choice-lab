@@ -14,26 +14,57 @@ from warnings import warn
 import numpy as np
 import tiktoken
 import yaml
-from langchain.schema import BaseMessage
-from langchain_community.adapters.openai import convert_message_to_dict
 from PIL import Image
-from transformers import AutoModel, AutoTokenizer
+
+# NOTE: `transformers` (and `torch`) are optional for most of this repo. We only
+# need them for token counting / OSS model utilities. Import lazily so the
+# package remains usable in environments where torch isn't available.
+try:
+    from transformers import AutoModel, AutoTokenizer  # type: ignore
+except Exception:  # pragma: no cover
+    AutoModel = None  # type: ignore
+    AutoTokenizer = None  # type: ignore
 
 if TYPE_CHECKING:
     from agentlab.llm.chat_api import ChatModel
 
 
-def messages_to_dict(messages: list[dict] | list[BaseMessage]) -> dict:
+def messages_to_dict(messages: list[dict] | list["BaseMessage"]) -> dict:
+    """Convert a list of messages into a `Discussion`.
+
+    Notes:
+    - This repo primarily uses its own `BaseMessage` class (defined below).
+    - Some external integrations may pass LangChain messages. To avoid importing
+      LangChain (which can pull in `transformers`/`torch`) at module import time,
+      we lazily import LangChain only when needed.
+    """
     new_messages = Discussion()
     for m in messages:
         if isinstance(m, dict):
             new_messages.add_message(m)
-        elif isinstance(m, str):
+            continue
+        if isinstance(m, str):
             new_messages.add_message({"role": "<unknown role>", "content": m})
-        elif isinstance(m, BaseMessage):
-            new_messages.add_message(convert_message_to_dict(m))
-        else:
-            raise ValueError(f"Unknown message type: {type(m)}")
+            continue
+
+        # Optional: support LangChain BaseMessage without importing langchain at import-time.
+        try:  # pragma: no cover
+            from langchain.schema import BaseMessage as LCBaseMessage  # type: ignore
+            from langchain_community.adapters.openai import convert_message_to_dict  # type: ignore
+
+            if isinstance(m, LCBaseMessage):
+                new_messages.add_message(convert_message_to_dict(m))
+                continue
+        except Exception:
+            pass
+
+        # Support this repo's own message class.
+        if isinstance(m, BaseMessage):
+            new_messages.add_message({"role": m["role"], "content": m["content"]})
+            continue
+
+        raise ValueError(f"Unknown message type: {type(m)}")
+
     return new_messages
 
 
@@ -177,6 +208,8 @@ def get_tokenizer_old(model_name="openai/gpt-4"):
         )
         return tiktoken.encoding_for_model("gpt-4")
     else:
+        if AutoTokenizer is None:
+            return tiktoken.encoding_for_model("gpt-4")
         return AutoTokenizer.from_pretrained(model_name)
 
 
@@ -186,10 +219,13 @@ def get_tokenizer(model_name="gpt-4"):
         return tiktoken.encoding_for_model(model_name)
     except KeyError:
         logging.info(f"Could not find a tokenizer for model {model_name}. Trying HuggingFace.")
-    try:
-        return AutoTokenizer.from_pretrained(model_name)
-    except Exception:
-        logging.info(f"Could not find a tokenizer for model {model_name}. Defaulting to gpt-4.")
+    if AutoTokenizer is not None:
+        try:
+            return AutoTokenizer.from_pretrained(model_name)
+        except Exception:
+            logging.info(
+                f"Could not find a tokenizer for model {model_name}. Defaulting to gpt-4."
+            )
     return tiktoken.encoding_for_model("gpt-4")
 
 
@@ -362,6 +398,8 @@ def parse_html_tags(text, keys=(), optional_keys=(), merge_multiple=False):
 
 
 def download_and_save_model(model_name: str, save_dir: str = "."):
+    if AutoModel is None:
+        raise ImportError("download_and_save_model requires transformers/torch, but they could not be imported")
     model = AutoModel.from_pretrained(model_name)
     model.save_pretrained(save_dir)
     print(f"Model downloaded and saved to {save_dir}")

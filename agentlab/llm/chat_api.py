@@ -130,6 +130,105 @@ class LiteLLMModelArgs(BaseModelArgs):
         )
 
 @dataclass
+class VertexLiteLLMModelArgs(BaseModelArgs):
+    """Serializable object for instantiating a LiteLLM model backed by Vertex AI.
+
+    This keeps the existing LiteLLM-based provider flow, but injects Vertex-specific
+    kwargs (project + location) into the LiteLLM completion call.
+
+    Expected environment variables:
+      - VERTEX_PROJECT (required)
+      - VERTEX_LOCATION (optional, defaults to "global")
+    """
+
+    vertex_project: str = None
+    vertex_location: str = "global"
+    # Optional Gemini "thinking budget" (tokens). Gemini 2.5+ requires this in
+    # the thinkingConfig payload. Default of 16 matches the prior hardcoded
+    # value used for Gemini 3 Pro Preview; Gemini 2.5 Pro requires >=128.
+    thinking_budget: int = 16
+
+    def make_model(self):
+        vertex_project = self.vertex_project or os.getenv("VERTEX_PROJECT")
+        if not vertex_project:
+            raise ValueError(
+                "VERTEX_PROJECT is required for Vertex AI models. "
+                "Set env var VERTEX_PROJECT or pass vertex_project in the config."
+            )
+
+        vertex_location = self.vertex_location or os.getenv("VERTEX_LOCATION") or "global"
+
+        # LiteLLM Vertex auth kwargs
+        provider_kwargs = {
+            "vertex_project": vertex_project,
+            "vertex_location": vertex_location,
+        }
+
+        # Vertex model handling
+        # - "Gemini" models are first-party Google models on Vertex (NOT prefixed with `vertex_ai/`)
+        # - "Partner" MaaS models (Claude, DeepSeek, Qwen, etc.) are routed by LiteLLM using the
+        #   `vertex_ai/...` prefix, but some (notably MaaS "-maas" models) are more reliable via
+        #   Vertex's OpenAI-compatible endpoint.
+        #
+        # Special cases:
+        # 1) For Vertex location="global", the hostname is `aiplatform.googleapis.com` (no region prefix)
+        # 2) Gemini 3 Pro Preview can return only "thoughts" unless a thinking budget is provided.
+        # Auto-prefix known Vertex partner models so LiteLLM routes via Vertex
+        _VERTEX_PARTNER_PREFIXES = ("claude-", "deepseek-", "qwen-")
+        model_name_for_routing = self.model_name
+        if not self.model_name.startswith("vertex_ai/") and self.model_name.startswith(_VERTEX_PARTNER_PREFIXES):
+            model_name_for_routing = f"vertex_ai/{self.model_name}"
+        is_vertex_partner_model = model_name_for_routing.startswith("vertex_ai/")
+
+        # If this is a Vertex MaaS model (DeepSeek/Qwen/etc.), prefer the OpenAI-compatible endpoint.
+        # This avoids a class of 404s / routing issues in provider-specific adapters.
+        # Example configured model_name: "vertex_ai/deepseek-ai/deepseek-v3.2-maas"
+        if is_vertex_partner_model and "maas" in model_name_for_routing:
+            import google.auth
+            import google.auth.transport.requests
+
+            creds, _ = google.auth.default(scopes=["https://www.googleapis.com/auth/cloud-platform"])
+            auth_req = google.auth.transport.requests.Request()
+            creds.refresh(auth_req)
+
+            host = "aiplatform.googleapis.com" if vertex_location == "global" else f"{vertex_location}-aiplatform.googleapis.com"
+            provider_kwargs.update(
+                {
+                    # Force LiteLLM to use OpenAI-compatible codepath
+                    "custom_llm_provider": "openai",
+                    "api_base": f"https://{host}/v1beta1/projects/{vertex_project}/locations/{vertex_location}/endpoints/openapi",
+                    "api_key": creds.token,
+                }
+            )
+            # Strip prefix to prevent LiteLLM from re-mapping the provider
+            model_name = model_name_for_routing.replace("vertex_ai/", "")
+        else:
+            model_name = model_name_for_routing
+
+            # Gemini-on-Vertex special handling
+            if not is_vertex_partner_model:
+                if vertex_location == "global":
+                    provider_kwargs["api_base"] = (
+                        f"https://aiplatform.googleapis.com/v1/projects/{vertex_project}/"
+                        f"locations/global/publishers/google/models/{self.model_name}"
+                    )
+                provider_kwargs["thinkingConfig"] = {
+                    "includeThoughts": False,
+                    "thinkingBudget": self.thinking_budget,
+                }
+
+        return LiteLLMChatModel(
+            model_name=model_name,
+            temperature=self.temperature,
+            max_tokens=self.max_new_tokens,
+            log_probs=self.log_probs,
+            pricing_func=tracking.get_pricing_litellm,
+            additional_drop_params=self.additional_drop_params,
+            provider_kwargs=provider_kwargs,
+        )
+
+
+@dataclass
 class AzureModelArgs(BaseModelArgs):
     """Serializable object for instantiating a generic chat model with an Azure model."""
 
@@ -385,7 +484,8 @@ class LiteLLMChatModel(AbstractChatModel):
         min_retry_wait_time=60,
         pricing_func=None,
         log_probs=False,
-        additional_drop_params=[]
+        additional_drop_params=None,
+        provider_kwargs: Optional[dict] = None,
     ):
         assert max_retry > 0, "max_retry should be greater than 0"
 
@@ -395,7 +495,8 @@ class LiteLLMChatModel(AbstractChatModel):
         self.max_retry = max_retry
         self.min_retry_wait_time = min_retry_wait_time
         self.log_probs = log_probs
-        self.additional_drop_params = additional_drop_params
+        self.additional_drop_params = additional_drop_params or []
+        self.provider_kwargs = provider_kwargs or {}
 
         # Get pricing information
         if pricing_func:
@@ -431,7 +532,8 @@ class LiteLLMChatModel(AbstractChatModel):
                     temperature=temperature,
                     max_tokens=self.max_tokens,
                     logprobs=self.log_probs,
-                    additional_drop_params=list(self.additional_drop_params)
+                    additional_drop_params=list(self.additional_drop_params),
+                    **(self.provider_kwargs or {}),
                 )
 
                 # LiteLLM parses <think></think> and creates a "reasoning_content" field separately.

@@ -1,0 +1,17 @@
+_target_: agentlab.agents.generic_agent.generic_agent.GenericAgentArgs
+
+defaults:
+  - flags: default
+  - _self_
+
+chat_model_args:
+  _target_: agentlab.llm.chat_api.VertexLiteLLMModelArgs
+  vertex_location: us-central1
+  model_name: gemini-2.5-pro
+  max_total_tokens: 1048576
+  max_input_tokens: 1048576
+  max_new_tokens: 65536
+  vision_support: true
+  temperature: 0.1
+  # gemini-2.5-pro requires thinking_budget in [128, 32768]; 128 = minimal thinking
+  thinking_budget: 128

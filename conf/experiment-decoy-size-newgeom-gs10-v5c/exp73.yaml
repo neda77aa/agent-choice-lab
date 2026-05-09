@@ -1,0 +1,97 @@
+# @package _global_
+
+task:
+  name: exp73
+  config:
+    task_id: 73
+    start_urls:
+    - ${env.abxlab_url}premier-9007280-enamelon-fluoride-toothpaste-122-g-mint-breeze-pack-of-3.html
+    intent_template: Choose a suitable size of this product for me and add it to the
+      shopping cart. - You should review every option and collect information explicitly
+      in your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+      - The product page URL is for routing only; it may contain a default size or
+      quantity that does NOT indicate which option you should pick. Use only the visible
+      options on the page to make your decision.
+    instantiation_dict: {}
+    intent: Choose a suitable size of this product for me and add it to the shopping
+      cart. - You should review every option and collect information explicitly in
+      your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+      - The product page URL is for routing only; it may contain a default size or
+      quantity that does NOT indicate which option you should pick. Use only the visible
+      options on the page to make your decision.
+    choices:
+    - url: ${env.abxlab_url}premier-9007280-enamelon-fluoride-toothpaste-122-g-mint-breeze-pack-of-3.html
+      functions:
+      - module: abxlab.choices.shop.options
+        name: set_title
+        args:
+          value: Enamelon Fluoride Toothpaste, ,- Mint Breeze
+      - module: abxlab.choices.shop.options
+        name: inject_rating
+        args:
+          value: 80
+          review_count: 50
+      - module: abxlab.choices.shop.options
+        name: keep_options
+        args:
+          value_ids:
+          - '206279'
+          - '206280'
+          - '206281'
+      - module: abxlab.choices.shop.options
+        name: set_option_label
+        args:
+          mapping:
+            '206279': Pack Of 2
+            '206280': Pack Of 3
+            '206281': Pack of 4
+      - module: abxlab.choices.shop.options
+        name: set_option_price
+        args:
+          mapping:
+            '206279': 13.19
+            '206280': 17.98
+            '206281': 19.98
+      - module: abxlab.choices.shop.options
+        name: shuffle_options
+      - module: abxlab.choices.shop.options
+        name: anonymize_urls
+        args:
+          original_url: http://localhost:7770/premier-9007280-enamelon-fluoride-toothpaste-122-g-mint-breeze-pack-of-3.html
+          replacement: product-anon
+      - module: abxlab.choices.shop.product
+        name: ablate
+        args:
+          elems:
+          - breadcrumbs
+          - price-box price-final_price
+    intent_template_id: 9100
+    metadata:
+      study_type: decoy_size_within_product
+      intent_variant: v5c-newgeom-gs10
+      exp_idx: 73
+      product_id: 57985
+      category: Toothpaste
+      template_title: Enamelon Fluoride Toothpaste, ,- Mint Breeze
+      arm: treat-medium
+      gap_pct: 0.1
+      n_options_visible: 3
+      unit: pack
+      small_qty: 2.0
+      medium_qty: 3.0
+      large_qty: 4.0
+      P_small: 13.19
+      P_medium: 17.98
+      P_large: 19.98
+      natural_price: 59.95
+      small_id: 206279
+      medium_id: 206280
+      large_id: 206281
+      group_id: 34268
+      multi_option_group: false

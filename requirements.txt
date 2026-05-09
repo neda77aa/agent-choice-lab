@@ -1,4 +1,6 @@
-attr==0.3.2
+# NOTE: Do not use the legacy `attr` package. This project requires `attrs` (python-attrs).
+attrs>=23.2.0
+google-cloud-aiplatform>=1.38.0
 beartype==0.12.0
 beautifulsoup4==4.13.4
 browsergym==0.13.3

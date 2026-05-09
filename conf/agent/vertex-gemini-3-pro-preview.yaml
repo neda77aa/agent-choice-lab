@@ -1,0 +1,16 @@
+_target_: agentlab.agents.generic_agent.generic_agent.GenericAgentArgs
+
+defaults:
+  - flags: default
+  - _self_
+
+chat_model_args:
+  _target_: agentlab.llm.chat_api.VertexLiteLLMModelArgs
+  vertex_location: global
+  # Vertex model id via LiteLLM
+  model_name: gemini-3-pro-preview
+  max_total_tokens: 1048576
+  max_input_tokens: 1048576
+  max_new_tokens: 65536
+  vision_support: true
+  temperature: 0.1

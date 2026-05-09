@@ -1,0 +1,709 @@
+[
+  {
+    "id": "huber_1982_original",
+    "paper": "Huber, Payne & Puto (1982) - The Original Decoy (Introductory Example)",
+    "scenario": "You are purchasing a new product.",
+    "attributes": ["Quality", "Price"],
+    "options": {
+      "Target": {"Quality": "90", "Price": "$60"},
+      "Rival": {"Quality": "70", "Price": "$30"},
+      "Decoy": {"Quality": "85", "Price": "$65"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": null
+  },
+  {
+    "id": "frederick_2014_gambles_large",
+    "paper": "Frederick, Lee, & Baskin (2014) - Study 2a",
+    "scenario": "You are choosing between different financial gambles.",
+    "attributes": ["Win Probability", "Payout"],
+    "options": {
+      "Target": {"Win Probability": "28%", "Payout": "$516"},
+      "Rival": {"Win Probability": "73%", "Payout": "$197"},
+      "Decoy": {"Win Probability": "23%", "Payout": "$507"}
+    },
+    "human_target_share_2_opt": 0.14,
+    "human_target_share_3_opt": 0.28
+  },
+  {
+    "id": "frederick_2014_gambles_small",
+    "paper": "Frederick, Lee, & Baskin (2014) - Study 2b",
+    "scenario": "You are choosing between different financial gambles.",
+    "attributes": ["Win Probability", "Payout"],
+    "options": {
+      "Target": {"Win Probability": "28%", "Payout": "$33"},
+      "Rival": {"Win Probability": "73%", "Payout": "$12"},
+      "Decoy": {"Win Probability": "28%", "Payout": "$30"}
+    },
+    "human_target_share_2_opt": 0.21,
+    "human_target_share_3_opt": 0.37
+  },
+  {
+    "id": "frederick_2014_televisions",
+    "paper": "Frederick, Lee, & Baskin (2014) - Study 3a",
+    "scenario": "You are purchasing a new television.",
+    "attributes": ["Price", "Quality Rating (out of 10)"],
+    "options": {
+      "Target": {"Price": "$350", "Quality Rating (out of 10)": "5.5"},
+      "Rival": {"Price": "$503", "Quality Rating (out of 10)": "8.0"},
+      "Decoy": {"Price": "$339", "Quality Rating (out of 10)": "3.5"}
+    },
+    "human_target_share_2_opt": 0.33,
+    "human_target_share_3_opt": 0.57
+  },
+  {
+    "id": "hedgcock_2009_beer_dominated",
+    "paper": "Hedgcock, Rao, & Chen (2009) - Study 1",
+    "scenario": "Imagine you went to a store to purchase beer for a weekend barbecue.",
+    "attributes": ["Quality Rating (blind taste test)", "Price per six-pack"],
+    "options": {
+      "Target": {"Quality Rating (blind taste test)": "74", "Price per six-pack": "$6.50"},
+      "Rival": {"Quality Rating (blind taste test)": "63", "Price per six-pack": "$4.40"},
+      "Decoy": {"Quality Rating (blind taste test)": "71", "Price per six-pack": "$6.50"}
+    },
+    "human_target_share_2_opt": 0.68,
+    "human_target_share_3_opt": 0.87
+  },
+  {
+    "id": "hedgcock_2009_beer_compromise",
+    "paper": "Hedgcock, Rao, & Chen (2009) - Study 1 Replication",
+    "scenario": "Imagine you went to a store to purchase beer for a weekend barbecue.",
+    "attributes": ["Quality Rating (blind taste test)", "Price per six-pack"],
+    "options": {
+      "Target": {"Quality Rating (blind taste test)": "74", "Price per six-pack": "$6.50"},
+      "Rival": {"Quality Rating (blind taste test)": "63", "Price per six-pack": "$4.40"},
+      "Decoy": {"Quality Rating (blind taste test)": "82", "Price per six-pack": "$8.05"}
+    },
+    "human_target_share_2_opt": 0.61,
+    "human_target_share_3_opt": 0.87
+  },
+  {
+    "id": "kim_2005_grocery",
+    "paper": "Kim & Hasher (2005) - Experiment 1",
+    "scenario": "You are selecting a grocery store discount card.",
+    "attributes": ["Discount", "Minimum Purchase"],
+    "options": {
+      "Target": {"Discount": "25%", "Minimum Purchase": "$45"},
+      "Rival": {"Discount": "15%", "Minimum Purchase": "$20"},
+      "Decoy": {"Discount": "26%", "Minimum Purchase": "$100"}
+    },
+    "human_target_share_2_opt": 0.50,
+    "human_target_share_3_opt": 0.77
+  },
+  {
+    "id": "kim_2005_extracredit",
+    "paper": "Kim & Hasher (2005) - Experiment 2",
+    "scenario": "You are selecting an extra credit assignment.",
+    "attributes": ["Extra Credit", "Minimum Time"],
+    "options": {
+      "Target": {"Extra Credit": "25 points", "Minimum Time": "90 minutes"},
+      "Rival": {"Extra Credit": "15 points", "Minimum Time": "40 minutes"},
+      "Decoy": {"Extra Credit": "26 points", "Minimum Time": "200 minutes"}
+    },
+    "human_target_share_2_opt": 0.80,
+    "human_target_share_3_opt": 0.81
+  },
+  {
+    "id": "moran_2006_vacation_exp1_sym",
+    "paper": "Moran & Meyer (2006) - Experiment 1 (Symmetrical)",
+    "scenario": "You are selecting a vacation package for the French Riviera.",
+    "attributes": ["Hotel Standard", "Price"],
+    "options": {
+      "Target": {"Hotel Standard": "5 stars", "Price": "$1850"},
+      "Rival": {"Hotel Standard": "4 stars", "Price": "$2100"},
+      "Decoy": {"Hotel Standard": "4 stars", "Price": "$2230"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": null
+  },
+  {
+    "id": "moran_2006_vacation_exp1_asym",
+    "paper": "Moran & Meyer (2006) - Experiment 1 (Asymmetrical)",
+    "scenario": "You are selecting a vacation package for the French Riviera.",
+    "attributes": ["Hotel Standard", "Price"],
+    "options": {
+      "Target": {"Hotel Standard": "5 stars", "Price": "$1850"},
+      "Rival": {"Hotel Standard": "4 stars", "Price": "$2100"},
+      "Decoy": {"Hotel Standard": "5 stars", "Price": "$1980"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": null
+  },
+  {
+    "id": "moran_2006_vacation_exp2_sym",
+    "paper": "Moran & Meyer (2006) - Experiment 2 (Symmetrical)",
+    "scenario": "You are selecting a vacation package for the French Riviera.",
+    "attributes": ["Hotel Standard", "Duration"],
+    "options": {
+      "Target": {"Hotel Standard": "5 stars", "Duration": "14 days"},
+      "Rival": {"Hotel Standard": "4 stars", "Duration": "12 days"},
+      "Decoy": {"Hotel Standard": "4 stars", "Duration": "10 days"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": null
+  },
+  {
+    "id": "moran_2006_vacation_exp2_asym",
+    "paper": "Moran & Meyer (2006) - Experiment 2 (Asymmetrical)",
+    "scenario": "You are selecting a vacation package for the French Riviera.",
+    "attributes": ["Hotel Standard", "Duration"],
+    "options": {
+      "Target": {"Hotel Standard": "5 stars", "Duration": "14 days"},
+      "Rival": {"Hotel Standard": "4 stars", "Duration": "12 days"},
+      "Decoy": {"Hotel Standard": "5 stars", "Duration": "13 days"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": null
+  },
+  {
+    "id": "moran_2006_vacation_exp3_asym_similar",
+    "paper": "Moran & Meyer (2006) - Experiment 3 (Asymmetrical Similar)",
+    "scenario": "You are selecting a vacation package for the French Riviera.",
+    "attributes": ["Hotel Standard", "Duration"],
+    "options": {
+      "Target": {"Hotel Standard": "5 stars", "Duration": "14 days"},
+      "Rival": {"Hotel Standard": "4 stars", "Duration": "10 days"},
+      "Decoy": {"Hotel Standard": "5 stars", "Duration": "13 days"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": null
+  },
+  {
+    "id": "moran_2006_vacation_exp3_asym_different",
+    "paper": "Moran & Meyer (2006) - Experiment 3 (Asymmetrical Different)",
+    "scenario": "You are selecting a vacation package for the French Riviera.",
+    "attributes": ["Hotel Standard", "Duration"],
+    "options": {
+      "Target": {"Hotel Standard": "5 stars", "Duration": "14 days"},
+      "Rival": {"Hotel Standard": "4 stars", "Duration": "10 days"},
+      "Decoy": {"Hotel Standard": "4 stars", "Duration": "11 days"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": null
+  },
+  {
+    "id": "prelec_1997_air_conditioners",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing a new air conditioner. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Operating noise rating", "Price"],
+    "options": {
+      "Target": {"Operating noise rating": "9", "Price": "$400"},
+      "Rival": {"Operating noise rating": "8", "Price": "$300"},
+      "Decoy": {"Operating noise rating": "10", "Price": "$500"}
+    },
+    "human_target_share_2_opt": 0.222,
+    "human_target_share_3_opt": 0.520,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "prelec_1997_binoculars",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing new binoculars. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Magnifying power", "Price"],
+    "options": {
+      "Target": {"Magnifying power": "10", "Price": "$100"},
+      "Rival": {"Magnifying power": "6", "Price": "$40"},
+      "Decoy": {"Magnifying power": "12", "Price": "$150"}
+    },
+    "human_target_share_2_opt": 0.482,
+    "human_target_share_3_opt": 0.640,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "prelec_1997_cameras",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing a new auto-focus camera. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Number of features", "Price"],
+    "options": {
+      "Target": {"Number of features": "8", "Price": "$120"},
+      "Rival": {"Number of features": "5", "Price": "$80"},
+      "Decoy": {"Number of features": "9", "Price": "$160"}
+    },
+    "human_target_share_2_opt": 0.593,
+    "human_target_share_3_opt": 0.480,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "prelec_1997_coffeemakers",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing a new coffeemaker. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Quality rating", "Price"],
+    "options": {
+      "Target": {"Quality rating": "8", "Price": "$50"},
+      "Rival": {"Quality rating": "6", "Price": "$30"},
+      "Decoy": {"Quality rating": "10", "Price": "$70"}
+    },
+    "human_target_share_2_opt": 0.591,
+    "human_target_share_3_opt": 0.482,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "prelec_1997_rain_boots",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing new rain boots. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Durability rating", "Price"],
+    "options": {
+      "Target": {"Durability rating": "9", "Price": "$40"},
+      "Rival": {"Durability rating": "7", "Price": "$30"},
+      "Decoy": {"Durability rating": "10", "Price": "$60"}
+    },
+    "human_target_share_2_opt": 0.773,
+    "human_target_share_3_opt": 0.444,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "prelec_1997_running_shoes",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing new running shoes. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Cushioning ability rating", "Price"],
+    "options": {
+      "Target": {"Cushioning ability rating": "8", "Price": "$70"},
+      "Rival": {"Cushioning ability rating": "7", "Price": "$50"},
+      "Decoy": {"Cushioning ability rating": "8", "Price": "$80"}
+    },
+    "human_target_share_2_opt": 0.440,
+    "human_target_share_3_opt": 0.591,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "prelec_1997_vacuum_cleaners",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing a new vacuum cleaner. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Suction power rating", "Price"],
+    "options": {
+      "Target": {"Suction power rating": "70", "Price": "$150"},
+      "Rival": {"Suction power rating": "60", "Price": "$100"},
+      "Decoy": {"Suction power rating": "80", "Price": "$200"}
+    },
+    "human_target_share_2_opt": 0.320,
+    "human_target_share_3_opt": 0.591,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "prelec_1997_vcrs",
+    "paper": "Prelec, Wernerfelt & Zettelmeyer (1997)",
+    "scenario": "You are purchasing a new VCR. Each question refers to the market offerings for a particular product category in terms of a trade-off between price and one quality attribute.",
+    "attributes": ["Durability rating", "Price"],
+    "options": {
+      "Target": {"Durability rating": "7", "Price": "$300"},
+      "Rival": {"Durability rating": "6", "Price": "$200"},
+      "Decoy": {"Durability rating": "8", "Price": "$400"}
+    },
+    "human_target_share_2_opt": 0.482,
+    "human_target_share_3_opt": 0.400,
+    "contribution": "Goal: Demonstrate experimentally that consumers rely partly on context to make inferences about the fit between specific brands and their own preferences. Findings: The inference effect accounts for two-thirds of the average magnitude of the context effect and for about one-half of the cross-category context-effect variance."
+  },
+  {
+    "id": "simonson_1989_beer_attraction_1",
+    "paper": "Simonson (1989) - Attraction Effect",
+    "scenario": "You are purchasing a six-pack of beer.",
+    "attributes": ["Six-pack price", "Quality rating"],
+    "options": {
+      "Target": {"Six-pack price": "$2.80", "Quality rating": "75"},
+      "Rival": {"Six-pack price": "$1.90", "Quality rating": "65"},
+      "Decoy": {"Six-pack price": "$3.10", "Quality rating": "75"}
+    },
+    "human_target_share_2_opt": 0.73,
+    "human_target_share_3_opt": 0.87,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "simonson_1989_beer_attraction_2",
+    "paper": "Simonson (1989) - Attraction Effect",
+    "scenario": "You are purchasing a six-pack of beer.",
+    "attributes": ["Six-pack price", "Quality rating"],
+    "options": {
+      "Target": {"Six-pack price": "$1.90", "Quality rating": "65"},
+      "Rival": {"Six-pack price": "$2.80", "Quality rating": "75"},
+      "Decoy": {"Six-pack price": "$2.20", "Quality rating": "65"}
+    },
+    "human_target_share_2_opt": 0.36,
+    "human_target_share_3_opt": 0.42,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "simonson_1989_car_attraction",
+    "paper": "Simonson (1989) - Attraction Effect",
+    "scenario": "You are purchasing a car.",
+    "attributes": ["Ride quality", "Miles per gallon"],
+    "options": {
+      "Target": {"Ride quality": "73", "Miles per gallon": "33"},
+      "Rival": {"Ride quality": "83", "Miles per gallon": "24"},
+      "Decoy": {"Ride quality": "70", "Miles per gallon": "33"}
+    },
+    "human_target_share_2_opt": 0.67,
+    "human_target_share_3_opt": 0.69,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "simonson_1989_color_tv_compromise",
+    "paper": "Simonson (1989) - Compromise Effect",
+    "scenario": "You are purchasing a color TV.",
+    "attributes": ["Price", "Picture quality"],
+    "options": {
+      "Target": {"Price": "$350", "Picture quality": "85"},
+      "Rival": {"Price": "$299", "Picture quality": "80"},
+      "Decoy": {"Price": "$503", "Picture quality": "100"}
+    },
+    "human_target_share_2_opt": 0.43,
+    "human_target_share_3_opt": 0.51,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "simonson_1989_apartment_compromise",
+    "paper": "Simonson (1989) - Compromise Effect",
+    "scenario": "You are renting an apartment.",
+    "attributes": ["Distance", "General condition"],
+    "options": {
+      "Target": {"Distance": "6 miles", "General condition": "75"},
+      "Rival": {"Distance": "11 miles", "General condition": "90"},
+      "Decoy": {"Distance": "1 mile", "General condition": "60"}
+    },
+    "human_target_share_2_opt": 0.50,
+    "human_target_share_3_opt": 0.66,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "simonson_1989_calculator_compromise",
+    "paper": "Simonson (1989) - Compromise Effect",
+    "scenario": "You are purchasing a calculator.",
+    "attributes": ["Number of functions (Range: 6-98 functions)", "Probability of need for repair in first two years (Range: 0.5-15%)"],
+    "options": {
+      "Target": {"Number of functions (Range: 6-98 functions)": "16", "Probability of need for repair in first two years (Range: 0.5-15%)": "3%"},
+      "Rival": {"Number of functions (Range: 6-98 functions)": "24", "Probability of need for repair in first two years (Range: 0.5-15%)": "5%"},
+      "Decoy": {"Number of functions (Range: 6-98 functions)": "8", "Probability of need for repair in first two years (Range: 0.5-15%)": "1%"}
+    },
+    "human_target_share_2_opt": 0.26,
+    "human_target_share_3_opt": 0.48,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "simonson_1989_mouthwash_compromise",
+    "paper": "Simonson (1989) - Compromise Effect",
+    "scenario": "You are purchasing mouthwash.",
+    "attributes": ["Fresh breath effectiveness", "Germ-killing effectiveness"],
+    "options": {
+      "Target": {"Fresh breath effectiveness": "70", "Germ-killing effectiveness": "70"},
+      "Rival": {"Fresh breath effectiveness": "80", "Germ-killing effectiveness": "60"},
+      "Decoy": {"Fresh breath effectiveness": "60", "Germ-killing effectiveness": "80"}
+    },
+    "human_target_share_2_opt": 0.17,
+    "human_target_share_3_opt": 0.42,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "simonson_1989_calculator_battery_compromise",
+    "paper": "Simonson (1989) - Compromise Effect",
+    "scenario": "You are purchasing a calculator battery.",
+    "attributes": ["Expected life", "Probability of corrosion"],
+    "options": {
+      "Target": {"Expected life": "12 hours", "Probability of corrosion": "2%"},
+      "Rival": {"Expected life": "14 hours", "Probability of corrosion": "4%"},
+      "Decoy": {"Expected life": "10 hours", "Probability of corrosion": "0%"}
+    },
+    "human_target_share_2_opt": 0.40,
+    "human_target_share_3_opt": 0.66,
+    "contribution": "Goal: To propose and test that choice behavior under preference uncertainty can be explained by assuming consumers select the alternative supported by the best reasons, providing an explanation for the attraction effect and predicting a compromise effect. Findings: Brands tend to gain share when they become compromise alternatives; attraction and compromise effects tend to be stronger when subjects expect to justify decisions to others."
+  },
+  {
+    "id": "pettibone_2000_computers_inferior",
+    "paper": "Pettibone & Wedell (2000) - Inferior Decoy",
+    "scenario": "You are purchasing a computer.",
+    "attributes": ["Processing Speed (Mhz)", "Size of hard drive (MB)"],
+    "options": {
+      "Target": {"Processing Speed (Mhz)": "40", "Size of hard drive (MB)": "420"},
+      "Rival": {"Processing Speed (Mhz)": "66", "Size of hard drive (MB)": "300"},
+      "Decoy": {"Processing Speed (Mhz)": "27", "Size of hard drive (MB)": "432"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.58,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_computers_compromise",
+    "paper": "Pettibone & Wedell (2000) - Compromise Decoy",
+    "scenario": "You are purchasing a computer.",
+    "attributes": ["Processing Speed (Mhz)", "Size of hard drive (MB)"],
+    "options": {
+      "Target": {"Processing Speed (Mhz)": "40", "Size of hard drive (MB)": "420"},
+      "Rival": {"Processing Speed (Mhz)": "66", "Size of hard drive (MB)": "300"},
+      "Decoy": {"Processing Speed (Mhz)": "27", "Size of hard drive (MB)": "480"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.46,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_computers_phantom",
+    "paper": "Pettibone & Wedell (2000) - Phantom Decoy",
+    "scenario": "You are purchasing a computer.",
+    "attributes": ["Processing Speed (Mhz)", "Size of hard drive (MB)"],
+    "options": {
+      "Target": {"Processing Speed (Mhz)": "40", "Size of hard drive (MB)": "420"},
+      "Rival": {"Processing Speed (Mhz)": "66", "Size of hard drive (MB)": "300"},
+      "Decoy": {"Processing Speed (Mhz)": "40", "Size of hard drive (MB)": "480"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.57,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_restaurants_inferior",
+    "paper": "Pettibone & Wedell (2000) - Inferior Decoy",
+    "scenario": "You are choosing a restaurant.",
+    "attributes": ["Price of meal for two ($)", "Wait to be served (min.)"],
+    "options": {
+      "Target": {"Price of meal for two ($)": "44", "Wait to be served (min.)": "20"},
+      "Rival": {"Price of meal for two ($)": "36", "Wait to be served (min.)": "34"},
+      "Decoy": {"Price of meal for two ($)": "48", "Wait to be served (min.)": "18"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.58,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_restaurants_compromise",
+    "paper": "Pettibone & Wedell (2000) - Compromise Decoy",
+    "scenario": "You are choosing a restaurant.",
+    "attributes": ["Price of meal for two ($)", "Wait to be served (min.)"],
+    "options": {
+      "Target": {"Price of meal for two ($)": "44", "Wait to be served (min.)": "20"},
+      "Rival": {"Price of meal for two ($)": "36", "Wait to be served (min.)": "34"},
+      "Decoy": {"Price of meal for two ($)": "48", "Wait to be served (min.)": "14"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.46,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_restaurants_phantom",
+    "paper": "Pettibone & Wedell (2000) - Phantom Decoy",
+    "scenario": "You are choosing a restaurant.",
+    "attributes": ["Price of meal for two ($)", "Wait to be served (min.)"],
+    "options": {
+      "Target": {"Price of meal for two ($)": "44", "Wait to be served (min.)": "20"},
+      "Rival": {"Price of meal for two ($)": "36", "Wait to be served (min.)": "34"},
+      "Decoy": {"Price of meal for two ($)": "44", "Wait to be served (min.)": "14"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.57,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_planetickets_inferior",
+    "paper": "Pettibone & Wedell (2000) - Inferior Decoy",
+    "scenario": "You are purchasing plane tickets.",
+    "attributes": ["Cost of ticket ($)", "Length of layover (min.)"],
+    "options": {
+      "Target": {"Cost of ticket ($)": "400", "Length of layover (min.)": "60"},
+      "Rival": {"Cost of ticket ($)": "330", "Length of layover (min.)": "150"},
+      "Decoy": {"Cost of ticket ($)": "435", "Length of layover (min.)": "51"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.58,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_planetickets_compromise",
+    "paper": "Pettibone & Wedell (2000) - Compromise Decoy",
+    "scenario": "You are purchasing plane tickets.",
+    "attributes": ["Cost of ticket ($)", "Length of layover (min.)"],
+    "options": {
+      "Target": {"Cost of ticket ($)": "400", "Length of layover (min.)": "60"},
+      "Rival": {"Cost of ticket ($)": "330", "Length of layover (min.)": "150"},
+      "Decoy": {"Cost of ticket ($)": "435", "Length of layover (min.)": "15"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.46,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_planetickets_phantom",
+    "paper": "Pettibone & Wedell (2000) - Phantom Decoy",
+    "scenario": "You are purchasing plane tickets.",
+    "attributes": ["Cost of ticket ($)", "Length of layover (min.)"],
+    "options": {
+      "Target": {"Cost of ticket ($)": "400", "Length of layover (min.)": "60"},
+      "Rival": {"Cost of ticket ($)": "330", "Length of layover (min.)": "150"},
+      "Decoy": {"Cost of ticket ($)": "400", "Length of layover (min.)": "15"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.57,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_cdplayers_inferior",
+    "paper": "Pettibone & Wedell (2000) - Inferior Decoy",
+    "scenario": "You are purchasing a CD player.",
+    "attributes": ["Price ($)", "Number of disks"],
+    "options": {
+      "Target": {"Price ($)": "250", "Number of disks": "10"},
+      "Rival": {"Price ($)": "175", "Number of disks": "4"},
+      "Decoy": {"Price ($)": "288", "Number of disks": "11"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.58,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_cdplayers_compromise",
+    "paper": "Pettibone & Wedell (2000) - Compromise Decoy",
+    "scenario": "You are purchasing a CD player.",
+    "attributes": ["Price ($)", "Number of disks"],
+    "options": {
+      "Target": {"Price ($)": "250", "Number of disks": "10"},
+      "Rival": {"Price ($)": "175", "Number of disks": "4"},
+      "Decoy": {"Price ($)": "288", "Number of disks": "13"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.46,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_cdplayers_phantom",
+    "paper": "Pettibone & Wedell (2000) - Phantom Decoy",
+    "scenario": "You are purchasing a CD player.",
+    "attributes": ["Price ($)", "Number of disks"],
+    "options": {
+      "Target": {"Price ($)": "250", "Number of disks": "10"},
+      "Rival": {"Price ($)": "175", "Number of disks": "4"},
+      "Decoy": {"Price ($)": "250", "Number of disks": "13"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.57,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_cars_inferior",
+    "paper": "Pettibone & Wedell (2000) - Inferior Decoy",
+    "scenario": "You are purchasing a car.",
+    "attributes": ["Miles per gallon", "Number of safety features"],
+    "options": {
+      "Target": {"Miles per gallon": "22", "Number of safety features": "10"},
+      "Rival": {"Miles per gallon": "35", "Number of safety features": "5"},
+      "Decoy": {"Miles per gallon": "16", "Number of safety features": "11"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.58,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_cars_compromise",
+    "paper": "Pettibone & Wedell (2000) - Compromise Decoy",
+    "scenario": "You are purchasing a car.",
+    "attributes": ["Miles per gallon", "Number of safety features"],
+    "options": {
+      "Target": {"Miles per gallon": "22", "Number of safety features": "10"},
+      "Rival": {"Miles per gallon": "35", "Number of safety features": "5"},
+      "Decoy": {"Miles per gallon": "16", "Number of safety features": "12"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.46,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "pettibone_2000_cars_phantom",
+    "paper": "Pettibone & Wedell (2000) - Phantom Decoy",
+    "scenario": "You are purchasing a car.",
+    "attributes": ["Miles per gallon", "Number of safety features"],
+    "options": {
+      "Target": {"Miles per gallon": "22", "Number of safety features": "10"},
+      "Rival": {"Miles per gallon": "35", "Number of safety features": "5"},
+      "Decoy": {"Miles per gallon": "22", "Number of safety features": "12"}
+    },
+    "human_target_share_2_opt": null,
+    "human_target_share_3_opt": 0.57,
+    "contribution": "Goal: To explore cognitive models of inferior, compromise, and phantom decoy effects in both judgment and choice. Findings: Both emergent-value and value-shift models of inferior decoy effects were supported, but only the emergent-value model of compromise decoy effects was supported. The phantom decoy effect was choice-based and did not occur in judgment."
+  },
+  {
+    "id": "frederick_2014_gambles_large_visual",
+    "paper": "Frederick, Lee, & Baskin (2014) - Study 2a (Visual)",
+    "scenario": "Suppose that for the gambles below, you get to spin the pointer, and if it lands anywhere in the black area, you win the amount shown. Which of the gambles below would you choose?",
+    "attributes": [],
+    "options": {
+      "Target": {"image": "experiments/decoy_effect/images/fig1_target.jpg"},
+      "Rival": {"image": "experiments/decoy_effect/images/fig1_rival.jpg"},
+      "Decoy": {"image": "experiments/decoy_effect/images/fig1_decoy.jpg"}
+    },
+    "human_target_share_2_opt": 0.24,
+    "human_target_share_3_opt": 0.26
+  },
+  {
+    "id": "frederick_2014_gambles_small_visual",
+    "paper": "Frederick, Lee, & Baskin (2014) - Study 2b (Visual)",
+    "scenario": "Suppose that for the gambles below, you get to spin the pointer, and if it lands anywhere in the shaded area, you win the amount shown. Which of the gambles below would you choose?",
+    "attributes": [],
+    "options": {
+      "Target": {"image": "experiments/decoy_effect/images/fig2_target.jpg"},
+      "Rival": {"image": "experiments/decoy_effect/images/fig2_rival.jpg"},
+      "Decoy": {"image": "experiments/decoy_effect/images/fig2_decoy.jpg"}
+    },
+    "human_target_share_2_opt": 0.34,
+    "human_target_share_3_opt": 0.35
+  },
+  {
+    "id": "frederick_2014_televisions_visual",
+    "paper": "Frederick, Lee, & Baskin (2014) - Study 3a (Visual)",
+    "scenario": "Suppose you are buying a second television. Assuming that all the ones below have the same screen size, which would you choose? (Please select one.)",
+    "attributes": [],
+    "options": {
+      "Target": {"image": "experiments/decoy_effect/images/fig3_target.jpg"},
+      "Rival": {"image": "experiments/decoy_effect/images/fig3_rival.jpg"},
+      "Decoy": {"image": "experiments/decoy_effect/images/fig3_decoy.jpg"}
+    },
+    "human_target_share_2_opt": 0.53,
+    "human_target_share_3_opt": 0.35
+  },
+  {
+    "id": "frederick_2014_apartments_visual",
+    "paper": "Frederick, Lee, & Baskin (2014) - Appendix H A (Apartments)",
+    "scenario": "Suppose you are renting an apartment. The following diagrams depict the window views and floor spaces of three options respectively. Which would you choose? (Please circle one.)",
+    "attributes": [],
+    "options": {
+      "Target": {"image": "experiments/decoy_effect/images/apartments_target.jpg"},
+      "Rival": {"image": "experiments/decoy_effect/images/apartments_rival.jpg"},
+      "Decoy": {"image": "experiments/decoy_effect/images/apartments_decoy.jpg"}
+    },
+    "human_target_share_2_opt": 0.43,
+    "human_target_share_3_opt": 0.48
+  },
+  {
+    "id": "frederick_2014_hotels_visual",
+    "paper": "Frederick, Lee, & Baskin (2014) - Appendix H D (Hotels)",
+    "scenario": "Suppose you are planning a three-day holiday to Los Angeles, California. The following hotels are still available. Which of the following would you choose?",
+    "attributes": [],
+    "options": {
+      "Target": {"image": "experiments/decoy_effect/images/hotels_target.jpg"},
+      "Rival": {"image": "experiments/decoy_effect/images/hotels_rival.jpg"},
+      "Decoy": {"image": "experiments/decoy_effect/images/hotels_decoy.jpg"}
+    },
+    "human_target_share_2_opt": 0.70,
+    "human_target_share_3_opt": 0.67
+  },
+  {
+    "id": "frederick_2014_popcorn1_visual",
+    "paper": "Frederick, Lee, & Baskin (2014) - Appendix H J (Popcorn 1)",
+    "scenario": "Suppose you could have one of the products below. Select the one you prefer.",
+    "attributes": [],
+    "options": {
+      "Target": {"image": "experiments/decoy_effect/images/popcorn_target.jpg"},
+      "Rival": {"image": "experiments/decoy_effect/images/popcorn_rival.jpg"},
+      "Decoy": {"image": "experiments/decoy_effect/images/popcorn_decoy.jpg"}
+    },
+    "human_target_share_2_opt": 0.39,
+    "human_target_share_3_opt": 0.31
+  },
+  {
+    "id": "frederick_2014_water_visual",
+    "paper": "Frederick, Lee, & Baskin (2014) - Appendix H L (Bottled Water)",
+    "scenario": "Suppose you could have one of the products below. Select the one you prefer.",
+    "attributes": [],
+    "options": {
+      "Target": {"image": "experiments/decoy_effect/images/water_target.jpg"},
+      "Rival": {"image": "experiments/decoy_effect/images/water_rival.jpg"},
+      "Decoy": {"image": "experiments/decoy_effect/images/water_decoy.jpg"}
+    },
+    "human_target_share_2_opt": 0.70,
+    "human_target_share_3_opt": 0.52
+  }
+]

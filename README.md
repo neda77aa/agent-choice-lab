@@ -1,273 +1,243 @@
-# ABxLab: A Framework for Studying AI Agent Behavior
+# Agent Choice Lab — Decoy Effect in LLM Web Agents
 
-![Python version](https://img.shields.io/badge/python-3.11-blue)
-![Package version](https://img.shields.io/badge/version-0.1.0-green)
-![GitHub license](https://img.shields.io/github/license/PapayaResearch/abxlab)
+> Code and data for the paper *Do AI Agents Inherit the Decoy Effect?
+> Evidence from Literature-Based Replications and a Real-World Web
+> Environment.*
 
-> [!NOTE]
-> Code for the paper **[A Framework for Studying AI Agent Behavior: Evidence from Consumer Choice Experiments](https://arxiv.org/abs/2509.25609)**.
+This repository contains two complementary studies:
 
-Environments built for people are increasingly operated by a new class of economic actors: **LLM-powered software agents** making decisions on our behalf. These decisions range from our purchases to travel plans to medical treatment selection. Current evaluations of these agents largely focus on task competence, but we argue for a deeper assessment: *how* these agents choose when faced with realistic decisions. We introduce **ABxLab**, a **framework for systematically probing agentic choice** through controlled manipulations of option attributes and persuasive cues. We apply this to a **realistic web-based shopping environment**, where we vary prices, ratings, and psychological nudges, all of which are factors long known to shape human choice.
+1. **Study 1 — Literature replication.** A factorial replication of 46
+   decoy stimuli from six published consumer-choice experiments
+   (Huber 1982, Simonson 1989, Prelec 1997, Pettibone 2000, Kim 2005,
+   Hedgcock 2009, Frederick 2014) across five frontier LLMs
+   (GPT-5.2, Claude Opus 4.6, Gemini 2.5 Pro, DeepSeek V3.2, Qwen 3.5),
+   with crossed temperature, prompting mode, and framing variants
+   (~96K trials). Code under [`experiments/decoy_effect/`](experiments/decoy_effect/).
 
-## Features
+2. **Study 2 — Within-product size-decoy on a real web shop.** Live
+   LLM agents shop on a local Magento storefront via the
+   [ABxLab](https://github.com/PapayaResearch/abxlab) man-in-the-middle
+   proxy. The medium size on a real product page is added or hidden
+   under two pricing schemes (absolute-dominance as the canonical
+   primary design; popcorn-style ladder pricing at three gap settings
+   as a robustness check), crossed with a URL-warning toggle. We close
+   a previously-undocumented browser-tab URL-leakage channel via an
+   observation-layer mask in the agent prompt.
 
-- 📊 Configurable A/B testing with interventions and preferences for any website
-- 🤖 Support for multiple LLM agents through various providers (e.g. LiteLLM)
-- 🛒 E-commerce shopping task environment with realistic browsing scenarios
-- 🔍 AgentXray visualization tool for debugging agent behavior
-- ⚙️ Hydra-based configuration system for reproducible experiments
+The repository is a fork of the upstream
+[ABxLab framework](https://github.com/PapayaResearch/abxlab); see the
+[Acknowledgements](#acknowledgements) section.
+
+---
 
 ## Prerequisites
 
-- Python 3.11 or 3.12
-- Node.js and npm (for Playwright)
-- R (optional, for statistical analysis)
+- Python 3.11
+- Node.js + npm (Playwright dependency)
+- Docker (to host the WebArena Magento container)
+- `gcloud` SDK if you want to run Vertex-served models
+  (Claude Opus, Gemini 2.5 Pro, DeepSeek V3.2, Qwen 3.5)
 
 ## Installation
 
-### 1. Install Python Dependencies
-
 ```bash
-conda create -n abxlab python=3.11
-conda activate abxlab
-```
+conda create -n agent-choice-lab python=3.11
+conda activate agent-choice-lab
 
-Using pip:
-```bash
 pip install -r requirements.txt
 cd ./agentlab && pip install -e . && cd ..
-```
 
-Or using `uv` (recommended for faster installs):
-```bash
-pip install uv
-uv pip install -r requirements.txt
-cd ./agentlab && uv pip install -e . && cd ..
-```
-
-### 2. Install Playwright
-
-Playwright is required for browser automation:
-```bash
 playwright install
 ```
 
-### 3. [Optional] Install DSPy
-
-In a few `scripts` we use [DSPy](https://dspy.ai/), but it conflicts with `hydra-ray-launcher` so you can install it separately:
+Optional (used by a few standalone scripts; conflicts with `hydra-ray-launcher`
+so install separately):
 
 ```bash
 pip install dspy==2.6.27
 ```
 
-### 3. Configure Environment Variables
+## Environment setup
 
-Create a `.env` file in the project root with the following configuration:
-
-> [!IMPORTANT]
-> Due to AgentLab and BrowserGym dependencies, you must set all these endpoints to avoid runtime errors. We don't host WebArena environments, but you can deploy them following these [instructions](https://github.com/web-arena-x/webarena/blob/main/environment_docker/README.md).
+Create `.env` in the repo root:
 
 ```bash
-# Base URL for web agent environments
-BASE_WEB_AGENT_URL="<YOUR_SERVER_URL>"
-
-# Primary Endpoints (can point to different environments)
+# Local WebArena (OneStopMarket Magento Docker)
+BASE_WEB_AGENT_URL="http://localhost:7770/"
 SHOPPING="${BASE_WEB_AGENT_URL}"
-SHOPPING_ADMIN="${BASE_WEB_AGENT_URL}"
-REDDIT="${BASE_WEB_AGENT_URL}"
-GITLAB="${BASE_WEB_AGENT_URL}"
-WIKIPEDIA="${BASE_WEB_AGENT_URL}"
-MAP="${BASE_WEB_AGENT_URL}"
-HOMEPAGE="${BASE_WEB_AGENT_URL}"
-
-# Synced WA_ Prefixed Vars (required by BrowserGym)
 WA_SHOPPING="${SHOPPING}"
-WA_SHOPPING_ADMIN="${SHOPPING_ADMIN}"
-WA_REDDIT="${REDDIT}"
-WA_GITLAB="${GITLAB}"
-WA_WIKIPEDIA="${WIKIPEDIA}"
-WA_MAP="${MAP}"
-WA_HOMEPAGE="${HOMEPAGE}"
+# (other WA_* / *_URL vars are required by BrowserGym; safe to point them all
+#  at the same base URL if you only run the shopping environment)
 
-# Results will be saved in this directory
+# Where experiment results live (per-trial pickles, summaries, CSVs)
 AGENTLAB_EXP_ROOT="results"
 
-# LLM API Keys (add only the ones you plan to use)
-OPENAI_API_KEY="<YOUR_OPENAI_KEY>"
-ANTHROPIC_API_KEY="<YOUR_ANTHROPIC_KEY>"
-GEMINI_API_KEY="<YOUR_GEMINI_KEY>"
-AWS_REGION_NAME="<AWS_REGION>"
-AWS_ACCESS_KEY_ID="<AWS_ACCESS_KEY_ID>"
-AWS_SECRET_ACCESS_KEY="<YOUR_AWS_KEY>"
+# LLM API keys (only the ones you use)
+OPENAI_API_KEY="..."
+ANTHROPIC_API_KEY="..."
+
+# Vertex AI (for Claude on Vertex, Gemini, DeepSeek, Qwen)
+VERTEX_PROJECT="<your-gcp-project>"
+VERTEX_LOCATION="global"
+VERTEX_PARTNER_LOCATION="asia-southeast1"  # serving region for Anthropic-on-Vertex
 ```
 
-## Running Experiments
-
-> [!NOTE]
-> Results are saved to `AGENTLAB_EXP_ROOT` defined in the `.env` above.
-
-> [!TIP]
-> The results contain the raw data. You can adapt `scripts/collect_results.py`, which transforms results into a CSV file that is easier to analyze.
-
-### Defining the Environment
-
-The main configuration file `conf/config.yaml` defines the `abxlab_url` used throughout the codebase. By default, we choose one of the variables defined in `.env` above, but you can replace it.
-
-```yaml
-env:
-  abxlab_url: ${oc.env:WA_SHOPPING}
-```
-
-### Running Your First Experiment
-
-The easiest way to run `ABxLab` is with a configuration file like the example in `ABxLab/conf/task/test/basic.yaml`. This works out of the box if you set `BASE_WEB_AGENT_URL="https://www.amazon.com/"` in `.env`, and it's easy to adapt!
-
-- `start_urls`: This defines the URLs the agent will see. In this example, the homepage.
-- `intent_template`: This defines the goal of the task. In this example, searching for a "toy papaya".
-- `choices`: This defines all intervention functions. In this case, it includes a nudge below the product title.
-- `eval`: This defines the stopping condition. In this example, once a product is added to the cart.
+For Vertex models, authenticate **once per ~1-hour session**:
 
 ```bash
-python run.py task=test/basic
+gcloud auth application-default login
 ```
 
-You can visualize the results with [AgentXray](#agentxray-visualizing-results).
+The Magento container ships with the WebArena release; bring it up and
+verify `curl http://localhost:7770/` returns `200`.
 
-### Scaling Experiments
+---
 
-There are other useful ways of running experiments. For example, you can also run any of the experiments in `conf/` as:
+## Study 2: running the size-decoy experiments
+
+The full evaluation crosses two pricing schemes × URL-warning toggle:
+
+| Scheme | Geometry | Treatment arms | Predicted effect |
+|---|---|---|---|
+| **Absolute dominance** (primary) | $P_M = (1+\gamma) P_L$, $\gamma=0.05$ | one | strongest — $M$ is strictly worse than $L$ on every dimension |
+| **Popcorn ladder** (robustness) | $P_M = (1-g) P_L$, $g \in \{0.08, 0.10, 0.15\}$ | three | smaller, monotone in $g$ — $M$ is a plausible compromise |
+
+Each treatment cell has both a `nowarn` and a `warn_new` variant of the
+v5c "personal-shopping" intent (see Methods §5.3 of the paper).
+
+### 1. Generate experiment configs (one-time)
+
+The geometry CSVs and YAML configs already live under [`tasks/`](tasks/) and
+[`conf/`](conf/). To regenerate:
 
 ```bash
-python run.py +experiment-regular=exp10
+# Geometry CSVs (idempotent — produces the committed files)
+python scripts/select_size_decoy_geometries.py --preset v2 --g_s 0.10 \
+    --output tasks/size_decoy_geometries_v2_gs10.csv
+
+python scripts/select_size_decoy_geometries.py \
+    --g_s 0.10 --qL_cap 1.5 --gap_levels treat-medium:-0.05 --s_anchor_gap 0.10 \
+    --output tasks/size_decoy_geometries_v3.csv
+
+# YAMLs are produced by scripts/generate_experiments_size_decoy.py, one
+# call per (geometry × warning × gap) condition. See the script's
+# --help for the full argument list; the in-repo dirs were generated
+# with --add-url-warning (or omitted) and the v5c intent text.
 ```
 
-For more elaborated experiments, you can generate all configurations programmatically. In the shopping environment, the script `scripts/generate_experiments.py` generates experiment configurations in `--exp-dir` from the data in `tasks/`:
+### 2. Run a single (model, sample, geometry) pair
+
+The `run_url_mask_pair.sh` helper runs both warning conditions
+(`nowarn` + `warn_new`) for one geometry, fitting comfortably inside
+a one-hour Vertex auth window:
 
 ```bash
-python scripts/generate_experiments.py --match-price --match-review-count --products=tasks/product_pairs-matched-ratings.csv --exp-dir conf/experiment
+# Geometry options: v2 (popcorn medium), v2_strong, v2_weak, v3 (absdom)
+# For Vertex models, refresh `gcloud auth application-default login` first.
+bash scripts/run_url_mask_pair.sh vertex-claude-opus-4-6  1 v3
+bash scripts/run_url_mask_pair.sh gpt-5-2                 1 v2_strong
 ```
 
-Then, one can run all these experiments with multirun
+Output goes to `results/url_mask_compare/{cond}/{model}/sample_{N}/run-*/`.
+
+### 3. Analyze
+
+The analyzer walks every `(condition, model, sample)` cell, computes
+within-product paired Δtarget, and prints three tables:
 
 ```bash
-# Define the range of experiment IDs you want to run (e.g., exp0 through N)
-N=100
-EXPS=$(echo exp{0..$N} | tr ' ' ',')
-python run.py --multirun "+experiment=${EXPS}"
+python scripts/analyze_url_mask_compare.py                # all samples
+python scripts/analyze_url_mask_compare.py --samples 1,2  # subset
+python scripts/analyze_url_mask_compare.py --out-csv analysis_output/url_mask.csv
 ```
 
-> [!WARNING]
-> Multirun can generate very large files because AgentLab prints out all uncommitted files in the directory. Consider including them in .gitignore to avoid these issues.
+The pooled-across-models table at the bottom is the primary
+cross-model summary; per-model rows show the dose-response on popcorn
+and the strict-dominance effect on absdom separately.
 
-### Customizing Experiments with Hydra
+---
 
-`ABxLab` uses [Hydra](https://hydra.cc/) for configuration management. You can override any configuration parameter from the command line.
+## URL-mask methodology
 
-#### Select a Different LLM
+Two layers of URL leakage are mitigated:
 
-Supported models and providers are in `conf/agent/`, which can be easily extended. We use [LiteLLM](https://www.litellm.ai/) by default, but you can find more details below.
+| Layer | Where it lives | What it leaks | Mitigation |
+|---|---|---|---|
+| In-page DOM | The HTML the proxy returns to the agent | Wishlist hrefs, cart form action, base64 `uenc` parameter, body CSS classes | `anonymize_urls` intervention (rewrites every in-page reference) |
+| Browser tab header | `obs["open_pages_urls"]` rendered into the prompt's "Currently open tabs:" block | Original Magento slug, e.g. `...-3-pound.html` | `mask_tab_url` flag on `ObsFlags` (rewrites the tab block URL to `http://<host>/product-anon.html/<slugified-title>.html` before the prompt is built) |
+
+The structural mask is configured via the
+[`conf/agent/flags/obs/default_ax_tree_decoy.yaml`](conf/agent/flags/obs/default_ax_tree_decoy.yaml)
+flags variant (used by `run_url_mask_pair.sh`).
+
+---
+
+## Project structure
+
+```
+agent-choice-lab/
+├── abxlab/                          # ABxLab framework (proxy + interventions)
+│   ├── browser.py                   # MITM browser env
+│   ├── choices/shop/                # Per-page intervention primitives
+│   │   ├── options.py               # set_title, set_option_price, anonymize_urls, …
+│   │   └── product.py               # ablate, set_rating, …
+│   └── …
+├── agentlab/                        # Modified AgentLab (LLM chat APIs, prompt elems)
+│   ├── llm/chat_api.py              # LiteLLM + Vertex backends
+│   └── agents/dynamic_prompting.py  # Tabs prompt element (URL mask lives here)
+├── conf/                            # Hydra configs
+│   ├── agent/                       # Per-model agent definitions
+│   ├── benchmark/                   # ABxLab benchmark
+│   ├── task/                        # Task definitions
+│   ├── config.yaml                  # Top-level config
+│   └── experiment-decoy-size-newgeom-{gs10,absdom}-v5c[-{warn-new,nourlwarn}][-{strong,weak}]/
+│                                    # 10 dirs: 4 v3 cells + 6 v2 cells (one per gap × warning)
+├── tasks/                           # Geometry CSVs + Magento product catalogue
+│   ├── size_decoy_geometries_v2_gs10.csv   # popcorn (g=0.08, 0.10, 0.15)
+│   ├── size_decoy_geometries_v3.csv        # absolute-dominance (γ=0.05)
+│   ├── product_size_ladders-decoy.csv
+│   └── products{,_expanded,_resolved}.csv
+├── scripts/
+│   ├── run_url_mask_pair.sh                   # run one (model, sample, geom) pair
+│   ├── analyze_url_mask_compare.py            # primary analyzer (3-table report)
+│   ├── analyze_size_decoy_runs.py             # legacy analyzer
+│   ├── generate_experiments_size_decoy.py     # YAML generator
+│   ├── select_size_decoy_geometries.py        # geometry CSV generator
+│   ├── preprocess_size_decoy_results.py       # paper-time preprocessing
+│   ├── render_human_experiments.py            # human-study screenshot renderer
+│   ├── render_v2_html.py                      # v2 HTML renderer
+│   ├── figgen_*.py                            # paper figures (4 generators)
+│   └── make_paper_figures.py
+├── experiments/decoy_effect/         # Study 1 (literature replication)
+├── results/url_mask_compare/         # Study 2 outputs (the active dataset)
+└── analysis_output/                  # Per-trial CSVs for the paper
+```
+
+---
+
+## Visualizing trial traces
+
+The upstream AgentLab ships [AgentXray](https://github.com/ServiceNow/AgentLab),
+a Gradio-based browser for the per-step pickles. Point it at a results dir
+and launch:
 
 ```bash
-# Use GPT 5
-python run.py agent=gpt-5
-
-# Use Claude 4.5 Sonnet
-python run.py agent=claude-4-5-sonnet
-
-# Use Gemini 2.5 Pro
-python run.py agent=gemini-2-5-pro
-
-# Use DeepSeek R1
-python run.py agent=deepseek-r1
-```
-
-### Advanced Usage & Customization
-
-### Project Structure
-
-```
-ABxLab/
-├── abxlab/              # Core ABxLab modules
-│   ├── actions.py       # Custom agent action definitions
-│   ├── browser.py       # Custom browser env to execute intervention functions
-│   ├── evaluators.py    # Custom task evaluation logic
-│   ├── task.py          # Custom task definitions
-│   └── choices/         # Intervention functions for each environment
-├── agentlab/            # Modified version of AgentLab
-├── analysis/            # R scripts for statistical analysis
-├── conf/                # Hydra configuration files
-│   ├── agent/           # Agent configurations (GPT, Claude, etc.)
-│   ├── benchmark/       # Benchmark configurations
-│   ├── task/            # Task configurations
-│   └── config.yaml      # Main config file
-├── scripts/             # Scripts for generating experiments, collecting results, etc
-│   ├── generate_experiments.py
-│   ├── collect_results.py
-│   └── ...
-├── tasks/               # Data for generating experiments
-│   ├── products.csv
-│   ├── interventions.csv
-│   └── ...
-├── run.py               # Main experiment runner
-└── requirements.txt     # Python dependencies
-```
-
-### Tasks
-
-You can create new tasks in `conf/task/` and use `shopping.yaml` or `test/basic.yaml` as inspiration. Most of this logic is inherited from [WebArena](https://github.com/web-arena-x/webarena), so we refer the reader there for details. We modify it with:
-
-- `entrypoint: abxlab.task.ABxLabShopTask`: This is a custom class where we run logic that we always need for the shopping environment. Otherwise, you can use its parent `entrypoint: abxlab.task.ABxLabTask`.
-- `config.choices`: This is a placeholder, which you can copy and paste. Your configs (e.g. conf/task/test) should inherit this config, and you can replace `choices` with either an empty list (no interventions needed) or a list of functions following the details below.
-
-We also define our own `config.eval`, which is a stopping condition.
-
-### Interventions
-
-ABxLab allows you to define a set of intervention functions in the configurations. If an agent visits a matching URL, then all functions get executed sequentially. Each function receives the HTML (by default) and a set of arguments defined in the configuration file. The field `nudge` can be used as an identifier to recognize during analysis. You can see an example [here](https://github.com/PapayaResearch/AgentLab/blob/main/conf/task/test/bestseller_product.yaml).
-
-### Benchmark
-
-The ABxLab [benchmark](https://github.com/PapayaResearch/AgentLab/blob/main/conf/benchmark/abxlab.yaml) can be used as is in most cases. It's worth noting that here is where we define the high level actions available for agents, which we customized [here](https://github.com/PapayaResearch/AgentLab/blob/967c3d1e2c064b988f4b14744b7a6ffb75269945/abxlab/actions.py#L203-L212) to remove unnecessary actions available in BrowserGym.
-
-### Agent
-
-You can see the agent's default flags [here](https://github.com/PapayaResearch/AgentLab/blob/main/conf/agent/flags/default.yaml). You can see more details in [AgentLab](https://github.com/ServiceNow/AgentLab/), but here you can decide whether to use thinking, memory, pruned HTML or accessibility trees, etc.
-
-### LLM Providers
-
-We included support for [LiteLLM](https://www.litellm.ai/) and set it by default in all agent configurations in `conf/agent/`. However, there are other options available like OpenRouter that you can see [here](https://github.com/PapayaResearch/AgentLab/blob/main/agentlab/llm/chat_api.py).
-
-## AgentXray: Visualizing Results
-
-AgentXray is a Gradio-based visualization tool by [AgentLab](https://github.com/ServiceNow/AgentLab) for debugging and analyzing agent behavior.
-
-https://github.com/user-attachments/assets/06c4dac0-b78f-45b7-9405-003da4af6b37
-
-Export the environment variable to specify the path for the results, and then launch AgentXray
-
-```bash
-export AGENTLAB_EXP_ROOT=./results
+export AGENTLAB_EXP_ROOT=./results/url_mask_compare/v3_warn_new/claude-opus-4-6/sample_1
 agentlab-xray
 ```
 
-## FAQs
+---
 
-### Can I access the data from the experiments in the paper?
+## Acknowledgements
 
-Reach out to us! We have hundreds of GBs of data.
+This repository is a fork of [ABxLab](https://github.com/PapayaResearch/abxlab)
+([Cherep et al., 2026](https://arxiv.org/abs/2509.25609)) adapted for the
+within-product size-decoy paradigm and extended with a structural
+observation-layer URL mask, two pricing geometries, and a 5-model evaluation
+panel. We are grateful to the ABxLab authors for the man-in-the-middle proxy
+framework, and to the [AgentLab](https://github.com/ServiceNow/AgentLab) /
+[BrowserGym](https://github.com/ServiceNow/BrowserGym) teams for the
+underlying agent-evaluation infrastructure.
 
-## Citing & Acknowledgements
-
-If you use `ABxLab` in your research, please cite the following paper:
-```bibtex
-@article{cherep2025framework,
- title={A Framework for Studying AI Agent Behavior: Evidence from Consumer Choice Experiments},
- author={Manuel Cherep and Chengtian Ma and Abigail Xu and Maya Shaked and Pattie Maes and Nikhil Singh},
- year={2025},
- url={https://arxiv.org/abs/2509.25609},
-}
-```
-
-Research reported in this publication was supported by an Amazon Research Award, Fall 2024. We also received funding from SK Telecom in partnership with the MIT Generative AI Impact Consortium (MGAIC). Experiments conducted in this paper were generously supported via API credits provided by OpenAI, Anthropic, and Google. MC is supported by a fellowship from “la Caixa” Foundation (ID 100010434) with code LCF/BQ/EU23/12010079.
-
-This project builds on [AgentLab](https://github.com/ServiceNow/AgentLab) and [BrowserGym](https://github.com/ServiceNow/BrowserGym), for which we are thankful.
+If you use this repository in your research, please cite both the
+upstream ABxLab paper and our paper (citation forthcoming).

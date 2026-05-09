@@ -1,0 +1,91 @@
+# @package _global_
+
+task:
+  name: exp35
+  config:
+    task_id: 35
+    start_urls:
+    - ${env.abxlab_url}pandesal-sweet-rolls-12ct-by-magic-flavors-with-free-sample-1pk.html
+    intent_template: Choose a suitable size of this product for me and add it to the
+      shopping cart. - You should review every option and collect information explicitly
+      in your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Choose a suitable size of this product for me and add it to the shopping
+      cart. - You should review every option and collect information explicitly in
+      your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+    choices:
+    - url: ${env.abxlab_url}pandesal-sweet-rolls-12ct-by-magic-flavors-with-free-sample-1pk.html
+      functions:
+      - module: abxlab.choices.shop.options
+        name: set_title
+        args:
+          value: Sweet Rolls
+      - module: abxlab.choices.shop.options
+        name: inject_rating
+        args:
+          value: 80
+          review_count: 50
+      - module: abxlab.choices.shop.options
+        name: keep_options
+        args:
+          value_ids:
+          - '329908'
+          - '329909'
+          - '329910'
+      - module: abxlab.choices.shop.options
+        name: set_option_label
+        args:
+          mapping:
+            '329908': 1pk
+            '329909': 2pk
+            '329910': 3pk
+      - module: abxlab.choices.shop.options
+        name: set_option_price
+        args:
+          mapping:
+            '329908': 10.11
+            '329909': 18.39
+            '329910': 19.99
+      - module: abxlab.choices.shop.options
+        name: shuffle_options
+      - module: abxlab.choices.shop.options
+        name: anonymize_urls
+        args:
+          original_url: http://localhost:7770/pandesal-sweet-rolls-12ct-by-magic-flavors-with-free-sample-1pk.html
+          replacement: product-anon
+      - module: abxlab.choices.shop.product
+        name: ablate
+        args:
+          elems:
+          - breadcrumbs
+          - price-box price-final_price
+    intent_template_id: 9100
+    metadata:
+      study_type: decoy_size_within_product
+      intent_variant: v5c-newgeom-gs10-nourlwarn-strong
+      exp_idx: 35
+      product_id: 79257
+      category: Breads
+      template_title: Sweet Rolls
+      arm: treat-strong
+      gap_pct: 0.08
+      n_options_visible: 3
+      unit: pack
+      small_qty: 1.0
+      medium_qty: 2.0
+      large_qty: 3.0
+      P_small: 10.11
+      P_medium: 18.39
+      P_large: 19.99
+      natural_price: 19.99
+      small_id: 329908
+      medium_id: 329909
+      large_id: 329910
+      group_id: 53650
+      multi_option_group: false

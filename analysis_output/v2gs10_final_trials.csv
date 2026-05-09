@@ -1,0 +1,741 @@
+model,sample,exp_name,arm,product_id,category,template_title,unit,qty_S,qty_M,qty_L,P_S,P_M,P_L,reward,n_steps,cost,chosen_value_id,chosen_role,completed,chose_target,chose_decoy,chose_competitor
+claude-opus-4-6,1,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.1,74712,small,True,False,False,True
+claude-opus-4-6,1,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.1134,74712,small,True,False,False,True
+claude-opus-4-6,1,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.1031,336613,small,True,False,False,True
+claude-opus-4-6,1,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.1081,336615,large,True,True,False,False
+claude-opus-4-6,1,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.1001,437874,small,True,False,False,True
+claude-opus-4-6,1,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.1057,437874,small,True,False,False,True
+claude-opus-4-6,1,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.1015,330541,small,True,False,False,True
+claude-opus-4-6,1,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.1161,330542,medium,True,False,True,False
+claude-opus-4-6,1,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0981,437245,small,True,False,False,True
+claude-opus-4-6,1,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0985,437245,small,True,False,False,True
+claude-opus-4-6,1,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0971,435498,small,True,False,False,True
+claude-opus-4-6,1,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.115,435498,small,True,False,False,True
+claude-opus-4-6,1,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.1108,185461,large,True,True,False,False
+claude-opus-4-6,1,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0971,386669,small,True,False,False,True
+claude-opus-4-6,1,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.1001,386669,small,True,False,False,True
+claude-opus-4-6,1,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.1004,328358,small,True,False,False,True
+claude-opus-4-6,1,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.112,328358,small,True,False,False,True
+claude-opus-4-6,1,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0994,332077,small,True,False,False,True
+claude-opus-4-6,1,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.1021,332077,small,True,False,False,True
+claude-opus-4-6,1,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0986,330563,small,True,False,False,True
+claude-opus-4-6,1,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.1014,330563,small,True,False,False,True
+claude-opus-4-6,1,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.095,334588,small,True,False,False,True
+claude-opus-4-6,1,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.1024,334588,small,True,False,False,True
+claude-opus-4-6,1,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.1095,185461,large,True,True,False,False
+claude-opus-4-6,1,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.099,75565,small,True,False,False,True
+claude-opus-4-6,1,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.1138,75566,medium,True,False,True,False
+claude-opus-4-6,1,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.1031,340950,small,True,False,False,True
+claude-opus-4-6,1,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.1063,340950,small,True,False,False,True
+claude-opus-4-6,1,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.1045,329908,small,True,False,False,True
+claude-opus-4-6,1,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.1068,329908,small,True,False,False,True
+claude-opus-4-6,1,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.1011,72491,small,True,False,False,True
+claude-opus-4-6,1,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.1038,72491,small,True,False,False,True
+claude-opus-4-6,1,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.1137,75151,large,True,True,False,False
+claude-opus-4-6,1,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.1083,75151,large,True,True,False,False
+claude-opus-4-6,1,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.1053,72906,small,True,False,False,True
+claude-opus-4-6,1,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0998,185933,large,True,True,False,False
+claude-opus-4-6,1,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.1042,185933,large,True,True,False,False
+claude-opus-4-6,1,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.1008,335875,small,True,False,False,True
+claude-opus-4-6,1,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.1022,335875,small,True,False,False,True
+claude-opus-4-6,1,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.1027,74590,large,True,True,False,False
+claude-opus-4-6,1,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.1086,74590,large,True,True,False,False
+claude-opus-4-6,1,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0973,436123,large,True,True,False,False
+claude-opus-4-6,1,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.1018,436123,large,True,True,False,False
+claude-opus-4-6,1,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.1069,335261,large,True,True,False,False
+claude-opus-4-6,1,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.1097,335260,medium,True,False,True,False
+claude-opus-4-6,1,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.1102,72906,small,True,False,False,True
+claude-opus-4-6,1,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.0996,334551,small,True,False,False,True
+claude-opus-4-6,1,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.1128,334553,large,True,True,False,False
+claude-opus-4-6,1,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.1029,436172,small,True,False,False,True
+claude-opus-4-6,1,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.101,436174,large,True,True,False,False
+claude-opus-4-6,1,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0977,329003,small,True,False,False,True
+claude-opus-4-6,1,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.1006,329005,large,True,True,False,False
+claude-opus-4-6,1,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.1041,73460,small,True,False,False,True
+claude-opus-4-6,1,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.1201,73460,small,True,False,False,True
+claude-opus-4-6,1,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.106,76164,small,True,False,False,True
+claude-opus-4-6,1,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.1108,76166,medium,True,False,True,False
+claude-opus-4-6,1,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.106,186848,small,True,False,False,True
+claude-opus-4-6,1,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.1093,185401,small,True,False,False,True
+claude-opus-4-6,1,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.1139,185401,small,True,False,False,True
+claude-opus-4-6,1,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.105,328478,small,True,False,False,True
+claude-opus-4-6,1,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.1082,328478,small,True,False,False,True
+claude-opus-4-6,1,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.112,337549,small,True,False,False,True
+claude-opus-4-6,1,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.118,337549,small,True,False,False,True
+claude-opus-4-6,1,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.1098,386330,small,True,False,False,True
+claude-opus-4-6,1,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.1055,386331,medium,True,False,True,False
+claude-opus-4-6,1,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.1075,337058,large,True,True,False,False
+claude-opus-4-6,1,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.1099,337058,large,True,True,False,False
+claude-opus-4-6,1,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.1082,186848,small,True,False,False,True
+claude-opus-4-6,1,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.1066,331536,large,True,True,False,False
+claude-opus-4-6,1,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.1048,331534,medium,True,False,True,False
+claude-opus-4-6,1,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.1049,206281,large,True,True,False,False
+claude-opus-4-6,1,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.1113,206280,medium,True,False,True,False
+claude-opus-4-6,1,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.1179,186949,large,True,True,False,False
+claude-opus-4-6,1,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.112,186948,medium,True,False,True,False
+claude-opus-4-6,2,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,3,0.1571,74712,small,True,False,False,True
+claude-opus-4-6,2,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.1028,74712,small,True,False,False,True
+claude-opus-4-6,2,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.1004,336615,large,True,True,False,False
+claude-opus-4-6,2,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.1044,336615,large,True,True,False,False
+claude-opus-4-6,2,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.1011,437874,small,True,False,False,True
+claude-opus-4-6,2,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.1054,437874,small,True,False,False,True
+claude-opus-4-6,2,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.1014,330541,small,True,False,False,True
+claude-opus-4-6,2,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.1088,330542,medium,True,False,True,False
+claude-opus-4-6,2,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0961,437245,small,True,False,False,True
+claude-opus-4-6,2,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,3,0.1641,437247,large,True,True,False,False
+claude-opus-4-6,2,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.1023,435498,small,True,False,False,True
+claude-opus-4-6,2,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.1044,435498,small,True,False,False,True
+claude-opus-4-6,2,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.102,185461,large,True,True,False,False
+claude-opus-4-6,2,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0986,386669,small,True,False,False,True
+claude-opus-4-6,2,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.1014,386669,small,True,False,False,True
+claude-opus-4-6,2,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0977,328358,small,True,False,False,True
+claude-opus-4-6,2,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.1057,328358,small,True,False,False,True
+claude-opus-4-6,2,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0987,332077,small,True,False,False,True
+claude-opus-4-6,2,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.1003,332077,small,True,False,False,True
+claude-opus-4-6,2,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0974,330563,small,True,False,False,True
+claude-opus-4-6,2,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.1057,330563,small,True,False,False,True
+claude-opus-4-6,2,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0973,334588,small,True,False,False,True
+claude-opus-4-6,2,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.1041,334588,small,True,False,False,True
+claude-opus-4-6,2,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.1023,185461,large,True,True,False,False
+claude-opus-4-6,2,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.1009,75565,small,True,False,False,True
+claude-opus-4-6,2,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.1131,75565,small,True,False,False,True
+claude-opus-4-6,2,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.108,340950,small,True,False,False,True
+claude-opus-4-6,2,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.1025,340950,small,True,False,False,True
+claude-opus-4-6,2,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.1013,329908,small,True,False,False,True
+claude-opus-4-6,2,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.1143,329908,small,True,False,False,True
+claude-opus-4-6,2,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0989,72491,small,True,False,False,True
+claude-opus-4-6,2,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.116,72491,small,True,False,False,True
+claude-opus-4-6,2,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.1135,75151,large,True,True,False,False
+claude-opus-4-6,2,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.1204,75151,large,True,True,False,False
+claude-opus-4-6,2,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.1065,72906,small,True,False,False,True
+claude-opus-4-6,2,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0969,185933,large,True,True,False,False
+claude-opus-4-6,2,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.1016,185933,large,True,True,False,False
+claude-opus-4-6,2,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0989,335875,small,True,False,False,True
+claude-opus-4-6,2,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.0986,335875,small,True,False,False,True
+claude-opus-4-6,2,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.1005,74590,large,True,True,False,False
+claude-opus-4-6,2,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.1021,74590,large,True,True,False,False
+claude-opus-4-6,2,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0991,436123,large,True,True,False,False
+claude-opus-4-6,2,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.1003,436123,large,True,True,False,False
+claude-opus-4-6,2,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.1109,335261,large,True,True,False,False
+claude-opus-4-6,2,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.1117,335260,medium,True,False,True,False
+claude-opus-4-6,2,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.1182,72906,small,True,False,False,True
+claude-opus-4-6,2,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.1027,334551,small,True,False,False,True
+claude-opus-4-6,2,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.113,334553,large,True,True,False,False
+claude-opus-4-6,2,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.1,436172,small,True,False,False,True
+claude-opus-4-6,2,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.1085,436174,large,True,True,False,False
+claude-opus-4-6,2,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0987,329003,small,True,False,False,True
+claude-opus-4-6,2,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.1017,329005,large,True,True,False,False
+claude-opus-4-6,2,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.1123,73460,small,True,False,False,True
+claude-opus-4-6,2,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.1051,73460,small,True,False,False,True
+claude-opus-4-6,2,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.1078,76164,small,True,False,False,True
+claude-opus-4-6,2,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.0995,76166,medium,True,False,True,False
+claude-opus-4-6,2,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.1029,186848,small,True,False,False,True
+claude-opus-4-6,2,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.1053,185401,small,True,False,False,True
+claude-opus-4-6,2,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.1061,185401,small,True,False,False,True
+claude-opus-4-6,2,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0998,328478,small,True,False,False,True
+claude-opus-4-6,2,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.111,328478,small,True,False,False,True
+claude-opus-4-6,2,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.1142,337549,small,True,False,False,True
+claude-opus-4-6,2,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.1103,337549,small,True,False,False,True
+claude-opus-4-6,2,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.1092,386330,small,True,False,False,True
+claude-opus-4-6,2,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.111,386331,medium,True,False,True,False
+claude-opus-4-6,2,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.1073,337056,small,True,False,False,True
+claude-opus-4-6,2,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.1039,337058,large,True,True,False,False
+claude-opus-4-6,2,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.1245,186848,small,True,False,False,True
+claude-opus-4-6,2,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.1018,331533,small,True,False,False,True
+claude-opus-4-6,2,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.1293,331534,medium,True,False,True,False
+claude-opus-4-6,2,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.1082,206281,large,True,True,False,False
+claude-opus-4-6,2,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.1148,206281,large,True,True,False,False
+claude-opus-4-6,2,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.1199,186947,small,True,False,False,True
+claude-opus-4-6,2,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.1036,186948,medium,True,False,True,False
+claude-opus-4-6,3,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.0967,74712,small,True,False,False,True
+claude-opus-4-6,3,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.1158,74712,small,True,False,False,True
+claude-opus-4-6,3,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.1006,336615,large,True,True,False,False
+claude-opus-4-6,3,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0997,336615,large,True,True,False,False
+claude-opus-4-6,3,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.0998,437874,small,True,False,False,True
+claude-opus-4-6,3,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.1117,437874,small,True,False,False,True
+claude-opus-4-6,3,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.0992,330541,small,True,False,False,True
+claude-opus-4-6,3,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.1088,330542,medium,True,False,True,False
+claude-opus-4-6,3,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0977,437245,small,True,False,False,True
+claude-opus-4-6,3,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0995,437245,small,True,False,False,True
+claude-opus-4-6,3,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0989,435498,small,True,False,False,True
+claude-opus-4-6,3,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.1043,435498,small,True,False,False,True
+claude-opus-4-6,3,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0978,185461,large,True,True,False,False
+claude-opus-4-6,3,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.1025,386669,small,True,False,False,True
+claude-opus-4-6,3,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.1082,386669,small,True,False,False,True
+claude-opus-4-6,3,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.1039,328358,small,True,False,False,True
+claude-opus-4-6,3,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.1128,328358,small,True,False,False,True
+claude-opus-4-6,3,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0983,332077,small,True,False,False,True
+claude-opus-4-6,3,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.101,332077,small,True,False,False,True
+claude-opus-4-6,3,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.1007,330563,small,True,False,False,True
+claude-opus-4-6,3,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.1052,330563,small,True,False,False,True
+claude-opus-4-6,3,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0979,334588,small,True,False,False,True
+claude-opus-4-6,3,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.1004,334588,small,True,False,False,True
+claude-opus-4-6,3,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.1005,185461,large,True,True,False,False
+claude-opus-4-6,3,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.0991,75565,small,True,False,False,True
+claude-opus-4-6,3,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.1025,75567,large,True,True,False,False
+claude-opus-4-6,3,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.1008,340950,small,True,False,False,True
+claude-opus-4-6,3,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.1009,340952,large,True,True,False,False
+claude-opus-4-6,3,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.1038,329908,small,True,False,False,True
+claude-opus-4-6,3,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.1035,329908,small,True,False,False,True
+claude-opus-4-6,3,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.1051,72491,small,True,False,False,True
+claude-opus-4-6,3,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.1012,72491,small,True,False,False,True
+claude-opus-4-6,3,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.1112,75151,large,True,True,False,False
+claude-opus-4-6,3,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.104,75151,large,True,True,False,False
+claude-opus-4-6,3,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.1,72906,small,True,False,False,True
+claude-opus-4-6,3,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0973,185933,large,True,True,False,False
+claude-opus-4-6,3,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.1005,185933,large,True,True,False,False
+claude-opus-4-6,3,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.103,335875,small,True,False,False,True
+claude-opus-4-6,3,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.1019,335875,small,True,False,False,True
+claude-opus-4-6,3,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.105,74588,small,True,False,False,True
+claude-opus-4-6,3,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.122,74589,medium,True,False,True,False
+claude-opus-4-6,3,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0984,436123,large,True,True,False,False
+claude-opus-4-6,3,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.1,436123,large,True,True,False,False
+claude-opus-4-6,3,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.1086,335261,large,True,True,False,False
+claude-opus-4-6,3,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.1051,335260,medium,True,False,True,False
+claude-opus-4-6,3,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.1053,72906,small,True,False,False,True
+claude-opus-4-6,3,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.1006,334551,small,True,False,False,True
+claude-opus-4-6,3,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.1125,334552,medium,True,False,True,False
+claude-opus-4-6,3,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0987,436172,small,True,False,False,True
+claude-opus-4-6,3,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.1199,436172,small,True,False,False,True
+claude-opus-4-6,3,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0977,329003,small,True,False,False,True
+claude-opus-4-6,3,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.1018,329005,large,True,True,False,False
+claude-opus-4-6,3,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.1104,73460,small,True,False,False,True
+claude-opus-4-6,3,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.1029,73460,small,True,False,False,True
+claude-opus-4-6,3,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.1111,76164,small,True,False,False,True
+claude-opus-4-6,3,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.1044,76166,medium,True,False,True,False
+claude-opus-4-6,3,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.1016,186848,small,True,False,False,True
+claude-opus-4-6,3,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.1073,185401,small,True,False,False,True
+claude-opus-4-6,3,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.1042,185401,small,True,False,False,True
+claude-opus-4-6,3,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.1016,328478,small,True,False,False,True
+claude-opus-4-6,3,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.1118,328478,small,True,False,False,True
+claude-opus-4-6,3,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.1004,337549,small,True,False,False,True
+claude-opus-4-6,3,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.113,337549,small,True,False,False,True
+claude-opus-4-6,3,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.1068,386330,small,True,False,False,True
+claude-opus-4-6,3,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.1103,386331,medium,True,False,True,False
+claude-opus-4-6,3,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.1112,337056,small,True,False,False,True
+claude-opus-4-6,3,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.112,337056,small,True,False,False,True
+claude-opus-4-6,3,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.1091,186850,large,True,True,False,False
+claude-opus-4-6,3,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.115,331536,large,True,True,False,False
+claude-opus-4-6,3,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.105,331534,medium,True,False,True,False
+claude-opus-4-6,3,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.1022,206281,large,True,True,False,False
+claude-opus-4-6,3,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.1146,206281,large,True,True,False,False
+claude-opus-4-6,3,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.1093,186947,small,True,False,False,True
+claude-opus-4-6,3,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.1068,186948,medium,True,False,True,False
+gpt-5-2,1,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.0313,74714,large,True,True,False,False
+gpt-5-2,1,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.0319,74714,large,True,True,False,False
+gpt-5-2,1,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.0304,336615,large,True,True,False,False
+gpt-5-2,1,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0313,336615,large,True,True,False,False
+gpt-5-2,1,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.0291,437874,small,True,False,False,True
+gpt-5-2,1,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.0327,437875,medium,True,False,True,False
+gpt-5-2,1,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.0304,330543,large,True,True,False,False
+gpt-5-2,1,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.0314,330543,large,True,True,False,False
+gpt-5-2,1,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0314,437245,small,True,False,False,True
+gpt-5-2,1,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.031,437245,small,True,False,False,True
+gpt-5-2,1,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.03,435498,small,True,False,False,True
+gpt-5-2,1,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.0308,435501,large,True,True,False,False
+gpt-5-2,1,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0292,185459,small,True,False,False,True
+gpt-5-2,1,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0299,386671,large,True,True,False,False
+gpt-5-2,1,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.031,386671,large,True,True,False,False
+gpt-5-2,1,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0295,328360,large,True,True,False,False
+gpt-5-2,1,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.0321,328360,large,True,True,False,False
+gpt-5-2,1,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0298,332077,small,True,False,False,True
+gpt-5-2,1,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.0324,332079,large,True,True,False,False
+gpt-5-2,1,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.03,330563,small,True,False,False,True
+gpt-5-2,1,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0315,330563,small,True,False,False,True
+gpt-5-2,1,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0293,334588,small,True,False,False,True
+gpt-5-2,1,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.0318,334589,medium,True,False,True,False
+gpt-5-2,1,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.032,185461,large,True,True,False,False
+gpt-5-2,1,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.031,75567,large,True,True,False,False
+gpt-5-2,1,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.0311,75567,large,True,True,False,False
+gpt-5-2,1,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.0294,340950,small,True,False,False,True
+gpt-5-2,1,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.03,340952,large,True,True,False,False
+gpt-5-2,1,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.0313,329910,large,True,True,False,False
+gpt-5-2,1,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.0317,329910,large,True,True,False,False
+gpt-5-2,1,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0303,72493,large,True,True,False,False
+gpt-5-2,1,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.0311,72491,small,True,False,False,True
+gpt-5-2,1,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.0321,75151,large,True,True,False,False
+gpt-5-2,1,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.0324,75151,large,True,True,False,False
+gpt-5-2,1,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.0308,72908,large,True,True,False,False
+gpt-5-2,1,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0277,185933,large,True,True,False,False
+gpt-5-2,1,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.0319,185933,large,True,True,False,False
+gpt-5-2,1,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0306,335875,small,True,False,False,True
+gpt-5-2,1,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.0301,335877,large,True,True,False,False
+gpt-5-2,1,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.0294,74590,large,True,True,False,False
+gpt-5-2,1,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.0325,74590,large,True,True,False,False
+gpt-5-2,1,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.031,436123,large,True,True,False,False
+gpt-5-2,1,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.0326,436123,large,True,True,False,False
+gpt-5-2,1,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.031,335261,large,True,True,False,False
+gpt-5-2,1,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.0325,335261,large,True,True,False,False
+gpt-5-2,1,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.0313,72906,small,True,False,False,True
+gpt-5-2,1,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.0274,334551,small,True,False,False,True
+gpt-5-2,1,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.0327,334553,large,True,True,False,False
+gpt-5-2,1,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0288,436172,small,True,False,False,True
+gpt-5-2,1,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.0303,436174,large,True,True,False,False
+gpt-5-2,1,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0303,329005,large,True,True,False,False
+gpt-5-2,1,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,3,0.0479,329005,large,True,True,False,False
+gpt-5-2,1,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.0299,73462,large,True,True,False,False
+gpt-5-2,1,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.0319,73462,large,True,True,False,False
+gpt-5-2,1,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.0298,76167,large,True,True,False,False
+gpt-5-2,1,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.0316,76167,large,True,True,False,False
+gpt-5-2,1,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.0305,186850,large,True,True,False,False
+gpt-5-2,1,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.0305,185403,large,True,True,False,False
+gpt-5-2,1,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.0316,185403,large,True,True,False,False
+gpt-5-2,1,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0309,328478,small,True,False,False,True
+gpt-5-2,1,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.0326,328480,large,True,True,False,False
+gpt-5-2,1,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.0306,337551,large,True,True,False,False
+gpt-5-2,1,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.0318,337549,small,True,False,False,True
+gpt-5-2,1,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.0307,386330,small,True,False,False,True
+gpt-5-2,1,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.0322,386332,large,True,True,False,False
+gpt-5-2,1,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.0294,337056,small,True,False,False,True
+gpt-5-2,1,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.0308,337058,large,True,True,False,False
+gpt-5-2,1,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.0309,186850,large,True,True,False,False
+gpt-5-2,1,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.0322,331533,small,True,False,False,True
+gpt-5-2,1,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.033,331533,small,True,False,False,True
+gpt-5-2,1,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.0307,206281,large,True,True,False,False
+gpt-5-2,1,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.0429,206281,large,True,True,False,False
+gpt-5-2,1,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.0302,186949,large,True,True,False,False
+gpt-5-2,1,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.0322,186949,large,True,True,False,False
+gpt-5-2,2,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.0299,74714,large,True,True,False,False
+gpt-5-2,2,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.0338,74714,large,True,True,False,False
+gpt-5-2,2,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.0304,336615,large,True,True,False,False
+gpt-5-2,2,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0308,336615,large,True,True,False,False
+gpt-5-2,2,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.0308,437874,small,True,False,False,True
+gpt-5-2,2,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.0333,437874,small,True,False,False,True
+gpt-5-2,2,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.029,330541,small,True,False,False,True
+gpt-5-2,2,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.0315,330543,large,True,True,False,False
+gpt-5-2,2,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0326,437245,small,True,False,False,True
+gpt-5-2,2,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0311,437245,small,True,False,False,True
+gpt-5-2,2,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0298,435498,small,True,False,False,True
+gpt-5-2,2,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.0312,435501,large,True,True,False,False
+gpt-5-2,2,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0307,185461,large,True,True,False,False
+gpt-5-2,2,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0304,386671,large,True,True,False,False
+gpt-5-2,2,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.0325,386671,large,True,True,False,False
+gpt-5-2,2,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0304,328358,small,True,False,False,True
+gpt-5-2,2,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.0313,328360,large,True,True,False,False
+gpt-5-2,2,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0306,332077,small,True,False,False,True
+gpt-5-2,2,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.0324,332079,large,True,True,False,False
+gpt-5-2,2,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0301,330563,small,True,False,False,True
+gpt-5-2,2,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0313,330563,small,True,False,False,True
+gpt-5-2,2,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0296,334590,large,True,True,False,False
+gpt-5-2,2,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.0336,334590,large,True,True,False,False
+gpt-5-2,2,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.0299,185461,large,True,True,False,False
+gpt-5-2,2,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.0307,75567,large,True,True,False,False
+gpt-5-2,2,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.0433,75567,large,True,True,False,False
+gpt-5-2,2,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.0293,340950,small,True,False,False,True
+gpt-5-2,2,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.03,340952,large,True,True,False,False
+gpt-5-2,2,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.0297,329908,small,True,False,False,True
+gpt-5-2,2,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.032,329910,large,True,True,False,False
+gpt-5-2,2,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0304,72491,small,True,False,False,True
+gpt-5-2,2,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.0319,72491,small,True,False,False,True
+gpt-5-2,2,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.0312,75151,large,True,True,False,False
+gpt-5-2,2,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.0325,75151,large,True,True,False,False
+gpt-5-2,2,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.0296,72908,large,True,True,False,False
+gpt-5-2,2,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0304,185933,large,True,True,False,False
+gpt-5-2,2,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.0315,185931,small,True,False,False,True
+gpt-5-2,2,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0301,335875,small,True,False,False,True
+gpt-5-2,2,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.031,335877,large,True,True,False,False
+gpt-5-2,2,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.0285,74590,large,True,True,False,False
+gpt-5-2,2,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.0306,74590,large,True,True,False,False
+gpt-5-2,2,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0306,436123,large,True,True,False,False
+gpt-5-2,2,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.032,436123,large,True,True,False,False
+gpt-5-2,2,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,3,0.0465,335261,large,True,True,False,False
+gpt-5-2,2,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.032,335261,large,True,True,False,False
+gpt-5-2,2,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.0326,72908,large,True,True,False,False
+gpt-5-2,2,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.0309,334551,small,True,False,False,True
+gpt-5-2,2,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.0303,334553,large,True,True,False,False
+gpt-5-2,2,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0299,436172,small,True,False,False,True
+gpt-5-2,2,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.0313,436174,large,True,True,False,False
+gpt-5-2,2,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0287,329005,large,True,True,False,False
+gpt-5-2,2,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.0307,329003,small,True,False,False,True
+gpt-5-2,2,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,3,0.0488,73462,large,True,True,False,False
+gpt-5-2,2,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.0318,73462,large,True,True,False,False
+gpt-5-2,2,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.0302,76164,small,True,False,False,True
+gpt-5-2,2,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.0314,76166,medium,True,False,True,False
+gpt-5-2,2,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.03,186850,large,True,True,False,False
+gpt-5-2,2,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.0292,185401,small,True,False,False,True
+gpt-5-2,2,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.0325,185403,large,True,True,False,False
+gpt-5-2,2,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0294,328478,small,True,False,False,True
+gpt-5-2,2,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,3,0.0505,328478,small,True,False,False,True
+gpt-5-2,2,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.0306,337549,small,True,False,False,True
+gpt-5-2,2,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.0319,337551,large,True,True,False,False
+gpt-5-2,2,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.0298,386330,small,True,False,False,True
+gpt-5-2,2,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.0332,386332,large,True,True,False,False
+gpt-5-2,2,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.0308,337058,large,True,True,False,False
+gpt-5-2,2,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.0329,337058,large,True,True,False,False
+gpt-5-2,2,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.0329,186850,large,True,True,False,False
+gpt-5-2,2,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.0318,331533,small,True,False,False,True
+gpt-5-2,2,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.0324,331533,small,True,False,False,True
+gpt-5-2,2,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.0308,206281,large,True,True,False,False
+gpt-5-2,2,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.0318,206281,large,True,True,False,False
+gpt-5-2,2,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.0309,186949,large,True,True,False,False
+gpt-5-2,2,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.0316,186949,large,True,True,False,False
+gpt-5-2,3,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.0279,74712,small,True,False,False,True
+gpt-5-2,3,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.0324,74714,large,True,True,False,False
+gpt-5-2,3,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.0296,336615,large,True,True,False,False
+gpt-5-2,3,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0289,336615,large,True,True,False,False
+gpt-5-2,3,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.031,437874,small,True,False,False,True
+gpt-5-2,3,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.0341,437876,large,True,True,False,False
+gpt-5-2,3,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.0299,330543,large,True,True,False,False
+gpt-5-2,3,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.0332,330543,large,True,True,False,False
+gpt-5-2,3,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0308,437245,small,True,False,False,True
+gpt-5-2,3,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.032,437245,small,True,False,False,True
+gpt-5-2,3,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0291,435498,small,True,False,False,True
+gpt-5-2,3,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.0312,435501,large,True,True,False,False
+gpt-5-2,3,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0293,185461,large,True,True,False,False
+gpt-5-2,3,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0301,386671,large,True,True,False,False
+gpt-5-2,3,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.0312,386671,large,True,True,False,False
+gpt-5-2,3,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0316,328360,large,True,True,False,False
+gpt-5-2,3,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.0317,328359,medium,True,False,True,False
+gpt-5-2,3,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0303,332079,large,True,True,False,False
+gpt-5-2,3,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.0312,332079,large,True,True,False,False
+gpt-5-2,3,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0303,330565,large,True,True,False,False
+gpt-5-2,3,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0304,330563,small,True,False,False,True
+gpt-5-2,3,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0277,334588,small,True,False,False,True
+gpt-5-2,3,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.0291,334590,large,True,True,False,False
+gpt-5-2,3,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.0316,185461,large,True,True,False,False
+gpt-5-2,3,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.0303,75567,large,True,True,False,False
+gpt-5-2,3,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.033,75567,large,True,True,False,False
+gpt-5-2,3,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.0287,340950,small,True,False,False,True
+gpt-5-2,3,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.0307,340950,small,True,False,False,True
+gpt-5-2,3,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.0293,329908,small,True,False,False,True
+gpt-5-2,3,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.0311,329910,large,True,True,False,False
+gpt-5-2,3,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0304,72491,small,True,False,False,True
+gpt-5-2,3,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.0296,72492,medium,True,False,True,False
+gpt-5-2,3,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.0424,75151,large,True,True,False,False
+gpt-5-2,3,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.0333,75155,medium,True,False,True,False
+gpt-5-2,3,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.0406,72908,large,True,True,False,False
+gpt-5-2,3,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0275,185933,large,True,True,False,False
+gpt-5-2,3,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.0316,185933,large,True,True,False,False
+gpt-5-2,3,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0297,335875,small,True,False,False,True
+gpt-5-2,3,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.0317,335876,medium,True,False,True,False
+gpt-5-2,3,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.0286,74590,large,True,True,False,False
+gpt-5-2,3,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.0318,74590,large,True,True,False,False
+gpt-5-2,3,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.031,436123,large,True,True,False,False
+gpt-5-2,3,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.0323,436123,large,True,True,False,False
+gpt-5-2,3,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.0303,335261,large,True,True,False,False
+gpt-5-2,3,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.0312,335261,large,True,True,False,False
+gpt-5-2,3,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.032,72908,large,True,True,False,False
+gpt-5-2,3,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.0272,334551,small,True,False,False,True
+gpt-5-2,3,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.0309,334553,large,True,True,False,False
+gpt-5-2,3,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0292,436174,large,True,True,False,False
+gpt-5-2,3,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.0314,436172,small,True,False,False,True
+gpt-5-2,3,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0299,329003,small,True,False,False,True
+gpt-5-2,3,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.0308,329003,small,True,False,False,True
+gpt-5-2,3,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.0298,73462,large,True,True,False,False
+gpt-5-2,3,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.0327,73462,large,True,True,False,False
+gpt-5-2,3,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.0299,76167,large,True,True,False,False
+gpt-5-2,3,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.0288,76167,large,True,True,False,False
+gpt-5-2,3,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.0279,186850,large,True,True,False,False
+gpt-5-2,3,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.0298,185401,small,True,False,False,True
+gpt-5-2,3,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.0325,185403,large,True,True,False,False
+gpt-5-2,3,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0307,328478,small,True,False,False,True
+gpt-5-2,3,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.0317,328478,small,True,False,False,True
+gpt-5-2,3,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.0281,337549,small,True,False,False,True
+gpt-5-2,3,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.0312,337551,large,True,True,False,False
+gpt-5-2,3,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.0301,386330,small,True,False,False,True
+gpt-5-2,3,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.0323,386331,medium,True,False,True,False
+gpt-5-2,3,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.0318,337058,large,True,True,False,False
+gpt-5-2,3,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.0321,337057,medium,True,False,True,False
+gpt-5-2,3,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.0316,186849,medium,True,False,True,False
+gpt-5-2,3,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.0306,331533,small,True,False,False,True
+gpt-5-2,3,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.0324,331533,small,True,False,False,True
+gpt-5-2,3,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.0296,206279,small,True,False,False,True
+gpt-5-2,3,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.0322,206281,large,True,True,False,False
+gpt-5-2,3,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.0304,186949,large,True,True,False,False
+gpt-5-2,3,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.0325,186949,large,True,True,False,False
+gpt-5-2,5,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.03,74714,large,True,True,False,False
+gpt-5-2,5,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.0318,74714,large,True,True,False,False
+gpt-5-2,5,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.0293,336615,large,True,True,False,False
+gpt-5-2,5,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0319,336615,large,True,True,False,False
+gpt-5-2,5,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.0325,437874,small,True,False,False,True
+gpt-5-2,5,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,3,0.0516,437876,large,True,True,False,False
+gpt-5-2,5,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.028,330543,large,True,True,False,False
+gpt-5-2,5,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.0327,330542,medium,True,False,True,False
+gpt-5-2,5,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0313,437245,small,True,False,False,True
+gpt-5-2,5,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0322,437247,large,True,True,False,False
+gpt-5-2,5,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0298,435498,small,True,False,False,True
+gpt-5-2,5,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.0311,435498,small,True,False,False,True
+gpt-5-2,5,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0298,185459,small,True,False,False,True
+gpt-5-2,5,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0294,386671,large,True,True,False,False
+gpt-5-2,5,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.0319,386669,small,True,False,False,True
+gpt-5-2,5,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0302,328358,small,True,False,False,True
+gpt-5-2,5,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.0292,328358,small,True,False,False,True
+gpt-5-2,5,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0304,332079,large,True,True,False,False
+gpt-5-2,5,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.0326,332077,small,True,False,False,True
+gpt-5-2,5,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0295,330563,small,True,False,False,True
+gpt-5-2,5,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0309,330563,small,True,False,False,True
+gpt-5-2,5,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0305,334588,small,True,False,False,True
+gpt-5-2,5,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.0322,334590,large,True,True,False,False
+gpt-5-2,5,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.0296,185461,large,True,True,False,False
+gpt-5-2,5,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.0313,75567,large,True,True,False,False
+gpt-5-2,5,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.0326,75567,large,True,True,False,False
+gpt-5-2,5,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.0292,340950,small,True,False,False,True
+gpt-5-2,5,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.0304,340950,small,True,False,False,True
+gpt-5-2,5,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.0299,329908,small,True,False,False,True
+gpt-5-2,5,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.0328,329910,large,True,True,False,False
+gpt-5-2,5,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0299,72491,small,True,False,False,True
+gpt-5-2,5,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.0317,72491,small,True,False,False,True
+gpt-5-2,5,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.031,75151,large,True,True,False,False
+gpt-5-2,5,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.0306,75151,large,True,True,False,False
+gpt-5-2,5,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.0298,72908,large,True,True,False,False
+gpt-5-2,5,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0296,185933,large,True,True,False,False
+gpt-5-2,5,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.0312,185933,large,True,True,False,False
+gpt-5-2,5,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0297,335875,small,True,False,False,True
+gpt-5-2,5,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.0322,335877,large,True,True,False,False
+gpt-5-2,5,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.0297,74590,large,True,True,False,False
+gpt-5-2,5,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.031,74590,large,True,True,False,False
+gpt-5-2,5,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0281,436123,large,True,True,False,False
+gpt-5-2,5,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.0318,436123,large,True,True,False,False
+gpt-5-2,5,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.0309,335261,large,True,True,False,False
+gpt-5-2,5,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.0321,335261,large,True,True,False,False
+gpt-5-2,5,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.0323,72907,medium,True,False,True,False
+gpt-5-2,5,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.03,334553,large,True,True,False,False
+gpt-5-2,5,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.0314,334552,medium,True,False,True,False
+gpt-5-2,5,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0299,436172,small,True,False,False,True
+gpt-5-2,5,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.0317,436174,large,True,True,False,False
+gpt-5-2,5,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0298,329003,small,True,False,False,True
+gpt-5-2,5,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.0317,329005,large,True,True,False,False
+gpt-5-2,5,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.0309,73462,large,True,True,False,False
+gpt-5-2,5,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.0322,73462,large,True,True,False,False
+gpt-5-2,5,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.0298,76167,large,True,True,False,False
+gpt-5-2,5,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.0319,76167,large,True,True,False,False
+gpt-5-2,5,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.0295,186848,small,True,False,False,True
+gpt-5-2,5,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.0303,185403,large,True,True,False,False
+gpt-5-2,5,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.0302,185401,small,True,False,False,True
+gpt-5-2,5,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0299,328478,small,True,False,False,True
+gpt-5-2,5,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.0322,328480,large,True,True,False,False
+gpt-5-2,5,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.0308,337551,large,True,True,False,False
+gpt-5-2,5,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.0315,337550,medium,True,False,True,False
+gpt-5-2,5,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.0297,386330,small,True,False,False,True
+gpt-5-2,5,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.0325,386330,small,True,False,False,True
+gpt-5-2,5,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.0303,337056,small,True,False,False,True
+gpt-5-2,5,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.0332,337058,large,True,True,False,False
+gpt-5-2,5,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.0309,186850,large,True,True,False,False
+gpt-5-2,5,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.0324,331533,small,True,False,False,True
+gpt-5-2,5,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.0321,331533,small,True,False,False,True
+gpt-5-2,5,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.0308,206281,large,True,True,False,False
+gpt-5-2,5,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.0321,206281,large,True,True,False,False
+gpt-5-2,5,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.0299,186949,large,True,True,False,False
+gpt-5-2,5,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.0318,186949,large,True,True,False,False
+gemini-2.5-pro,1,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.0293,74714,large,True,True,False,False
+gemini-2.5-pro,1,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.0294,74714,large,True,True,False,False
+gemini-2.5-pro,1,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.0295,336615,large,True,True,False,False
+gemini-2.5-pro,1,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0292,336615,large,True,True,False,False
+gemini-2.5-pro,1,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.0303,437876,large,True,True,False,False
+gemini-2.5-pro,1,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.0297,437876,large,True,True,False,False
+gemini-2.5-pro,1,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.0278,330543,large,True,True,False,False
+gemini-2.5-pro,1,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.0292,330543,large,True,True,False,False
+gemini-2.5-pro,1,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0271,437247,large,True,True,False,False
+gemini-2.5-pro,1,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0293,437247,large,True,True,False,False
+gemini-2.5-pro,1,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0275,435501,large,True,True,False,False
+gemini-2.5-pro,1,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.0293,435501,large,True,True,False,False
+gemini-2.5-pro,1,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0288,185461,large,True,True,False,False
+gemini-2.5-pro,1,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0274,386671,large,True,True,False,False
+gemini-2.5-pro,1,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.0295,386671,large,True,True,False,False
+gemini-2.5-pro,1,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0269,328360,large,True,True,False,False
+gemini-2.5-pro,1,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.0303,328360,large,True,True,False,False
+gemini-2.5-pro,1,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0288,332079,large,True,True,False,False
+gemini-2.5-pro,1,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.0304,332079,large,True,True,False,False
+gemini-2.5-pro,1,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0273,330565,large,True,True,False,False
+gemini-2.5-pro,1,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0283,330565,large,True,True,False,False
+gemini-2.5-pro,1,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0271,334590,large,True,True,False,False
+gemini-2.5-pro,1,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.032,334590,large,True,True,False,False
+gemini-2.5-pro,1,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.0293,185461,large,True,True,False,False
+gemini-2.5-pro,1,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.0274,75567,large,True,True,False,False
+gemini-2.5-pro,1,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.0285,75567,large,True,True,False,False
+gemini-2.5-pro,1,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.0252,340950,small,True,False,False,True
+gemini-2.5-pro,1,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,3,0.039,340952,large,True,True,False,False
+gemini-2.5-pro,1,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.0274,329910,large,True,True,False,False
+gemini-2.5-pro,1,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.0275,329910,large,True,True,False,False
+gemini-2.5-pro,1,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0264,72493,large,True,True,False,False
+gemini-2.5-pro,1,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.0288,72493,large,True,True,False,False
+gemini-2.5-pro,1,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.0297,75151,large,True,True,False,False
+gemini-2.5-pro,1,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.0345,75151,large,True,True,False,False
+gemini-2.5-pro,1,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.0292,72908,large,True,True,False,False
+gemini-2.5-pro,1,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.028,185933,large,True,True,False,False
+gemini-2.5-pro,1,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.0293,185933,large,True,True,False,False
+gemini-2.5-pro,1,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0276,335877,large,True,True,False,False
+gemini-2.5-pro,1,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.0295,335877,large,True,True,False,False
+gemini-2.5-pro,1,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.0266,74590,large,True,True,False,False
+gemini-2.5-pro,1,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.0282,74590,large,True,True,False,False
+gemini-2.5-pro,1,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0289,436123,large,True,True,False,False
+gemini-2.5-pro,1,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.0321,436123,large,True,True,False,False
+gemini-2.5-pro,1,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.0296,335261,large,True,True,False,False
+gemini-2.5-pro,1,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.0331,335261,large,True,True,False,False
+gemini-2.5-pro,1,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.0295,72908,large,True,True,False,False
+gemini-2.5-pro,1,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.0292,334553,large,True,True,False,False
+gemini-2.5-pro,1,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.0281,334553,large,True,True,False,False
+gemini-2.5-pro,1,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0269,436174,large,True,True,False,False
+gemini-2.5-pro,1,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.0317,436174,large,True,True,False,False
+gemini-2.5-pro,1,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0274,329005,large,True,True,False,False
+gemini-2.5-pro,1,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.0293,329005,large,True,True,False,False
+gemini-2.5-pro,1,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.0269,73462,large,True,True,False,False
+gemini-2.5-pro,1,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.0288,73462,large,True,True,False,False
+gemini-2.5-pro,1,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.0285,76167,large,True,True,False,False
+gemini-2.5-pro,1,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.029,76167,large,True,True,False,False
+gemini-2.5-pro,1,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.0269,186848,small,True,False,False,True
+gemini-2.5-pro,1,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.028,185403,large,True,True,False,False
+gemini-2.5-pro,1,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.0282,185403,large,True,True,False,False
+gemini-2.5-pro,1,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0287,328480,large,True,True,False,False
+gemini-2.5-pro,1,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.0288,328480,large,True,True,False,False
+gemini-2.5-pro,1,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.0287,337551,large,True,True,False,False
+gemini-2.5-pro,1,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.0284,337551,large,True,True,False,False
+gemini-2.5-pro,1,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.0286,386332,large,True,True,False,False
+gemini-2.5-pro,1,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.0317,386332,large,True,True,False,False
+gemini-2.5-pro,1,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.0288,337058,large,True,True,False,False
+gemini-2.5-pro,1,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.0294,337058,large,True,True,False,False
+gemini-2.5-pro,1,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.03,186850,large,True,True,False,False
+gemini-2.5-pro,1,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.0286,331533,small,True,False,False,True
+gemini-2.5-pro,1,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.0356,331533,small,True,False,False,True
+gemini-2.5-pro,1,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.0275,206281,large,True,True,False,False
+gemini-2.5-pro,1,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.0295,206281,large,True,True,False,False
+gemini-2.5-pro,1,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.027,186949,large,True,True,False,False
+gemini-2.5-pro,1,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.0298,186949,large,True,True,False,False
+gemini-2.5-pro,2,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,1.0,2,0.0287,74714,large,True,True,False,False
+gemini-2.5-pro,2,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.03,74714,large,True,True,False,False
+gemini-2.5-pro,2,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.0279,336615,large,True,True,False,False
+gemini-2.5-pro,2,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0282,336615,large,True,True,False,False
+gemini-2.5-pro,2,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.0302,437876,large,True,True,False,False
+gemini-2.5-pro,2,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.0306,437876,large,True,True,False,False
+gemini-2.5-pro,2,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.0281,330543,large,True,True,False,False
+gemini-2.5-pro,2,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.0277,330543,large,True,True,False,False
+gemini-2.5-pro,2,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0281,437247,large,True,True,False,False
+gemini-2.5-pro,2,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0296,437247,large,True,True,False,False
+gemini-2.5-pro,2,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0292,435501,large,True,True,False,False
+gemini-2.5-pro,2,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.0284,435501,large,True,True,False,False
+gemini-2.5-pro,2,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0276,185461,large,True,True,False,False
+gemini-2.5-pro,2,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0281,386671,large,True,True,False,False
+gemini-2.5-pro,2,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.028,386671,large,True,True,False,False
+gemini-2.5-pro,2,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0273,328358,small,True,False,False,True
+gemini-2.5-pro,2,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.0288,328360,large,True,True,False,False
+gemini-2.5-pro,2,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0297,332079,large,True,True,False,False
+gemini-2.5-pro,2,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.0308,332079,large,True,True,False,False
+gemini-2.5-pro,2,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0262,330563,small,True,False,False,True
+gemini-2.5-pro,2,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0284,330565,large,True,True,False,False
+gemini-2.5-pro,2,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.0273,334590,large,True,True,False,False
+gemini-2.5-pro,2,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.0317,334590,large,True,True,False,False
+gemini-2.5-pro,2,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.0292,185461,large,True,True,False,False
+gemini-2.5-pro,2,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.0265,75567,large,True,True,False,False
+gemini-2.5-pro,2,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.0289,75567,large,True,True,False,False
+gemini-2.5-pro,2,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.0287,340952,large,True,True,False,False
+gemini-2.5-pro,2,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.0286,340952,large,True,True,False,False
+gemini-2.5-pro,2,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.0272,329910,large,True,True,False,False
+gemini-2.5-pro,2,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.029,329910,large,True,True,False,False
+gemini-2.5-pro,2,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0282,72493,large,True,True,False,False
+gemini-2.5-pro,2,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.0294,72493,large,True,True,False,False
+gemini-2.5-pro,2,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.0303,75151,large,True,True,False,False
+gemini-2.5-pro,2,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.0309,75151,large,True,True,False,False
+gemini-2.5-pro,2,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.0276,72908,large,True,True,False,False
+gemini-2.5-pro,2,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.028,185933,large,True,True,False,False
+gemini-2.5-pro,2,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.0285,185933,large,True,True,False,False
+gemini-2.5-pro,2,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0272,335877,large,True,True,False,False
+gemini-2.5-pro,2,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.0291,335877,large,True,True,False,False
+gemini-2.5-pro,2,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.0278,74590,large,True,True,False,False
+gemini-2.5-pro,2,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.028,74590,large,True,True,False,False
+gemini-2.5-pro,2,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0309,436123,large,True,True,False,False
+gemini-2.5-pro,2,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.0315,436123,large,True,True,False,False
+gemini-2.5-pro,2,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.0303,335261,large,True,True,False,False
+gemini-2.5-pro,2,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.0325,335261,large,True,True,False,False
+gemini-2.5-pro,2,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.0262,72908,large,True,True,False,False
+gemini-2.5-pro,2,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.0283,334553,large,True,True,False,False
+gemini-2.5-pro,2,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.0293,334553,large,True,True,False,False
+gemini-2.5-pro,2,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0263,436174,large,True,True,False,False
+gemini-2.5-pro,2,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.0305,436174,large,True,True,False,False
+gemini-2.5-pro,2,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0268,329005,large,True,True,False,False
+gemini-2.5-pro,2,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.0308,329005,large,True,True,False,False
+gemini-2.5-pro,2,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.0269,73462,large,True,True,False,False
+gemini-2.5-pro,2,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.0309,73462,large,True,True,False,False
+gemini-2.5-pro,2,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.0309,76167,large,True,True,False,False
+gemini-2.5-pro,2,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.0294,76167,large,True,True,False,False
+gemini-2.5-pro,2,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.0293,186850,large,True,True,False,False
+gemini-2.5-pro,2,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.0284,185403,large,True,True,False,False
+gemini-2.5-pro,2,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.0303,185403,large,True,True,False,False
+gemini-2.5-pro,2,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0275,328480,large,True,True,False,False
+gemini-2.5-pro,2,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.0326,328480,large,True,True,False,False
+gemini-2.5-pro,2,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.0282,337551,large,True,True,False,False
+gemini-2.5-pro,2,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.0291,337551,large,True,True,False,False
+gemini-2.5-pro,2,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.0289,386332,large,True,True,False,False
+gemini-2.5-pro,2,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.0316,386332,large,True,True,False,False
+gemini-2.5-pro,2,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.0293,337058,large,True,True,False,False
+gemini-2.5-pro,2,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.0318,337058,large,True,True,False,False
+gemini-2.5-pro,2,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.03,186850,large,True,True,False,False
+gemini-2.5-pro,2,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.0305,331533,small,True,False,False,True
+gemini-2.5-pro,2,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.0346,331533,small,True,False,False,True
+gemini-2.5-pro,2,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.0285,206281,large,True,True,False,False
+gemini-2.5-pro,2,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.0302,206281,large,True,True,False,False
+gemini-2.5-pro,2,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.029,186949,large,True,True,False,False
+gemini-2.5-pro,2,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.029,186949,large,True,True,False,False
+gemini-2.5-pro,3,exp0,baseline,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,,15.63,0.0,0,0.0656,,unknown,False,False,False,False
+gemini-2.5-pro,3,exp1,treat-medium,22586,Cookies,Animal Crackers Original,pack,1.0,2.0,3.0,7.74,14.07,15.63,1.0,2,0.0308,74714,large,True,True,False,False
+gemini-2.5-pro,3,exp10,baseline,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,,36.99,1.0,2,0.0286,336615,large,True,True,False,False
+gemini-2.5-pro,3,exp11,treat-medium,47622,Cookies,Danish Style Butter Cookies,pack,1.0,2.0,3.0,18.31,33.29,36.99,1.0,2,0.0298,336615,large,True,True,False,False
+gemini-2.5-pro,3,exp12,baseline,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,,12.99,1.0,2,0.0284,437876,large,True,True,False,False
+gemini-2.5-pro,3,exp13,treat-medium,103693,Chocolate,Dark Chocolate Nonpareils,lb,1.0,2.0,3.0,6.43,11.69,12.99,1.0,2,0.0311,437876,large,True,True,False,False
+gemini-2.5-pro,3,exp14,baseline,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,,20.59,1.0,2,0.0275,330543,large,True,True,False,False
+gemini-2.5-pro,3,exp15,treat-medium,79772,Cookies,Garlic Parmesan Bread Chips,pack,1.0,2.0,3.0,10.19,18.53,20.59,1.0,2,0.0294,330543,large,True,True,False,False
+gemini-2.5-pro,3,exp16,baseline,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0284,437247,large,True,True,False,False
+gemini-2.5-pro,3,exp17,treat-medium,103152,Chocolate,Opera Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0298,437247,large,True,True,False,False
+gemini-2.5-pro,3,exp18,baseline,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,,53.28,1.0,2,0.0279,435501,large,True,True,False,False
+gemini-2.5-pro,3,exp19,treat-medium,102021,Cookies,Ultimate Holiday Cookie Collection,pack,3.0,6.0,9.0,26.37,47.95,53.28,1.0,2,0.0289,435501,large,True,True,False,False
+gemini-2.5-pro,3,exp2,baseline,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,,49.99,1.0,2,0.0285,185461,large,True,True,False,False
+gemini-2.5-pro,3,exp20,baseline,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,,18.99,1.0,2,0.0282,386671,large,True,True,False,False
+gemini-2.5-pro,3,exp21,treat-medium,90391,Chocolate,Greek Yogurt Coated Blueberries,lb,1.0,2.0,3.0,9.4,17.09,18.99,1.0,2,0.0297,386671,large,True,True,False,False
+gemini-2.5-pro,3,exp22,baseline,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,,59.0,1.0,2,0.0274,328360,large,True,True,False,False
+gemini-2.5-pro,3,exp23,treat-medium,78105,Cheese,Fresh Snacking Mozzarella Cheese (32 oz each),pack,2.0,3.0,4.0,38.94,53.1,59.0,1.0,2,0.0275,328360,large,True,True,False,False
+gemini-2.5-pro,3,exp24,baseline,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,,19.95,1.0,2,0.0313,332079,large,True,True,False,False
+gemini-2.5-pro,3,exp25,treat-medium,80649,Cheese,Parmesan Cheese,pack,1.0,2.0,3.0,9.87,17.95,19.95,1.0,2,0.0327,332079,large,True,True,False,False
+gemini-2.5-pro,3,exp26,baseline,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,,27.99,1.0,2,0.0275,330565,large,True,True,False,False
+gemini-2.5-pro,3,exp27,treat-medium,79778,Chocolate,Lemon Creme Milk Chocolate,lb,1.0,2.0,3.0,13.85,25.19,27.99,1.0,2,0.0311,330565,large,True,True,False,False
+gemini-2.5-pro,3,exp28,baseline,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,,26.06,1.0,2,0.029,334590,large,True,True,False,False
+gemini-2.5-pro,3,exp29,treat-medium,46185,Cheese,Pepper Joe’s Ghost Pepper Cheese Curds,pack,1.0,2.0,3.0,12.9,23.45,26.06,1.0,2,0.0304,334590,large,True,True,False,False
+gemini-2.5-pro,3,exp3,treat-medium,44424,Cheese,Genuine Grana Padano Aged 24 Months Italian Import,lb,1.0,2.0,3.0,24.74,44.99,49.99,1.0,2,0.0313,185461,large,True,True,False,False
+gemini-2.5-pro,3,exp30,baseline,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,,8.88,1.0,2,0.0281,75567,large,True,True,False,False
+gemini-2.5-pro,3,exp31,treat-medium,23200,Cookies,Bourbon Cookies,pack,1.0,2.0,3.0,4.39,7.99,8.88,1.0,2,0.0298,75567,large,True,True,False,False
+gemini-2.5-pro,3,exp32,baseline,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,,99.99,1.0,2,0.0272,340952,large,True,True,False,False
+gemini-2.5-pro,3,exp33,treat-medium,48607,Yogurt,Fruit on the Bottom Non-Fat Delicious Greek Yogurt — 20 Cups per Pack,pack,2.0,3.0,4.0,65.99,89.99,99.99,1.0,2,0.0295,340952,large,True,True,False,False
+gemini-2.5-pro,3,exp34,baseline,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,,19.99,1.0,2,0.0267,329910,large,True,True,False,False
+gemini-2.5-pro,3,exp35,treat-medium,79257,Breads,Sweet Rolls,pack,1.0,2.0,3.0,9.89,17.99,19.99,1.0,2,0.0317,329910,large,True,True,False,False
+gemini-2.5-pro,3,exp36,baseline,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,,13.95,1.0,2,0.0269,72493,large,True,True,False,False
+gemini-2.5-pro,3,exp37,treat-medium,21011,Cookies,Mint Chip & Chocolate Chip Cookies,lb,1.0,2.0,3.0,6.9,12.55,13.95,1.0,2,0.0276,72493,large,True,True,False,False
+gemini-2.5-pro,3,exp38,baseline,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,,41.99,1.0,2,0.0329,75151,large,True,True,False,False
+gemini-2.5-pro,3,exp39,treat-medium,22861,Chocolate,"Russian, Polish & Ukrainian Candy Mix",lb,1.0,2.0,3.0,20.78,37.79,41.99,1.0,2,0.0334,75151,large,True,True,False,False
+gemini-2.5-pro,3,exp4,baseline,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,,10.99,1.0,2,0.0265,72906,small,True,False,False,True
+gemini-2.5-pro,3,exp40,baseline,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,,9.26,1.0,2,0.0269,185933,large,True,True,False,False
+gemini-2.5-pro,3,exp41,treat-medium,44786,Cookies,French Cookies LU Barquettes Strawberry,pack,2.0,4.0,6.0,4.58,8.33,9.26,1.0,2,0.0308,185933,large,True,True,False,False
+gemini-2.5-pro,3,exp42,baseline,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,,24.88,1.0,2,0.0286,335877,large,True,True,False,False
+gemini-2.5-pro,3,exp43,treat-medium,47084,Cereals,"Organic Cracked Wheat Berries - Non-GMO. Cleaned, Crushed & Sifted Hard Red Winter Groats",lb,2.5,5.0,8.0,12.31,22.39,24.88,1.0,2,0.0301,335877,large,True,True,False,False
+gemini-2.5-pro,3,exp44,baseline,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,,22.46,1.0,2,0.0264,74590,large,True,True,False,False
+gemini-2.5-pro,3,exp45,treat-medium,22456,Chocolate,Chocolate Bar - Creamy Milk Chocolate and Crisped Rice - Individually wrapped Snack Size Crunch Candy bars – Bulk Pack,lb,1.0,2.0,3.0,11.12,20.21,22.46,1.0,2,0.027,74590,large,True,True,False,False
+gemini-2.5-pro,3,exp46,baseline,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,,14.99,1.0,2,0.0292,436123,large,True,True,False,False
+gemini-2.5-pro,3,exp47,treat-medium,102384,Cookies,Traditional Christmas Wafers,count,6.0,8.0,12.0,11.13,13.49,14.99,1.0,2,0.0319,436123,large,True,True,False,False
+gemini-2.5-pro,3,exp48,baseline,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,,8.33,1.0,2,0.0306,335261,large,True,True,False,False
+gemini-2.5-pro,3,exp49,treat-medium,46606,Cereals,Golden Crunchy Granola,lb,0.375,0.75,1.0,4.12,7.5,8.33,1.0,2,0.03,335261,large,True,True,False,False
+gemini-2.5-pro,3,exp5,treat-medium,21375,Cookies,Cream Crackers,pack,2.0,4.0,6.0,5.44,9.89,10.99,1.0,2,0.0293,72908,large,True,True,False,False
+gemini-2.5-pro,3,exp50,baseline,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,,28.87,1.0,2,0.0275,334553,large,True,True,False,False
+gemini-2.5-pro,3,exp51,treat-medium,46141,Cereals,"Organic Rolled Oats - Old-Fashioned, 100% Whole Grain, Non-GMO, Kosher, Bulk",lb,5.0,10.0,15.0,14.29,25.98,28.87,1.0,2,0.031,334553,large,True,True,False,False
+gemini-2.5-pro,3,exp52,baseline,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,,46.16,1.0,2,0.0287,436174,large,True,True,False,False
+gemini-2.5-pro,3,exp53,treat-medium,102417,Cookies,Petit dark flour wafers,pack,3.0,5.0,8.0,27.42,41.54,46.16,1.0,2,0.0305,436174,large,True,True,False,False
+gemini-2.5-pro,3,exp54,baseline,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,,20.8,1.0,2,0.0279,329005,large,True,True,False,False
+gemini-2.5-pro,3,exp55,treat-medium,78559,Cookies,Japan Mini Chocolate Chips,pack,3.0,5.0,8.0,12.36,18.72,20.8,1.0,2,0.0305,329005,large,True,True,False,False
+gemini-2.5-pro,3,exp56,baseline,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,,4.19,1.0,2,0.0299,73462,large,True,True,False,False
+gemini-2.5-pro,3,exp57,treat-medium,21732,Yogurt,Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For Creamy and Mild Milk Kefir,count,3.0,5.0,8.0,2.49,3.77,4.19,1.0,2,0.0291,73462,large,True,True,False,False
+gemini-2.5-pro,3,exp58,baseline,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,,24.9,1.0,2,0.03,76167,large,True,True,False,False
+gemini-2.5-pro,3,exp59,treat-medium,23661,Cookies,Condensed Milk Rusks,pack,1.0,4.0,6.0,6.16,22.41,24.9,1.0,2,0.0298,76167,large,True,True,False,False
+gemini-2.5-pro,3,exp6,baseline,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,,14.33,1.0,2,0.0278,186850,large,True,True,False,False
+gemini-2.5-pro,3,exp60,baseline,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,,6.39,1.0,2,0.0298,185403,large,True,True,False,False
+gemini-2.5-pro,3,exp61,treat-medium,44374,Chocolate,Missy J’s Organic Roasted Carob Powder,pack,1.0,3.0,4.0,2.11,5.75,6.39,1.0,2,0.029,185403,large,True,True,False,False
+gemini-2.5-pro,3,exp62,baseline,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,,43.07,1.0,2,0.0292,328480,large,True,True,False,False
+gemini-2.5-pro,3,exp63,treat-medium,78185,Chocolate,Organic Carob Chips,pack,1.0,3.0,4.0,14.21,38.76,43.07,1.0,2,0.0295,328480,large,True,True,False,False
+gemini-2.5-pro,3,exp64,baseline,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,,8.79,1.0,2,0.0276,337551,large,True,True,False,False
+gemini-2.5-pro,3,exp65,treat-medium,49000,Cereals,Premium Puffed Buckwheat Kernels,lb,2.0,5.0,8.0,3.48,7.91,8.79,1.0,2,0.0304,337551,large,True,True,False,False
+gemini-2.5-pro,3,exp66,baseline,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,,26.13,1.0,2,0.0286,386332,large,True,True,False,False
+gemini-2.5-pro,3,exp67,treat-medium,90180,Chocolate,Chocolate Covered Roasted Espresso Beans,lb,1.0,2.0,3.0,12.94,23.52,26.13,1.0,2,0.0331,386332,large,True,True,False,False
+gemini-2.5-pro,3,exp68,baseline,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,,26.99,1.0,2,0.0285,337058,large,True,True,False,False
+gemini-2.5-pro,3,exp69,treat-medium,47853,Chocolate,Milk Chocolate Covered Raisins,lb,1.0,2.0,3.0,13.36,24.29,26.99,1.0,2,0.0303,337058,large,True,True,False,False
+gemini-2.5-pro,3,exp7,treat-medium,45488,Cookies,Cheese Wafer,count,40.0,60.0,80.0,9.46,12.9,14.33,1.0,2,0.0288,186850,large,True,True,False,False
+gemini-2.5-pro,3,exp70,baseline,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,,10.9,1.0,2,0.0326,331533,small,True,False,False,True
+gemini-2.5-pro,3,exp71,treat-medium,80276,Chocolate,Dark Chocolate Peanut Butter Cups,oz,2.53,4.19,6.0,6.52,9.81,10.9,1.0,2,0.0354,331533,small,True,False,False,True
+gemini-2.5-pro,3,exp72,baseline,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,,19.98,1.0,2,0.0295,206281,large,True,True,False,False
+gemini-2.5-pro,3,exp73,treat-medium,57985,Toothpaste,"Enamelon Fluoride Toothpaste, ,- Mint Breeze",pack,2.0,3.0,4.0,13.19,17.98,19.98,1.0,2,0.0306,206281,large,True,True,False,False
+gemini-2.5-pro,3,exp8,baseline,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,,13.56,1.0,2,0.0284,186949,large,True,True,False,False
+gemini-2.5-pro,3,exp9,treat-medium,45546,Chocolate,Caramel Apple Candy Corn,lb,1.0,2.0,3.0,6.71,12.2,13.56,1.0,2,0.0311,186949,large,True,True,False,False

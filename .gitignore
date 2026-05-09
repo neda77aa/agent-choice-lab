@@ -186,3 +186,16 @@ analysis/Rplots.pdf
 conf/experiment-decoy_initial_/
 logs/
 results/
+
+# Human-study screenshot stimuli (~68 MB of PNGs) — kept local, not in git
+human_experiments/
+
+# Hydra metadata (redirected to /tmp via conf/config.yaml; defensive)
+multirun/
+outputs/
+
+# OS / IDE / local cache
+.DS_Store
+.cache/
+.cache_size/
+.claude/

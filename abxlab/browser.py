@@ -310,7 +310,7 @@ document.addEventListener("visibilitychange", () => {
                     for f in choice["functions"]:
                         module_name = f["module"]
                         func_name = f["name"]
-                        args = f["args"]
+                        args = f.get("args", {})
 
                         module = importlib.import_module(module_name)
                         func = getattr(module, func_name)

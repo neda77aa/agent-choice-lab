@@ -1,0 +1,88 @@
+# @package _global_
+
+task:
+  name: exp2
+  config:
+    task_id: 2
+    start_urls:
+    - ${env.abxlab_url}frank-and-sal-genuine-grana-padano-aged-24-months-italian-import-3-pound.html
+    intent_template: Choose a suitable size of this product for me and add it to the
+      shopping cart. - You should review every option and collect information explicitly
+      in your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Choose a suitable size of this product for me and add it to the shopping
+      cart. - You should review every option and collect information explicitly in
+      your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+    choices:
+    - url: ${env.abxlab_url}frank-and-sal-genuine-grana-padano-aged-24-months-italian-import-3-pound.html
+      functions:
+      - module: abxlab.choices.shop.options
+        name: set_title
+        args:
+          value: Genuine Grana Padano Aged 24 Months Italian Import
+      - module: abxlab.choices.shop.options
+        name: inject_rating
+        args:
+          value: 80
+          review_count: 50
+      - module: abxlab.choices.shop.options
+        name: keep_options
+        args:
+          value_ids:
+          - '185459'
+          - '185461'
+      - module: abxlab.choices.shop.options
+        name: set_option_label
+        args:
+          mapping:
+            '185459': 1 Pound
+            '185461': 3 Pound
+      - module: abxlab.choices.shop.options
+        name: set_option_price
+        args:
+          mapping:
+            '185459': 24.74
+            '185461': 49.99
+      - module: abxlab.choices.shop.options
+        name: shuffle_options
+      - module: abxlab.choices.shop.options
+        name: anonymize_urls
+        args:
+          original_url: http://localhost:7770/frank-and-sal-genuine-grana-padano-aged-24-months-italian-import-3-pound.html
+          replacement: product-anon
+      - module: abxlab.choices.shop.product
+        name: ablate
+        args:
+          elems:
+          - breadcrumbs
+          - price-box price-final_price
+    intent_template_id: 9100
+    metadata:
+      study_type: decoy_size_within_product
+      intent_variant: v5c-newgeom-gs10-nourlwarn-strong
+      exp_idx: 2
+      product_id: 44424
+      category: Cheese
+      template_title: Genuine Grana Padano Aged 24 Months Italian Import
+      arm: baseline
+      gap_pct: null
+      n_options_visible: 2
+      unit: lb
+      small_qty: 1.0
+      medium_qty: 2.0
+      large_qty: 3.0
+      P_small: 24.74
+      P_medium: null
+      P_large: 49.99
+      natural_price: 49.99
+      small_id: 185459
+      medium_id: 185460
+      large_id: 185461
+      group_id: 29976
+      multi_option_group: false

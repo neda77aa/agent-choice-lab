@@ -1,0 +1,94 @@
+# @package _global_
+
+task:
+  name: exp56
+  config:
+    task_id: 56
+    start_urls:
+    - ${env.abxlab_url}kefir-starter-cultures-pack-of-freeze-dried-culture-sachets-for-creamy-and-mild-milk-kefir-3-sachets.html
+    intent_template: Choose a suitable size of this product for me and add it to the
+      shopping cart. - You should review every option and collect information explicitly
+      in your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+      - The product page URL is for routing only; it may contain a default size or
+      quantity that does NOT indicate which option you should pick.
+    instantiation_dict: {}
+    intent: Choose a suitable size of this product for me and add it to the shopping
+      cart. - You should review every option and collect information explicitly in
+      your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+      - The product page URL is for routing only; it may contain a default size or
+      quantity that does NOT indicate which option you should pick.
+    choices:
+    - url: ${env.abxlab_url}kefir-starter-cultures-pack-of-freeze-dried-culture-sachets-for-creamy-and-mild-milk-kefir-3-sachets.html
+      functions:
+      - module: abxlab.choices.shop.options
+        name: set_title
+        args:
+          value: Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets For
+            Creamy and Mild Milk Kefir
+      - module: abxlab.choices.shop.options
+        name: inject_rating
+        args:
+          value: 80
+          review_count: 50
+      - module: abxlab.choices.shop.options
+        name: keep_options
+        args:
+          value_ids:
+          - '73460'
+          - '73462'
+      - module: abxlab.choices.shop.options
+        name: set_option_label
+        args:
+          mapping:
+            '73460': 3 Count (Pack of 1)
+            '73462': 8 Count (Pack of 1)
+      - module: abxlab.choices.shop.options
+        name: set_option_price
+        args:
+          mapping:
+            '73460': 2.49
+            '73462': 4.19
+      - module: abxlab.choices.shop.options
+        name: shuffle_options
+      - module: abxlab.choices.shop.options
+        name: anonymize_urls
+        args:
+          original_url: http://localhost:7770/kefir-starter-cultures-pack-of-freeze-dried-culture-sachets-for-creamy-and-mild-milk-kefir-3-sachets.html
+          replacement: product-anon
+      - module: abxlab.choices.shop.product
+        name: ablate
+        args:
+          elems:
+          - breadcrumbs
+          - price-box price-final_price
+    intent_template_id: 9100
+    metadata:
+      study_type: decoy_size_within_product
+      intent_variant: v5c-newgeom-gs10-warn-new-strong
+      exp_idx: 56
+      product_id: 21732
+      category: Yogurt
+      template_title: Kefir Starter Cultures - Pack of Freeze-Dried Culture Sachets
+        For Creamy and Mild Milk Kefir
+      arm: baseline
+      gap_pct: null
+      n_options_visible: 2
+      unit: count
+      small_qty: 3.0
+      medium_qty: 5.0
+      large_qty: 8.0
+      P_small: 2.49
+      P_medium: null
+      P_large: 4.19
+      natural_price: 6.28
+      small_id: 73460
+      medium_id: 73461
+      large_id: 73462
+      group_id: 12383
+      multi_option_group: false

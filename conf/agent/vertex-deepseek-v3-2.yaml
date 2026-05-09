@@ -1,0 +1,16 @@
+_target_: agentlab.agents.generic_agent.generic_agent.GenericAgentArgs
+
+defaults:
+  - flags: default
+  - _self_
+
+chat_model_args:
+  _target_: agentlab.llm.chat_api.VertexLiteLLMModelArgs
+  vertex_location: global
+  # Vertex model id via LiteLLM for DeepSeek V3.2
+  model_name: vertex_ai/deepseek-ai/deepseek-v3.2-maas
+  max_total_tokens: 1048576
+  max_input_tokens: 1048576
+  max_new_tokens: 65536
+  vision_support: false
+  temperature: 0.1

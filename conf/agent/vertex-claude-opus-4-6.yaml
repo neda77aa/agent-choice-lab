@@ -1,0 +1,18 @@
+_target_: agentlab.agents.generic_agent.generic_agent.GenericAgentArgs
+
+defaults:
+  - flags: default
+  - _self_
+
+chat_model_args:
+  _target_: agentlab.llm.chat_api.VertexLiteLLMModelArgs
+  vertex_location: us-east5
+  # Anthropic on Vertex model id via LiteLLM
+  model_name: claude-opus-4-6
+  max_total_tokens: 200000
+  max_input_tokens: 200000
+  max_new_tokens: 64000
+  vision_support: true
+  temperature: 0.1
+  additional_drop_params:
+    - logprobs

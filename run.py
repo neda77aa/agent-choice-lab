@@ -31,10 +31,15 @@ import logging
 import json
 import dotenv
 dotenv.load_dotenv()
-os.environ["AGENTLAB_EXP_ROOT"] = os.path.join( # Make unique run directory (mainly for gathering multiruns)
-    os.environ["AGENTLAB_EXP_ROOT"],
-    datetime.datetime.now().strftime("run-%Y-%m-%d_%H-%M-%S")
-)
+# Make unique run directory unless AGENTLAB_EXP_ROOT_OVERRIDE is set
+# (used to continue results into an existing directory)
+if os.environ.get("AGENTLAB_EXP_ROOT_OVERRIDE"):
+    os.environ["AGENTLAB_EXP_ROOT"] = os.environ["AGENTLAB_EXP_ROOT_OVERRIDE"]
+else:
+    os.environ["AGENTLAB_EXP_ROOT"] = os.path.join(
+        os.environ["AGENTLAB_EXP_ROOT"],
+        datetime.datetime.now().strftime("run-%Y-%m-%d_%H-%M-%S")
+    )
 import hydra
 import gymnasium as gym
 import abxlab.task

@@ -29,6 +29,15 @@ env:
 
 # Hydra-Specific settings
 hydra:
+  # Redirect Hydra's per-run/per-multirun metadata to /tmp so the repo stays clean.
+  # The actual experiment data goes to AGENTLAB_EXP_ROOT (controlled by run.py and
+  # the agentlab loop); these dirs only hold Hydra's config snapshot, run.log, and
+  # per-job override files, none of which the analyzer pipeline reads.
+  run:
+    dir: /tmp/abxlab_hydra/run/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: /tmp/abxlab_hydra/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
   launcher:
     ray:
       init:

@@ -3,7 +3,17 @@ import time
 from typing import Any, List, Optional, Union
 
 from pydantic import Field
-from transformers import AutoTokenizer, GPT2TokenizerFast
+
+# NOTE: `transformers` (and its transitive `torch` dependency) can be heavy and
+# may not be available / compatible in some environments (e.g. mismatched macOS
+# architectures). We only need it for HuggingFace-backed models, so we import it
+# lazily.
+try:
+    from transformers import AutoTokenizer, GPT2TokenizerFast  # type: ignore
+except Exception as e:  # pragma: no cover
+    AutoTokenizer = None  # type: ignore
+    GPT2TokenizerFast = None  # type: ignore
+    _TRANSFORMERS_IMPORT_ERROR = e
 
 from agentlab.llm.base_api import AbstractChatModel
 from agentlab.llm.llm_utils import AIMessage, Discussion
@@ -45,11 +55,18 @@ class HFBaseChatModel(AbstractChatModel):
         self.n_retry_server = n_retry_server
         self.log_probs = log_probs
 
+        if AutoTokenizer is None:  # pragma: no cover
+            raise ImportError(
+                "HuggingFace models require `transformers` (and usually `torch`) to be installed and importable. "
+                "This environment failed to import `transformers`. Original error: "
+                f"{getattr(globals(), '_TRANSFORMERS_IMPORT_ERROR', 'unknown')}"
+            )
+
         if base_model_name is None:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         else:
             self.tokenizer = AutoTokenizer.from_pretrained(base_model_name)
-        if isinstance(self.tokenizer, GPT2TokenizerFast):
+        if GPT2TokenizerFast is not None and isinstance(self.tokenizer, GPT2TokenizerFast):
             logging.warning(
                 f"No chat template is defined for {base_model_name}. Resolving to the hard-coded templates."
             )

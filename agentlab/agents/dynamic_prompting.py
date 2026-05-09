@@ -95,6 +95,12 @@ class ObsFlags(Flags):
     openai_vision_detail: Literal["low", "high", "auto"] = "auto"
     filter_with_bid_only: bool = False
     filter_som_only: bool = False
+    # Rewrite URLs in the "Currently open tabs" block to a sanitized placeholder.
+    # Used for decoy studies where the original Magento slug (e.g. "...-3-pound.html")
+    # leaks the page's default size; the proxy-side anonymize_urls intervention
+    # cannot touch the tab-header URL because BrowserGym surfaces it directly from
+    # the browser navigation state.
+    mask_tab_url: bool = False
 
 
 @dataclass
@@ -370,11 +376,35 @@ None
 """
 
 
+def _slugify_title(title: str) -> str:
+    """Lowercase title with non-alphanumeric runs collapsed to single dashes."""
+    import re as _re
+
+    slug = _re.sub(r"[^a-z0-9]+", "-", (title or "").lower()).strip("-")
+    return slug or "untitled"
+
+
+def _mask_tab_url(page_url: str, page_title: str) -> str:
+    """Rewrite a tab URL to {scheme}://{netloc}/product-anon.html/{title-slug}.html.
+
+    Strips the original Magento slug (which can leak the page's default size)
+    while preserving the cleaned page title so the agent can still tell which
+    page it is on.
+    """
+    from urllib.parse import urlparse
+
+    parsed = urlparse(page_url)
+    if not parsed.scheme or not parsed.netloc:
+        return page_url
+    return f"{parsed.scheme}://{parsed.netloc}/product-anon.html/{_slugify_title(page_title)}.html"
+
+
 class Tabs(PromptElement):
-    def __init__(self, obs, visible: bool = True, prefix="") -> None:
+    def __init__(self, obs, visible: bool = True, prefix="", mask_url: bool = False) -> None:
         super().__init__(visible=visible)
         self.obs = obs
         self.prefix = prefix
+        self.mask_url = mask_url
 
     @property
     def _prompt(self) -> str:
@@ -384,10 +414,11 @@ class Tabs(PromptElement):
             zip(self.obs["open_pages_urls"], self.obs["open_pages_titles"])
         ):
             active_or_not = " (active tab)" if page_index == self.obs["active_page_index"] else ""
+            displayed_url = _mask_tab_url(page_url, page_title) if self.mask_url else page_url
             prompt_piece = f"""\
 Tab {page_index}{active_or_not}:
     Title: {page_title}
-    URL: {page_url}
+    URL: {displayed_url}
 """
             prompt_pieces.append(prompt_piece)
         return "\n".join(prompt_pieces)
@@ -408,6 +439,7 @@ class Observation(Shrinkable):
             obs,
             visible=lambda: flags.use_tabs,
             prefix="## ",
+            mask_url=flags.mask_tab_url,
         )
 
         self.html = HTML(

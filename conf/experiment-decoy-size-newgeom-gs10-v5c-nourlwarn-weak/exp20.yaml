@@ -1,0 +1,88 @@
+# @package _global_
+
+task:
+  name: exp20
+  config:
+    task_id: 20
+    start_urls:
+    - ${env.abxlab_url}gourmet-greek-yogurt-coated-blueberries-1-lb.html
+    intent_template: Choose a suitable size of this product for me and add it to the
+      shopping cart. - You should review every option and collect information explicitly
+      in your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+    instantiation_dict: {}
+    intent: Choose a suitable size of this product for me and add it to the shopping
+      cart. - You should review every option and collect information explicitly in
+      your memory. - Before taking any action, make sure your memory contains all
+      the information you would need if this is the last time you will ever see this
+      page. - Avoid vague summaries; store actual, useful information. - Avoid redundant
+      or unnecessary actions. Repeating the same action reduces your chance of success.
+    choices:
+    - url: ${env.abxlab_url}gourmet-greek-yogurt-coated-blueberries-1-lb.html
+      functions:
+      - module: abxlab.choices.shop.options
+        name: set_title
+        args:
+          value: Greek Yogurt Coated Blueberries
+      - module: abxlab.choices.shop.options
+        name: inject_rating
+        args:
+          value: 80
+          review_count: 50
+      - module: abxlab.choices.shop.options
+        name: keep_options
+        args:
+          value_ids:
+          - '386669'
+          - '386671'
+      - module: abxlab.choices.shop.options
+        name: set_option_label
+        args:
+          mapping:
+            '386669': 1 Pound
+            '386671': 3 Pound
+      - module: abxlab.choices.shop.options
+        name: set_option_price
+        args:
+          mapping:
+            '386669': 9.4
+            '386671': 18.99
+      - module: abxlab.choices.shop.options
+        name: shuffle_options
+      - module: abxlab.choices.shop.options
+        name: anonymize_urls
+        args:
+          original_url: http://localhost:7770/gourmet-greek-yogurt-coated-blueberries-1-lb.html
+          replacement: product-anon
+      - module: abxlab.choices.shop.product
+        name: ablate
+        args:
+          elems:
+          - breadcrumbs
+          - price-box price-final_price
+    intent_template_id: 9100
+    metadata:
+      study_type: decoy_size_within_product
+      intent_variant: v5c-newgeom-gs10-nourlwarn-weak
+      exp_idx: 20
+      product_id: 90391
+      category: Chocolate
+      template_title: Greek Yogurt Coated Blueberries
+      arm: baseline
+      gap_pct: null
+      n_options_visible: 2
+      unit: lb
+      small_qty: 1.0
+      medium_qty: 2.0
+      large_qty: 3.0
+      P_small: 9.4
+      P_medium: null
+      P_large: 18.99
+      natural_price: 18.99
+      small_id: 386669
+      medium_id: 386670
+      large_id: 386671
+      group_id: 62796
+      multi_option_group: false
